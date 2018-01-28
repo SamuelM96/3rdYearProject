@@ -28,9 +28,10 @@ void setup()
 
   //  ina219.begin();
 
-  stepper.setMaxSpeed(100);
-  stepper.setSpeed(100);
-  // stepper.setAcceleration(100);
+  stepper.setMaxSpeed(200);
+  stepper.setSpeed(200);
+  // stepper.setAcceleration(20);
+  // stepper.runSpeed();
 
   // pinMode(CLK, INPUT);
   // pinMode(DT, INPUT);
@@ -91,13 +92,13 @@ void loop()
 
   // clkLast = clkVal;
   // stepper.runSpeedToPosition();
-   long pos = stepper.currentPosition();
-   long stepperSpeed = stepper.speed();
-   if (stepperSpeed > 0 && pos >= 150 || stepperSpeed < 0 && pos <= 50) {
-     stepper.setSpeed(-stepperSpeed);
-   }
+  // long pos = stepper.currentPosition();
+  // long stepperSpeed = stepper.speed();
+  // if (stepperSpeed > 0 && pos >= 50 || stepperSpeed < 0 && pos <= 20) {
+    // stepper.setSpeed(-stepperSpeed);
+  // }
 
-   stepper.runSpeed();
+  stepper.runSpeed();
   //  stepper.runToNewPosition(0);
   //  stepper.runToNewPosition(235);
 }
