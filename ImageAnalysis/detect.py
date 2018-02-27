@@ -107,7 +107,7 @@ def main():
 
     # while True:
     for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-        ret, frame = cap.read()
+        # ret, frame = cap.read()
         frame = frameCam.array
         # frame = cv2.imread("G:/Google Drive/University/Year 3/Project/3rdYearProject/ImageAnalysis/DSC_0681.png", cv2.IMREAD_GRAYSCALE)
         # frame = cv2.resize(frame, (0, 0), fx=0.2, fy=0.2)
