@@ -7,14 +7,17 @@ import findBlobs as fb
 
 def main():
     cap = cv2.VideoCapture(0)
+    blobs = []
 
     while True:
         ret, frame = cap.read()
-        chunkBlobs = fb.findBlobs(frame)
+        blobs = fb.findBlobs(frame, blobs)
 
-        for b in chunkBlobs:
+        for b in blobs:
             cv2.rectangle(frame, (b.rect[0], b.rect[1]),
-                          (b.rect[2], b.rect[3]), (0, 0, 0), 3)
+                          (b.rect[2], b.rect[3]), (128, 0, 0), 3)
+            cv2.putText(frame, str(b.num), tuple(b.center),
+                        cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 128, 0))
 
         cv2.imshow('image', frame)
 
