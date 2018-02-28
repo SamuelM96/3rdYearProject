@@ -6,8 +6,8 @@ from sys import maxint
 
 
 cdef class Blob:
-    cdef public int num
-    cdef public int [:] rect, center, lineStart, lastPixel 
+    cdef public int num, lastPixelX
+    cdef public int [:] rect, center, lineStart 
     # cdef public int [:] center
 
     def __init__(self, int num, int x, int y):
@@ -15,7 +15,7 @@ cdef class Blob:
         self.rect = array.array('i', [x, y, x, y])
         self.center = array.array('i', [x, y])
         self.lineStart = array.array('i', [x, y])
-        self.lastPixel = array.array('i', [x, y])
+        self.lastPixelX = x
 
     cpdef addPoint(self, int x, int y):
         cdef int changed = 0
@@ -36,28 +36,19 @@ cdef class Blob:
             self.center[1] = self.rect[1] + (self.rect[3] - self.rect[1]) / 2
 
     cpdef inRange(self, int x, int y):
-        # cdef float l2 = self.rect[2] - self.rect[0]
-        # if (l2 == 0):
-        #     return ((x - self.rect[0])**2 + (y - self.rect[1])**2) < 100000
-        # cdef float [:] vec = array.array('f', [l2, self.rect[3] - self.rect[1]])
-        # cdef float t = max(0, min(1, np.dot([x - self.rect[0], y - self.rect[3]], vec) / l2))
-        # vec[0] = self.rect[0] + t * vec[0]
-        # vec[1] = self.rect[1] + t * vec[1]
-        return ((x - self.center[0])**2 + (y - self.center[1])**2) < 100000
-        # if y > self.lineStart[1]:
-        #     distSq = ((x - self.lineStart[0])**2 + (y - self.lineStart[1])**2)
-        #     if distSq < 50:
-        #         self.lineStart[0] = x
-        #         self.lineStart[1] = y
-        #         self.lastPixel[0] = x
-        #         self.lastPixel[1] = y
-        #         return True
-        # elif x - self.lastPixel[0] < 10:
-        #     self.lastPixel[0] = x
-        #     self.lastPixel[1] = y
-        #     return True
-        # else:
-        #     return False
+        # return ((x - self.center[0])**2 + (y - self.center[1])**2) < 100000
+        if y != self.lineStart[1]:
+            distSq = ((x - self.lineStart[0])**2 + (y - self.lineStart[1])**2)
+            if distSq < 7000:
+                self.lineStart[0] = x
+                self.lineStart[1] = y
+                self.lastPixelX = x
+                return True
+        elif x - self.lastPixelX < 100:
+            self.lastPixelX = x
+            return True
+        else:
+            return False
 
 cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
     cdef int counter = 0
@@ -90,17 +81,23 @@ cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
 
     lenCBlobs = len(currentBlobs)
 
+    # Need to fix potential duplicate numbers
     if len(blobs) == 0:
         return currentBlobs
     elif len(blobs) == lenCBlobs:
-        for i in xrange(lenCBlobs):
+        for i in xrange(len(currentBlobs)-1, -1, -1):
             b1 = currentBlobs[i]
+
+            if (b1.rect[2] - b1.rect[0]) * (b1.rect[3] - b1.rect[1]) < 1000:
+                del currentBlobs[i]
+                continue
+
             dist = maxint
             blobNum = 0
             for j in xrange(len(blobs)):
                 b2 = blobs[j]
                 newDist = ((b2.center[0] - b1.center[0])** 2 + (b2.center[1] - b2.center[1])**2)
-                if newDist < 1000 and newDist < dist:
+                if newDist < 640 and newDist < dist:
                     dist = newDist
                     blobNum = j
             b1.num = blobs[blobNum].num
