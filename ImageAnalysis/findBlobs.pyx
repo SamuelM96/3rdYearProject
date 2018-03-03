@@ -88,7 +88,7 @@ cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
         for i in xrange(len(currentBlobs)-1, -1, -1):
             b1 = currentBlobs[i]
 
-            if (b1.rect[2] - b1.rect[0]) * (b1.rect[3] - b1.rect[1]) < 1000:
+            if (b1.rect[3] - b1.rect[1]) < 50:
                 del currentBlobs[i]
                 continue
 

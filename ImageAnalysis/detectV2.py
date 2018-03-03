@@ -1,20 +1,26 @@
 from multiprocessing.dummy import Pool as ThreadPool
 import numpy as np
 import cv2
+from picamera.array import PiRGBArray
+from picamera import PiCamera
 import pyximport; pyximport.install()
 import findBlobs as fb
 
 
 def main():
     # cap = cv2.VideoCapture("G:/Google Drive/University/Year 3/Project/3rdYearProject/ImageAnalysis/test.avi")
-    cap = cv2.VideoCapture(0) 
+    # cap = cv2.VideoCapture(0) 
     blobs = []
+    camera = PiCamera()
+    camera.resolution = (640, 480)
+    camera.framerate = 32
+    rawCapture = PiRGBArray(camera, size=(640, 480))
 
-    while cap.isOpened():
-        ret, frame = cap.read()
-        # frame = cv2.blur(frame, (30,30))
-        # frame = cv2.imread("G:/Google Drive/University/Year 3/Project/3rdYearProject/ImageAnalysis/DSC_0681.png")
-        # frame = cv2.resize(frame, (0, 0), fx=0.3, fy=0.3)
+    # while True:
+    for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+        # ret, frame = cap.read()
+        frame = frameCam.array
+        frame.flags.writeable = True
         blobs = fb.findBlobs(frame, blobs)
         
 
@@ -25,11 +31,12 @@ def main():
                         cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 128, 0), 2)
 
         cv2.imshow('image', frame)
+        rawCapture.truncate(0)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     
-    cap.release()
+    # cap.release()
     cv2.destroyAllWindows()
 
 
