@@ -46,18 +46,19 @@ cdef class Blob:
     # print "D: %d, x: %d, y: %d, lx: %d, ly: %d, lpx: %d" % (dist, x, y, self.lineStart[0], self.lineStart[1], self.lastPixelX)
     cpdef inRange(self, int x, int y):
         # return ((x - self.center[0])**2 + (y - self.center[1])**2) < 100000
-        result = False
-        if y != self.lineStart[1]:
-            if ((x - self.lineStart[0]) **2 + (y - self.lineStart[1])**2) < 1000:
-                self.lineStart[0] = x
-                self.lineStart[1] = y
-                self.lastPixelX = x
-                return True
-        elif x - self.lastPixelX < 100: 
-            self.lastPixelX = x
-            return True
+        # result = False
+        # if y != self.lineStart[1]:
+        #     if ((x - self.lineStart[0]) **2 + (y - self.lineStart[1])**2) < 1000:
+        #         self.lineStart[0] = x
+        #         self.lineStart[1] = y
+        #         self.lastPixelX = x
+        #         return True
+        # elif x - self.lastPixelX < 100: 
+        #     self.lastPixelX = x
+        #     return True
 
-        return False
+        # return False
+        return y < self.rect[3] + 50 and x > self.rect[0] - 50 and x < self.rect[2] + 50
 
 cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
     cdef list currentBlobs = []
@@ -70,11 +71,12 @@ cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
 
     for y in xrange(0, h):
         for x in xrange(0, w):
-            # b = image[y,x,0]
+            b = image[y,x,0]
             g = image[y,x,1]
-            # r = image[y,x,2]
-            # if (b+g)/2 < 50 and r > 128:
-            if g < 30:
+            r = image[y,x,2]
+            # if (r+g)/2 < 50 and b > 100:
+            # if g < 30:
+            if (b+g+r)/3 < 50:
                 newBlob = True
                 if lastBlob is not None and lastBlob.inRange(x, y):
                     lastBlob.addPoint(x, y)
