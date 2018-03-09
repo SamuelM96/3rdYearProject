@@ -7,131 +7,143 @@ from random import randint
 from math import ceil
 
 
+# Stores information about the blobs in an image
 cdef class Blob:
-    cdef public int num, lastPixelX, alive, iteration, pixelCount
-    cdef public int [:] rect, center, lineStart
-    # cdef public unsigned char [:] lastLine
+    cdef public int num         # Blob ID
+    cdef public int alive       # If the blob is active (0 means it wasn't redetected)
+    cdef public int iteration   # How many frames the blob can persist for when undetected
+    cdef public int pixelCount  # Number of pixels within the blob
+    cdef public int[:] rect     # Bounding rectangle: [TopLeftX, TopLeftY, BtmRightX, BtmRightY]
 
+    # Creates a new Blob object
+    # num : Blob ID
+    # x : Initial pixel x coordinate
+    # y : Initial pixel y coordinate
     def __init__(self, int num, int x, int y):
         self.num = num
         self.rect = array.array('i', [x, y, x, y])
-        self.center = array.array('i', [x, y])
-        self.lineStart = array.array('i', [x, y])
-        self.lastPixelX = x
         self.alive = 1
         self.iteration = 5
-        # self.lastLine = np.zeros(int(ceil(width/8.0)), dtype='B')
         self.pixelCount = 0
 
-    cpdef addPoint(self, int x, int y):
-        cdef int changed = 0
+    # Adds a point to the blob
+    # x : x coordinate of pixel
+    # y : y coordinate of pixel
+    cpdef addPixel(self, int x, int y):
         if x < self.rect[0]:
             self.rect[0] = x
-            changed = 1
         elif x > self.rect[2]:
             self.rect[2] = x
-            changed = 1
-        if y < self.rect[1]:
-            self.rect[1] = y
-            changed = 1
         elif y > self.rect[3]:
             self.rect[3] = y
-            changed = 1
-        if changed == 1:
-            self.center[0] = self.rect[0] + (self.rect[2] - self.rect[0]) / 2
-            self.center[1] = self.rect[1] + (self.rect[3] - self.rect[1]) / 2
-        
         self.pixelCount += 1
 
-    # print "D: %d, x: %d, y: %d, lx: %d, ly: %d, lpx: %d" % (dist, x, y, self.lineStart[0], self.lineStart[1], self.lastPixelX)
+    # Returns True if the give pixel coords are within range of the blob, False otherwise
     cpdef inRange(self, int x, int y):
-        # return ((x - self.center[0])**2 + (y - self.center[1])**2) < 100000
-        # result = False
-        # if y != self.lineStart[1]:
-        #     if ((x - self.lineStart[0]) **2 + (y - self.lineStart[1])**2) < 1000:
-        #         self.lineStart[0] = x
-        #         self.lineStart[1] = y
-        #         self.lastPixelX = x
-        #         return True
-        # elif x - self.lastPixelX < 100: 
-        #     self.lastPixelX = x
-        #     return True
-
-        # return False
         return y < self.rect[3] + 50 and x > self.rect[0] - 50 and x < self.rect[2] + 50
 
-cpdef findBlobs(unsigned char [:, :, :] image, list blobs):
-    cdef list currentBlobs = []
-    cdef Blob lastBlob = None
-    cdef int x, y, w, h
-    cdef unsigned char val
+# Returns a list of founds blobs in the given image
+# image : Image to search for blobs in
+# blobs : Previously detected blobs if persistant detection is needed
+cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
+    cdef list currentBlobs = [] # List of detected blobs
+    cdef Blob lastBlob = None   # Last detected blob
+    cdef int x, y, w, h         # x,y coords and width,height of image
+    cdef unsigned char val      # Pixel value
 
+    # Height and width of image
     h = image.shape[0]
     w = image.shape[1]
 
     for y in xrange(0, h):
         for x in xrange(0, w):
-            b = image[y,x,0]
-            g = image[y,x,1]
-            r = image[y,x,2]
-            # if (r+g)/2 < 50 and b > 100:
-            # if g < 30:
-            if (b+g+r)/3 < 50:
+            blue = image[y, x, 0]
+            green = image[y, x, 1]
+            red = image[y, x, 2]
+
+            # Test brightness of pixel (threshold function)
+            if (blue + green + red)/3 < 50:
                 newBlob = True
+
+                # Try to add the detected pixel to the last used blob as an optimisation
                 if lastBlob is not None and lastBlob.inRange(x, y):
-                    lastBlob.addPoint(x, y)
+                    lastBlob.addPixel(x, y)
                 else:
+                    # Try to add pixel to an existing blob
                     for b in currentBlobs:
                         if b.inRange(x, y):
-                            b.addPoint(x, y)
+                            b.addPixel(x, y)
                             lastBlob = b
                             newBlob = False
                             break
+                    # Pixel not in range of current blobs, so create a new blob
                     if newBlob:
-                        lastBlob = Blob(randint(0,1000), x, y)
+                        lastBlob = Blob(randint(0, 1000), x, y)
                         currentBlobs.append(lastBlob)
 
+    # Blob persistence:
+    # Tries to find matching blobs (current blobs that are closest to previous blobs) and
+    # assigns the previous blobs number to the current one
     if len(blobs) == 0:
         return currentBlobs
     elif len(blobs) >= len(currentBlobs):
-        for i in xrange(len(currentBlobs)-1,-1,-1):
+        for i in xrange(len(currentBlobs)-1, -1, -1):
             curBlob = currentBlobs[i]
+
+            # Removes small blobs
             if curBlob.pixelCount < 1000:
                 del blobs[i]
                 continue
 
+            # Finds closest previous blob based on distance between their centers
             dist = maxint
             b = -1
             for j in xrange(len(blobs)):
                 blob = blobs[j]
-                newDist = ((blob.center[0] - curBlob.center[0])** 2 + (blob.center[1] - blob.center[1])**2)
+                
+                # Calculate distance between centers from bounding rectangles
+                newDist = (blob.rect[0] - curBlob.rect[0] + (blob.rect[2] - blob.rect[0] - curBlob.rect[2] + curBlob.rect[0]) / 2)**2 + (
+                    blob.rect[1] - curBlob.rect[1] + (blob.rect[3] - blob.rect[1] - curBlob.rect[3] + curBlob.rect[1]) / 2)**2
+                
                 if newDist < dist:
                     dist = newDist
                     b = j
+
+            # Persist previous blobs number
             if b != -1:
                 curBlob.num = blobs[b].num
                 del blobs[b]
-    else: # len(blobs) < len(currentBlobs)
+    else:  # len(blobs) < len(currentBlobs)
         for i in xrange(len(blobs)-1, -1, -1):
             blob = blobs[i]
+
+            # Finds closest previous blob based on distance between their centers
             dist = maxint
             b = None
-            for j in xrange(len(currentBlobs)-1,-1,-1):
+            for j in xrange(len(currentBlobs)-1, -1, -1):
                 curBlob = currentBlobs[j]
 
+                # Remove small blobs
                 if curBlob.pixelCount < 1000:
                     del currentBlobs[j]
                     continue
-                    
-                newDist = ((curBlob.center[0] - blob.center[0])**2 + (curBlob.center[1] - curBlob.center[1])**2)
+
+                # Calculate distance between centers from bounding rectangles
+                newDist = (blob.rect[0] - curBlob.rect[0] + (blob.rect[2] - blob.rect[0] - curBlob.rect[2] + curBlob.rect[0]) / 2)**2 + (
+                    blob.rect[1] - curBlob.rect[1] + (blob.rect[3] - blob.rect[1] - curBlob.rect[3] + curBlob.rect[1]) / 2)**2
+                
                 if newDist < dist:
                     dist = newDist
                     b = curBlob
+
+            # Persist previous blobs number
             if b is not None:
                 b.num = blob.num
                 del blobs[i]
 
-
+    # Left over blobs are previous blobs that have "disappeared" (obscured, missed detection,
+    # moved off screen, etc) which are allowed to survive for a set amount of frame so they can
+    # be redetected and persist through newer blobs
     for b in blobs:
         if b.iteration > 1:
             b.alive = 0
