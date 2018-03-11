@@ -29,7 +29,7 @@ def main():
             b = blobs[i]
             
             # Draw bounding boxes and IDs of blobs
-            elif b.alive == 1: 
+            if b.alive == 1: 
                 cv2.rectangle(frame, (b.rect[0], b.rect[1]),
                           (b.rect[2], b.rect[3]), (128, 0, 0), 3)
                 cv2.putText(frame, str(b.num), (b.rect[0] + (b.rect[2] - b.rect[0]) / 2, b.rect[1] + (b.rect[3] - b.rect[1]) / 2),

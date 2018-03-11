@@ -1,0 +1,1329 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/c04ceb81/
+0	.vscode/c_cpp_properties.json	/^                    "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\cores/;"	s	array:configurations.0.browse.path
+0	.vscode/c_cpp_properties.json	/^                "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\cores\\\\/;"	s	array:configurations.0.includePath
+0	.vscode/c_cpp_properties.json	/^        {$/;"	o	array:configurations
+0	ServoTester/.vscode/c_cpp_properties.json	/^                    "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/um",$/;"	s	array:configurations.2.browse.path
+0	ServoTester/.vscode/c_cpp_properties.json	/^                    "\/usr\/include",$/;"	s	array:configurations.0.browse.path
+0	ServoTester/.vscode/c_cpp_properties.json	/^                    "\/usr\/include",$/;"	s	array:configurations.1.browse.path
+0	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/um",$/;"	s	array:configurations.2.includePath
+0	ServoTester/.vscode/c_cpp_properties.json	/^                "\/System\/Library\/Frameworks",$/;"	s	array:configurations.0.macFrameworkPath
+0	ServoTester/.vscode/c_cpp_properties.json	/^                "\/usr\/include",$/;"	s	array:configurations.0.includePath
+0	ServoTester/.vscode/c_cpp_properties.json	/^                "\/usr\/include",$/;"	s	array:configurations.1.includePath
+0	ServoTester/.vscode/c_cpp_properties.json	/^                "_DEBUG",$/;"	s	array:configurations.2.defines
+0	ServoTester/.vscode/c_cpp_properties.json	/^        {$/;"	o	array:configurations
+1	ServoTester/.vscode/c_cpp_properties.json	/^                    "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/ucrt",$/;"	s	array:configurations.2.browse.path
+1	ServoTester/.vscode/c_cpp_properties.json	/^                    "\/usr\/local\/include",$/;"	s	array:configurations.0.browse.path
+1	ServoTester/.vscode/c_cpp_properties.json	/^                    "\/usr\/local\/include",$/;"	s	array:configurations.1.browse.path
+1	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/ucrt",$/;"	s	array:configurations.2.includePath
+1	ServoTester/.vscode/c_cpp_properties.json	/^                "UNICODE"$/;"	s	array:configurations.2.defines
+1	ServoTester/.vscode/c_cpp_properties.json	/^                "\/Library\/Frameworks"$/;"	s	array:configurations.0.macFrameworkPath
+1	ServoTester/.vscode/c_cpp_properties.json	/^                "\/usr\/local\/include",$/;"	s	array:configurations.0.includePath
+1	ServoTester/.vscode/c_cpp_properties.json	/^                "\/usr\/local\/include",$/;"	s	array:configurations.1.includePath
+1	ServoTester/.vscode/c_cpp_properties.json	/^        {$/;"	o	array:configurations
+2	ServoTester/.vscode/c_cpp_properties.json	/^                    "${workspaceRoot}"$/;"	s	array:configurations.0.browse.path
+2	ServoTester/.vscode/c_cpp_properties.json	/^                    "${workspaceRoot}"$/;"	s	array:configurations.1.browse.path
+2	ServoTester/.vscode/c_cpp_properties.json	/^                    "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/shared",$/;"	s	array:configurations.2.browse.path
+2	ServoTester/.vscode/c_cpp_properties.json	/^                "${workspaceRoot}"$/;"	s	array:configurations.0.includePath
+2	ServoTester/.vscode/c_cpp_properties.json	/^                "${workspaceRoot}"$/;"	s	array:configurations.1.includePath
+2	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/shared",$/;"	s	array:configurations.2.includePath
+2	ServoTester/.vscode/c_cpp_properties.json	/^        {$/;"	o	array:configurations
+3	ServoTester/.vscode/c_cpp_properties.json	/^                    "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/winrt",$/;"	s	array:configurations.2.browse.path
+3	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\/Program Files (x86)\/Windows Kits\/10\/Include\/10.0.14393.0\/winrt",$/;"	s	array:configurations.2.includePath
+4	ServoTester/.vscode/c_cpp_properties.json	/^                    "${workspaceRoot}",$/;"	s	array:configurations.2.browse.path
+4	ServoTester/.vscode/c_cpp_properties.json	/^                "${workspaceRoot}",$/;"	s	array:configurations.2.includePath
+5	ServoTester/.vscode/c_cpp_properties.json	/^                    "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\cores/;"	s	array:configurations.2.browse.path
+5	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\cores\\\\/;"	s	array:configurations.2.includePath
+6	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\\\\Users\\\\samue\\\\Documents\\\\Arduino\\\\libraries",$/;"	s	array:configurations.2.includePath
+7	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\\\\Users\\\\samue\\\\Documents\\\\Arduino\\\\libraries\\\\AccelStepper\\\\sr/;"	s	array:configurations.2.includePath
+8	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\libraries/;"	s	array:configurations.2.includePath
+9	ServoTester/.vscode/c_cpp_properties.json	/^                "C:\\\\Program Files (x86)\\\\Arduino\\\\hardware\\\\arduino\\\\avr\\\\libraries/;"	s	array:configurations.2.includePath
+Blob	ImageAnalysis/detect.py	/^class Blob:$/;"	c
+Blob	ImageAnalysis/findBlobs.pyx	/^cdef class Blob:$/;"	c
+CYTHON_ABI	ImageAnalysis/findBlobs.c	/^#define CYTHON_ABI /;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_ASSUME_SAFE_MACROS /;"	d	file:
+CYTHON_ASSUME_SAFE_MACROS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_ASSUME_SAFE_MACROS /;"	d	file:
+CYTHON_ATOMICS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_ATOMICS /;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_AVOID_BORROWED_REFS /;"	d	file:
+CYTHON_AVOID_BORROWED_REFS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_AVOID_BORROWED_REFS /;"	d	file:
+CYTHON_COMPILING_IN_CPYTHON	ImageAnalysis/findBlobs.c	/^  #define CYTHON_COMPILING_IN_CPYTHON /;"	d	file:
+CYTHON_COMPILING_IN_PYPY	ImageAnalysis/findBlobs.c	/^  #define CYTHON_COMPILING_IN_PYPY /;"	d	file:
+CYTHON_COMPILING_IN_PYSTON	ImageAnalysis/findBlobs.c	/^  #define CYTHON_COMPILING_IN_PYSTON /;"	d	file:
+CYTHON_FALLTHROUGH	ImageAnalysis/findBlobs.c	/^      #define CYTHON_FALLTHROUGH /;"	d	file:
+CYTHON_FALLTHROUGH	ImageAnalysis/findBlobs.c	/^      #define CYTHON_FALLTHROUGH$/;"	d	file:
+CYTHON_FAST_PYCALL	ImageAnalysis/findBlobs.c	/^    #define CYTHON_FAST_PYCALL /;"	d	file:
+CYTHON_FAST_PYCALL	ImageAnalysis/findBlobs.c	/^  #define CYTHON_FAST_PYCALL /;"	d	file:
+CYTHON_FAST_PYCCALL	ImageAnalysis/findBlobs.c	/^#define CYTHON_FAST_PYCCALL /;"	d	file:
+CYTHON_FAST_THREAD_STATE	ImageAnalysis/findBlobs.c	/^    #define CYTHON_FAST_THREAD_STATE /;"	d	file:
+CYTHON_FAST_THREAD_STATE	ImageAnalysis/findBlobs.c	/^  #define CYTHON_FAST_THREAD_STATE /;"	d	file:
+CYTHON_FORMAT_SSIZE_T	ImageAnalysis/findBlobs.c	/^#define CYTHON_FORMAT_SSIZE_T /;"	d	file:
+CYTHON_FUTURE_DIVISION	ImageAnalysis/findBlobs.c	/^#define CYTHON_FUTURE_DIVISION /;"	d	file:
+CYTHON_INLINE	ImageAnalysis/findBlobs.c	/^    #define CYTHON_INLINE /;"	d	file:
+CYTHON_INLINE	ImageAnalysis/findBlobs.c	/^    #define CYTHON_INLINE$/;"	d	file:
+CYTHON_MAYBE_UNUSED_VAR	ImageAnalysis/findBlobs.c	/^     template<class T> void CYTHON_MAYBE_UNUSED_VAR( const T& ) { }$/;"	f	typeref:typename:template<class T> void
+CYTHON_MAYBE_UNUSED_VAR	ImageAnalysis/findBlobs.c	/^#    define CYTHON_MAYBE_UNUSED_VAR(/;"	d	file:
+CYTHON_NCP_UNUSED	ImageAnalysis/findBlobs.c	/^#  define CYTHON_NCP_UNUSED /;"	d	file:
+CYTHON_NCP_UNUSED	ImageAnalysis/findBlobs.c	/^#  define CYTHON_NCP_UNUSED$/;"	d	file:
+CYTHON_PEP393_ENABLED	ImageAnalysis/findBlobs.c	/^  #define CYTHON_PEP393_ENABLED /;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	ImageAnalysis/findBlobs.c	/^    #define CYTHON_PEP489_MULTI_PHASE_INIT /;"	d	file:
+CYTHON_PEP489_MULTI_PHASE_INIT	ImageAnalysis/findBlobs.c	/^  #define CYTHON_PEP489_MULTI_PHASE_INIT /;"	d	file:
+CYTHON_REFNANNY	ImageAnalysis/findBlobs.c	/^  #define CYTHON_REFNANNY /;"	d	file:
+CYTHON_RESTRICT	ImageAnalysis/findBlobs.c	/^    #define CYTHON_RESTRICT /;"	d	file:
+CYTHON_RESTRICT	ImageAnalysis/findBlobs.c	/^    #define CYTHON_RESTRICT$/;"	d	file:
+CYTHON_UNPACK_METHODS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_UNPACK_METHODS /;"	d	file:
+CYTHON_UNPACK_METHODS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_UNPACK_METHODS /;"	d	file:
+CYTHON_UNUSED	ImageAnalysis/findBlobs.c	/^#     define CYTHON_UNUSED /;"	d	file:
+CYTHON_UNUSED	ImageAnalysis/findBlobs.c	/^#     define CYTHON_UNUSED$/;"	d	file:
+CYTHON_UNUSED	ImageAnalysis/findBlobs.c	/^#   define CYTHON_UNUSED /;"	d	file:
+CYTHON_UNUSED	ImageAnalysis/findBlobs.c	/^#   define CYTHON_UNUSED$/;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_ASYNC_SLOTS /;"	d	file:
+CYTHON_USE_ASYNC_SLOTS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_ASYNC_SLOTS /;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_PYLIST_INTERNALS /;"	d	file:
+CYTHON_USE_PYLIST_INTERNALS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_PYLIST_INTERNALS /;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_PYLONG_INTERNALS /;"	d	file:
+CYTHON_USE_PYLONG_INTERNALS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_PYLONG_INTERNALS /;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_PYTYPE_LOOKUP /;"	d	file:
+CYTHON_USE_PYTYPE_LOOKUP	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_PYTYPE_LOOKUP /;"	d	file:
+CYTHON_USE_TP_FINALIZE	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_TP_FINALIZE /;"	d	file:
+CYTHON_USE_TP_FINALIZE	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_TP_FINALIZE /;"	d	file:
+CYTHON_USE_TYPE_SLOTS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_TYPE_SLOTS /;"	d	file:
+CYTHON_USE_TYPE_SLOTS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_TYPE_SLOTS /;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_UNICODE_INTERNALS /;"	d	file:
+CYTHON_USE_UNICODE_INTERNALS	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_UNICODE_INTERNALS /;"	d	file:
+CYTHON_USE_UNICODE_WRITER	ImageAnalysis/findBlobs.c	/^    #define CYTHON_USE_UNICODE_WRITER /;"	d	file:
+CYTHON_USE_UNICODE_WRITER	ImageAnalysis/findBlobs.c	/^  #define CYTHON_USE_UNICODE_WRITER /;"	d	file:
+CYTHON_WITHOUT_ASSERTIONS	ImageAnalysis/findBlobs.c	/^#define CYTHON_WITHOUT_ASSERTIONS$/;"	d	file:
+Chunk	ImageAnalysis/detect.py	/^class Chunk:$/;"	c
+DECREF	ImageAnalysis/findBlobs.c	/^    void (*DECREF)(void*, PyObject*, int);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void (*)(void *,PyObject *,int)	file:
+DISTSQ	ImageAnalysis/detect.py	/^DISTSQ = 10000$/;"	v
+DL_EXPORT	ImageAnalysis/findBlobs.c	/^  #define DL_EXPORT(/;"	d	file:
+DL_IMPORT	ImageAnalysis/findBlobs.c	/^  #define DL_IMPORT(/;"	d	file:
+FinishContext	ImageAnalysis/findBlobs.c	/^    void (*FinishContext)(void**);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void (*)(void **)	file:
+GIVEREF	ImageAnalysis/findBlobs.c	/^    void (*GIVEREF)(void*, PyObject*, int);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void (*)(void *,PyObject *,int)	file:
+GOTREF	ImageAnalysis/findBlobs.c	/^    void (*GOTREF)(void*, PyObject*, int);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void (*)(void *,PyObject *,int)	file:
+HAVE_LONG_LONG	ImageAnalysis/findBlobs.c	/^    #define HAVE_LONG_LONG$/;"	d	file:
+INCREF	ImageAnalysis/findBlobs.c	/^    void (*INCREF)(void*, PyObject*, int);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void (*)(void *,PyObject *,int)	file:
+IS_UNSIGNED	ImageAnalysis/findBlobs.c	/^#define IS_UNSIGNED(/;"	d	file:
+METH_FASTCALL	ImageAnalysis/findBlobs.c	/^     #define METH_FASTCALL /;"	d	file:
+N	ImageAnalysis/note.py	/^N = 1005$/;"	v
+PY_LONG_LONG	ImageAnalysis/findBlobs.c	/^  #define PY_LONG_LONG /;"	d	file:
+PY_SSIZE_T_CLEAN	ImageAnalysis/findBlobs.c	/^#define PY_SSIZE_T_CLEAN$/;"	d	file:
+PyBaseString_Type	ImageAnalysis/findBlobs.c	/^  #define PyBaseString_Type /;"	d	file:
+PyBoolObject	ImageAnalysis/findBlobs.c	/^  #define PyBoolObject /;"	d	file:
+PyByteArray_Check	ImageAnalysis/findBlobs.c	/^  #define PyByteArray_Check(/;"	d	file:
+PyIntObject	ImageAnalysis/findBlobs.c	/^  #define PyIntObject /;"	d	file:
+PyInt_AS_LONG	ImageAnalysis/findBlobs.c	/^  #define PyInt_AS_LONG /;"	d	file:
+PyInt_AsLong	ImageAnalysis/findBlobs.c	/^  #define PyInt_AsLong /;"	d	file:
+PyInt_AsSsize_t	ImageAnalysis/findBlobs.c	/^  #define PyInt_AsSsize_t /;"	d	file:
+PyInt_AsUnsignedLongLongMask	ImageAnalysis/findBlobs.c	/^  #define PyInt_AsUnsignedLongLongMask /;"	d	file:
+PyInt_AsUnsignedLongMask	ImageAnalysis/findBlobs.c	/^  #define PyInt_AsUnsignedLongMask /;"	d	file:
+PyInt_Check	ImageAnalysis/findBlobs.c	/^  #define PyInt_Check(/;"	d	file:
+PyInt_CheckExact	ImageAnalysis/findBlobs.c	/^  #define PyInt_CheckExact(/;"	d	file:
+PyInt_FromLong	ImageAnalysis/findBlobs.c	/^  #define PyInt_FromLong /;"	d	file:
+PyInt_FromSize_t	ImageAnalysis/findBlobs.c	/^  #define PyInt_FromSize_t /;"	d	file:
+PyInt_FromSsize_t	ImageAnalysis/findBlobs.c	/^  #define PyInt_FromSsize_t /;"	d	file:
+PyInt_FromString	ImageAnalysis/findBlobs.c	/^  #define PyInt_FromString /;"	d	file:
+PyInt_FromUnicode	ImageAnalysis/findBlobs.c	/^  #define PyInt_FromUnicode /;"	d	file:
+PyInt_Type	ImageAnalysis/findBlobs.c	/^  #define PyInt_Type /;"	d	file:
+PyNumber_Int	ImageAnalysis/findBlobs.c	/^  #define PyNumber_Int /;"	d	file:
+PyObject_ASCII	ImageAnalysis/findBlobs.c	/^  #define PyObject_ASCII(/;"	d	file:
+PyObject_Format	ImageAnalysis/findBlobs.c	/^  #define PyObject_Format(/;"	d	file:
+PyObject_Free	ImageAnalysis/findBlobs.c	/^  #define PyObject_Free(/;"	d	file:
+PyObject_Malloc	ImageAnalysis/findBlobs.c	/^  #define PyObject_Malloc(/;"	d	file:
+PyObject_Realloc	ImageAnalysis/findBlobs.c	/^  #define PyObject_Realloc(/;"	d	file:
+PySet_CheckExact	ImageAnalysis/findBlobs.c	/^  #define PySet_CheckExact(/;"	d	file:
+PyStringObject	ImageAnalysis/findBlobs.c	/^  #define PyStringObject /;"	d	file:
+PyString_Check	ImageAnalysis/findBlobs.c	/^  #define PyString_Check /;"	d	file:
+PyString_CheckExact	ImageAnalysis/findBlobs.c	/^  #define PyString_CheckExact /;"	d	file:
+PyString_Type	ImageAnalysis/findBlobs.c	/^  #define PyString_Type /;"	d	file:
+PyUnicode_1BYTE_KIND	ImageAnalysis/findBlobs.c	/^  #define PyUnicode_1BYTE_KIND /;"	d	file:
+PyUnicode_2BYTE_KIND	ImageAnalysis/findBlobs.c	/^  #define PyUnicode_2BYTE_KIND /;"	d	file:
+PyUnicode_4BYTE_KIND	ImageAnalysis/findBlobs.c	/^  #define PyUnicode_4BYTE_KIND /;"	d	file:
+PyUnicode_Contains	ImageAnalysis/findBlobs.c	/^  #define PyUnicode_Contains(/;"	d	file:
+PyUnicode_InternFromString	ImageAnalysis/findBlobs.c	/^    #define PyUnicode_InternFromString(/;"	d	file:
+Py_HUGE_VAL	ImageAnalysis/findBlobs.c	/^  #define Py_HUGE_VAL /;"	d	file:
+Py_NO_RETURN	ImageAnalysis/findBlobs.c	/^#define Py_NO_RETURN$/;"	d	file:
+Py_OptimizeFlag	ImageAnalysis/findBlobs.c	/^  #define Py_OptimizeFlag /;"	d	file:
+Py_TPFLAGS_CHECKTYPES	ImageAnalysis/findBlobs.c	/^  #define Py_TPFLAGS_CHECKTYPES /;"	d	file:
+Py_TPFLAGS_HAVE_FINALIZE	ImageAnalysis/findBlobs.c	/^  #define Py_TPFLAGS_HAVE_FINALIZE /;"	d	file:
+Py_TPFLAGS_HAVE_INDEX	ImageAnalysis/findBlobs.c	/^  #define Py_TPFLAGS_HAVE_INDEX /;"	d	file:
+Py_TPFLAGS_HAVE_NEWBUFFER	ImageAnalysis/findBlobs.c	/^  #define Py_TPFLAGS_HAVE_NEWBUFFER /;"	d	file:
+Py_hash_t	ImageAnalysis/findBlobs.c	/^  typedef long Py_hash_t;$/;"	t	typeref:typename:long	file:
+SetupContext	ImageAnalysis/findBlobs.c	/^    void* (*SetupContext)(const char*, int, const char*);$/;"	m	struct:__anonf7744edf0708	typeref:typename:void * (*)(const char *,int,const char *)	file:
+ThreadPool	ImageAnalysis/detect.py	/^from multiprocessing.dummy import Pool as ThreadPool$/;"	x
+ThreadPool	ImageAnalysis/detectV2.py	/^from multiprocessing.dummy import Pool as ThreadPool$/;"	x
+UNARY_NEG_WOULD_OVERFLOW	ImageAnalysis/findBlobs.c	/^#define UNARY_NEG_WOULD_OVERFLOW(/;"	d	file:
+_ARRAYARRAY_H	ImageAnalysis/findBlobs.c	/^#define _ARRAYARRAY_H$/;"	d	file:
+_USE_MATH_DEFINES	ImageAnalysis/findBlobs.c	/^  #define _USE_MATH_DEFINES$/;"	d	file:
+__PYX_BUF_FLAGS_PACKED_STRUCT	ImageAnalysis/findBlobs.c	/^#define __PYX_BUF_FLAGS_PACKED_STRUCT /;"	d	file:
+__PYX_BUILD_PY_SSIZE_T	ImageAnalysis/findBlobs.c	/^#define __PYX_BUILD_PY_SSIZE_T /;"	d	file:
+__PYX_COMMA	ImageAnalysis/findBlobs.c	/^#define __PYX_COMMA /;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING	ImageAnalysis/findBlobs.c	/^#define __PYX_DEFAULT_STRING_ENCODING /;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING	ImageAnalysis/findBlobs.c	/^static char* __PYX_DEFAULT_STRING_ENCODING;$/;"	v	typeref:typename:char *	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_ASCII	ImageAnalysis/findBlobs.c	/^#define __PYX_DEFAULT_STRING_ENCODING_IS_ASCII /;"	d	file:
+__PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT	ImageAnalysis/findBlobs.c	/^#define __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT /;"	d	file:
+__PYX_ERR	ImageAnalysis/findBlobs.c	/^#define __PYX_ERR(/;"	d	file:
+__PYX_EXTERN_C	ImageAnalysis/findBlobs.c	/^    #define __PYX_EXTERN_C /;"	d	file:
+__PYX_FORCE_INIT_THREADS	ImageAnalysis/findBlobs.c	/^  #define __PYX_FORCE_INIT_THREADS /;"	d	file:
+__PYX_HAVE_API__findBlobs	ImageAnalysis/findBlobs.c	/^#define __PYX_HAVE_API__findBlobs$/;"	d	file:
+__PYX_HAVE_RT_ImportModule	ImageAnalysis/findBlobs.c	/^#define __PYX_HAVE_RT_ImportModule$/;"	d	file:
+__PYX_HAVE_RT_ImportType	ImageAnalysis/findBlobs.c	/^#define __PYX_HAVE_RT_ImportType$/;"	d	file:
+__PYX_HAVE__findBlobs	ImageAnalysis/findBlobs.c	/^#define __PYX_HAVE__findBlobs$/;"	d	file:
+__PYX_INC_MEMVIEW	ImageAnalysis/findBlobs.c	/^#define __PYX_INC_MEMVIEW(/;"	d	file:
+__PYX_NAN	ImageAnalysis/findBlobs.c	/^#define __PYX_NAN(/;"	d	file:
+__PYX_NAN	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE float __PYX_NAN() {$/;"	f	typeref:typename:CYTHON_INLINE float	file:
+__PYX_VERIFY_RETURN_INT	ImageAnalysis/findBlobs.c	/^    #define __PYX_VERIFY_RETURN_INT(/;"	d	file:
+__PYX_VERIFY_RETURN_INT_EXC	ImageAnalysis/findBlobs.c	/^#define __PYX_VERIFY_RETURN_INT_EXC(/;"	d	file:
+__PYX_XDEC_MEMVIEW	ImageAnalysis/findBlobs.c	/^#define __PYX_XDEC_MEMVIEW(/;"	d	file:
+__PYX__VERIFY_RETURN_INT	ImageAnalysis/findBlobs.c	/^#define __PYX__VERIFY_RETURN_INT(/;"	d	file:
+__Pyx_AddTraceback	ImageAnalysis/findBlobs.c	/^static void __Pyx_AddTraceback(const char *funcname, int c_line,$/;"	f	typeref:typename:void	file:
+__Pyx_ArgTypeTest	ImageAnalysis/findBlobs.c	/^#define __Pyx_ArgTypeTest(/;"	d	file:
+__Pyx_BUF_MAX_NDIMS	ImageAnalysis/findBlobs.c	/^#define __Pyx_BUF_MAX_NDIMS /;"	d	file:
+__Pyx_BUILTIN_MODULE_NAME	ImageAnalysis/findBlobs.c	/^  #define __Pyx_BUILTIN_MODULE_NAME /;"	d	file:
+__Pyx_BufFmt_CheckString	ImageAnalysis/findBlobs.c	/^static const char* __Pyx_BufFmt_CheckString(__Pyx_BufFmt_Context* ctx, const char* ts) {$/;"	f	typeref:typename:const char *	file:
+__Pyx_BufFmt_Context	ImageAnalysis/findBlobs.c	/^} __Pyx_BufFmt_Context;$/;"	t	typeref:struct:__anonf7744edf0608	file:
+__Pyx_BufFmt_DescribeTypeChar	ImageAnalysis/findBlobs.c	/^static const char* __Pyx_BufFmt_DescribeTypeChar(char ch, int is_complex) {$/;"	f	typeref:typename:const char *	file:
+__Pyx_BufFmt_ExpectNumber	ImageAnalysis/findBlobs.c	/^static int __Pyx_BufFmt_ExpectNumber(const char **ts) {$/;"	f	typeref:typename:int	file:
+__Pyx_BufFmt_Init	ImageAnalysis/findBlobs.c	/^    static void __Pyx_BufFmt_Init(__Pyx_BufFmt_Context* ctx,$/;"	f	typeref:typename:void	file:
+__Pyx_BufFmt_ParseNumber	ImageAnalysis/findBlobs.c	/^static int __Pyx_BufFmt_ParseNumber(const char** ts) {$/;"	f	typeref:typename:int	file:
+__Pyx_BufFmt_ProcessTypeChunk	ImageAnalysis/findBlobs.c	/^static int __Pyx_BufFmt_ProcessTypeChunk(__Pyx_BufFmt_Context* ctx) {$/;"	f	typeref:typename:int	file:
+__Pyx_BufFmt_RaiseExpected	ImageAnalysis/findBlobs.c	/^static void __Pyx_BufFmt_RaiseExpected(__Pyx_BufFmt_Context* ctx) {$/;"	f	typeref:typename:void	file:
+__Pyx_BufFmt_RaiseUnexpectedChar	ImageAnalysis/findBlobs.c	/^static void __Pyx_BufFmt_RaiseUnexpectedChar(char ch) {$/;"	f	typeref:typename:void	file:
+__Pyx_BufFmt_StackElem	ImageAnalysis/findBlobs.c	/^} __Pyx_BufFmt_StackElem;$/;"	t	typeref:struct:__anonf7744edf0508	file:
+__Pyx_BufFmt_TypeCharToAlignment	ImageAnalysis/findBlobs.c	/^static size_t __Pyx_BufFmt_TypeCharToAlignment(char ch, CYTHON_UNUSED int is_complex) {$/;"	f	typeref:typename:size_t	file:
+__Pyx_BufFmt_TypeCharToGroup	ImageAnalysis/findBlobs.c	/^static char __Pyx_BufFmt_TypeCharToGroup(char ch, int is_complex) {$/;"	f	typeref:typename:char	file:
+__Pyx_BufFmt_TypeCharToNativeSize	ImageAnalysis/findBlobs.c	/^static size_t __Pyx_BufFmt_TypeCharToNativeSize(char ch, int is_complex) {$/;"	f	typeref:typename:size_t	file:
+__Pyx_BufFmt_TypeCharToPadding	ImageAnalysis/findBlobs.c	/^static size_t __Pyx_BufFmt_TypeCharToPadding(char ch, CYTHON_UNUSED int is_complex) {$/;"	f	typeref:typename:size_t	file:
+__Pyx_BufFmt_TypeCharToStandardSize	ImageAnalysis/findBlobs.c	/^static size_t __Pyx_BufFmt_TypeCharToStandardSize(char ch, int is_complex) {$/;"	f	typeref:typename:size_t	file:
+__Pyx_Buf_DimInfo	ImageAnalysis/findBlobs.c	/^} __Pyx_Buf_DimInfo;$/;"	t	typeref:struct:__anonf7744edf0a08	file:
+__Pyx_Buffer	ImageAnalysis/findBlobs.c	/^} __Pyx_Buffer;$/;"	t	typeref:struct:__anonf7744edf0b08	file:
+__Pyx_CLEAR	ImageAnalysis/findBlobs.c	/^#define __Pyx_CLEAR(/;"	d	file:
+__Pyx_CLineForTraceback	ImageAnalysis/findBlobs.c	/^#define __Pyx_CLineForTraceback(/;"	d	file:
+__Pyx_CLineForTraceback	ImageAnalysis/findBlobs.c	/^static int __Pyx_CLineForTraceback(CYTHON_UNUSED PyThreadState *tstate, int c_line) {$/;"	f	typeref:typename:int	file:
+__Pyx_CodeObjectCache	ImageAnalysis/findBlobs.c	/^struct __Pyx_CodeObjectCache {$/;"	s	file:
+__Pyx_CodeObjectCacheEntry	ImageAnalysis/findBlobs.c	/^} __Pyx_CodeObjectCacheEntry;$/;"	t	typeref:struct:__anonf7744edf0808	file:
+__Pyx_CreateCodeObjectForTraceback	ImageAnalysis/findBlobs.c	/^static PyCodeObject* __Pyx_CreateCodeObjectForTraceback($/;"	f	typeref:typename:PyCodeObject *	file:
+__Pyx_DECREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_DECREF(/;"	d	file:
+__Pyx_DECREF_SET	ImageAnalysis/findBlobs.c	/^#define __Pyx_DECREF_SET(/;"	d	file:
+__Pyx_DefaultClassType	ImageAnalysis/findBlobs.c	/^  #define __Pyx_DefaultClassType /;"	d	file:
+__Pyx_DelItemInt	ImageAnalysis/findBlobs.c	/^#define __Pyx_DelItemInt(/;"	d	file:
+__Pyx_DelItemInt_Fast	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_DelItemInt_Fast(PyObject *o, Py_ssize_t i,$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_DelItem_Generic	ImageAnalysis/findBlobs.c	/^  static int __Pyx_DelItem_Generic(PyObject *o, PyObject *j) {$/;"	f	typeref:typename:int	file:
+__Pyx_ErrFetch	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrFetch(/;"	d	file:
+__Pyx_ErrFetchInState	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrFetchInState(/;"	d	file:
+__Pyx_ErrFetchInState	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject **type, PyObject/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_ErrFetchWithState	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrFetchWithState(/;"	d	file:
+__Pyx_ErrRestore	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrRestore(/;"	d	file:
+__Pyx_ErrRestoreInState	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrRestoreInState(/;"	d	file:
+__Pyx_ErrRestoreInState	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObjec/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_ErrRestoreWithState	ImageAnalysis/findBlobs.c	/^#define __Pyx_ErrRestoreWithState(/;"	d	file:
+__Pyx_ExceptionReset	ImageAnalysis/findBlobs.c	/^#define __Pyx_ExceptionReset(/;"	d	file:
+__Pyx_ExceptionSave	ImageAnalysis/findBlobs.c	/^#define __Pyx_ExceptionSave(/;"	d	file:
+__Pyx_ExceptionSwap	ImageAnalysis/findBlobs.c	/^#define __Pyx_ExceptionSwap(/;"	d	file:
+__Pyx_ExceptionSwap	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx_ExceptionSwap(PyObject **type, PyObject **value, PyObject **tb) /;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_FastGIL_Forget	ImageAnalysis/findBlobs.c	/^#define __Pyx_FastGIL_Forget(/;"	d	file:
+__Pyx_FastGIL_Remember	ImageAnalysis/findBlobs.c	/^#define __Pyx_FastGIL_Remember(/;"	d	file:
+__Pyx_FastGilFuncInit	ImageAnalysis/findBlobs.c	/^#define __Pyx_FastGilFuncInit(/;"	d	file:
+__Pyx_GIVEREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_GIVEREF(/;"	d	file:
+__Pyx_GOTREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_GOTREF(/;"	d	file:
+__Pyx_GetAttr	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetAttr(PyObject *o, PyObject *n) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_GetAttr3	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetAttr3(PyObject *o, PyObject *n, PyObject *d) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_GetAttr3Default	ImageAnalysis/findBlobs.c	/^static PyObject *__Pyx_GetAttr3Default(PyObject *d) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_GetBuffer	ImageAnalysis/findBlobs.c	/^    #define __Pyx_GetBuffer /;"	d	file:
+__Pyx_GetBuffer	ImageAnalysis/findBlobs.c	/^static int __Pyx_GetBuffer(PyObject *obj, Py_buffer *view, int flags) {$/;"	f	typeref:typename:int	file:
+__Pyx_GetBuiltinName	ImageAnalysis/findBlobs.c	/^static PyObject *__Pyx_GetBuiltinName(PyObject *name) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_GetException	ImageAnalysis/findBlobs.c	/^#define __Pyx_GetException(/;"	d	file:
+__Pyx_GetItemInt	ImageAnalysis/findBlobs.c	/^#define __Pyx_GetItemInt(/;"	d	file:
+__Pyx_GetItemInt_Fast	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Fast(PyObject *o, Py_ssize_t i, int is_list,$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_GetItemInt_Generic	ImageAnalysis/findBlobs.c	/^  static PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_GetItemInt_List	ImageAnalysis/findBlobs.c	/^#define __Pyx_GetItemInt_List(/;"	d	file:
+__Pyx_GetItemInt_List_Fast	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_List_Fast(PyObject *o, Py_ssize_t i,$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_GetItemInt_Tuple	ImageAnalysis/findBlobs.c	/^#define __Pyx_GetItemInt_Tuple(/;"	d	file:
+__Pyx_GetItemInt_Tuple_Fast	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Tuple_Fast(PyObject *o, Py_ssize_t i,$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_GetModuleGlobalName	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_GetModuleGlobalName(PyObject *name) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_HasAttr	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE int __Pyx_HasAttr(PyObject *o, PyObject *n) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_INCREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_INCREF(/;"	d	file:
+__Pyx_INC_MEMVIEW	ImageAnalysis/findBlobs.c	/^__Pyx_INC_MEMVIEW(__Pyx_memviewslice *memslice, int have_gil, int lineno)$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_IS_C_CONTIG	ImageAnalysis/findBlobs.c	/^#define __Pyx_IS_C_CONTIG /;"	d	file:
+__Pyx_IS_F_CONTIG	ImageAnalysis/findBlobs.c	/^#define __Pyx_IS_F_CONTIG /;"	d	file:
+__Pyx_Import	ImageAnalysis/findBlobs.c	/^  static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_ImportFrom	ImageAnalysis/findBlobs.c	/^  static PyObject* __Pyx_ImportFrom(PyObject* module, PyObject* name) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_ImportModule	ImageAnalysis/findBlobs.c	/^static PyObject *__Pyx_ImportModule(const char *name) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_ImportType	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__Pyx_ImportType(const char *module_name, const char *class_name,$/;"	f	typeref:typename:PyTypeObject *	file:
+__Pyx_InBases	ImageAnalysis/findBlobs.c	/^static int __Pyx_InBases(PyTypeObject *a, PyTypeObject *b) {$/;"	f	typeref:typename:int	file:
+__Pyx_InitCachedBuiltins	ImageAnalysis/findBlobs.c	/^static int __Pyx_InitCachedBuiltins(void) {$/;"	f	typeref:typename:int	file:
+__Pyx_InitCachedConstants	ImageAnalysis/findBlobs.c	/^static int __Pyx_InitCachedConstants(void) {$/;"	f	typeref:typename:int	file:
+__Pyx_InitGlobals	ImageAnalysis/findBlobs.c	/^static int __Pyx_InitGlobals(void) {$/;"	f	typeref:typename:int	file:
+__Pyx_InitStrings	ImageAnalysis/findBlobs.c	/^      static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {$/;"	f	typeref:typename:int	file:
+__Pyx_IsSubtype	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_IsSubtype(PyTypeObject *a, PyTypeObject *b) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_Is_Little_Endian	ImageAnalysis/findBlobs.c	/^    static CYTHON_INLINE int __Pyx_Is_Little_Endian(void)$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_ListComp_Append	ImageAnalysis/findBlobs.c	/^#define __Pyx_ListComp_Append(/;"	d	file:
+__Pyx_ListComp_Append	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_ListComp_Append(PyObject* list, PyObject* x) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_LocalBuf_ND	ImageAnalysis/findBlobs.c	/^} __Pyx_LocalBuf_ND;$/;"	t	typeref:struct:__anonf7744edf0c08	file:
+__Pyx_MEMVIEW_CONTIG	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_CONTIG /;"	d	file:
+__Pyx_MEMVIEW_DIRECT	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_DIRECT /;"	d	file:
+__Pyx_MEMVIEW_FOLLOW	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_FOLLOW /;"	d	file:
+__Pyx_MEMVIEW_FULL	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_FULL /;"	d	file:
+__Pyx_MEMVIEW_PTR	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_PTR /;"	d	file:
+__Pyx_MEMVIEW_STRIDED	ImageAnalysis/findBlobs.c	/^#define __Pyx_MEMVIEW_STRIDED /;"	d	file:
+__Pyx_MODULE_NAME	ImageAnalysis/findBlobs.c	/^#define __Pyx_MODULE_NAME /;"	d	file:
+__Pyx_MemoryView_Len	ImageAnalysis/findBlobs.c	/^#define __Pyx_MemoryView_Len(/;"	d	file:
+__Pyx_NewRef	ImageAnalysis/findBlobs.c	/^#define __Pyx_NewRef(/;"	d	file:
+__Pyx_Owned_Py_None	ImageAnalysis/findBlobs.c	/^#define __Pyx_Owned_Py_None(/;"	d	file:
+__Pyx_ParseOptionalKeywords	ImageAnalysis/findBlobs.c	/^static int __Pyx_ParseOptionalKeywords($/;"	f	typeref:typename:int	file:
+__Pyx_PyAsyncMethodsStruct	ImageAnalysis/findBlobs.c	/^    #define __Pyx_PyAsyncMethodsStruct /;"	d	file:
+__Pyx_PyAsyncMethodsStruct	ImageAnalysis/findBlobs.c	/^    } __Pyx_PyAsyncMethodsStruct;$/;"	t	typeref:struct:__anonf7744edf0108	file:
+__Pyx_PyBaseString_Check	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyBaseString_Check(/;"	d	file:
+__Pyx_PyBaseString_CheckExact	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyBaseString_CheckExact(/;"	d	file:
+__Pyx_PyBool_FromLong	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBool_FromLong(/;"	d	file:
+__Pyx_PyByteArray_FromCString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyByteArray_FromCString(/;"	d	file:
+__Pyx_PyByteArray_FromString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyByteArray_FromString(/;"	d	file:
+__Pyx_PyByteArray_FromStringAndSize	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyByteArray_FromStringAndSize(/;"	d	file:
+__Pyx_PyBytes_AsSString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsSString(/;"	d	file:
+__Pyx_PyBytes_AsString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsString(/;"	d	file:
+__Pyx_PyBytes_AsUString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsUString(/;"	d	file:
+__Pyx_PyBytes_AsWritableSString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsWritableSString(/;"	d	file:
+__Pyx_PyBytes_AsWritableString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsWritableString(/;"	d	file:
+__Pyx_PyBytes_AsWritableUString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_AsWritableUString(/;"	d	file:
+__Pyx_PyBytes_Equals	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE int __Pyx_PyBytes_Equals(PyObject* s1, PyObject* s2, int equals) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyBytes_FromCString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_FromCString(/;"	d	file:
+__Pyx_PyBytes_FromString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_FromString /;"	d	file:
+__Pyx_PyBytes_FromStringAndSize	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyBytes_FromStringAndSize /;"	d	file:
+__Pyx_PyCFunctionFast	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyCFunctionFast /;"	d	file:
+__Pyx_PyCFunctionFast	ImageAnalysis/findBlobs.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFast) (PyObject *self, PyObject **args, Py_ssize_t nargs)/;"	t	typeref:typename:PyObject * (*)(PyObject * self,PyObject ** args,Py_ssize_t nargs)	file:
+__Pyx_PyCFunctionFastWithKeywords	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyCFunctionFastWithKeywords /;"	d	file:
+__Pyx_PyCFunctionFastWithKeywords	ImageAnalysis/findBlobs.c	/^  typedef PyObject *(*__Pyx_PyCFunctionFastWithKeywords) (PyObject *self, PyObject **args,$/;"	t	typeref:typename:PyObject * (*)(PyObject * self,PyObject ** args,Py_ssize_t nargs,PyObject * kwnames)	file:
+__Pyx_PyCFunction_FastCall	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyCFunction_FastCall(/;"	d	file:
+__Pyx_PyCFunction_FastCall	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, PyObject **args, /;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyCode_HasFreeVars	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyCode_HasFreeVars(/;"	d	file:
+__Pyx_PyCode_New	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyCode_New(/;"	d	file:
+__Pyx_PyDict_NewPresized	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyDict_NewPresized(/;"	d	file:
+__Pyx_PyErr_Clear	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_Clear(/;"	d	file:
+__Pyx_PyErr_ExceptionMatches	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_ExceptionMatches(/;"	d	file:
+__Pyx_PyErr_ExceptionMatchesInState	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyErr_ExceptionMatchesInState(PyThreadState* tstate, PyObject* er/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyErr_ExceptionMatchesTuple	ImageAnalysis/findBlobs.c	/^static int __Pyx_PyErr_ExceptionMatchesTuple(PyObject *exc_type, PyObject *tuple) {$/;"	f	typeref:typename:int	file:
+__Pyx_PyErr_GivenExceptionMatches	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_GivenExceptionMatches(/;"	d	file:
+__Pyx_PyErr_GivenExceptionMatches	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches(PyObject *err, PyObject* exc_type) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyErr_GivenExceptionMatches2	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_GivenExceptionMatches2(/;"	d	file:
+__Pyx_PyErr_GivenExceptionMatches2	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObject *exc_type1, /;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyErr_Occurred	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_Occurred(/;"	d	file:
+__Pyx_PyErr_SetNone	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyErr_SetNone(/;"	d	file:
+__Pyx_PyException_Check	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyException_Check(/;"	d	file:
+__Pyx_PyFastCFunction_Check	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyFastCFunction_Check(/;"	d	file:
+__Pyx_PyFrame_SetLineNumber	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyFrame_SetLineNumber(/;"	d	file:
+__Pyx_PyFunction_FastCall	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyFunction_FastCall(/;"	d	file:
+__Pyx_PyFunction_FastCallDict	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyFunction_FastCallDict(/;"	d	file:
+__Pyx_PyFunction_FastCallDict	ImageAnalysis/findBlobs.c	/^static PyObject *__Pyx_PyFunction_FastCallDict(PyObject *func, PyObject **args, int nargs, PyObj/;"	f	typeref:typename:PyObject *	file:
+__Pyx_PyFunction_FastCallNoKw	ImageAnalysis/findBlobs.c	/^static PyObject* __Pyx_PyFunction_FastCallNoKw(PyCodeObject *co, PyObject **args, Py_ssize_t na,$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_PyGILState_Ensure	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyGILState_Ensure /;"	d	file:
+__Pyx_PyGILState_Release	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyGILState_Release /;"	d	file:
+__Pyx_PyIdentifier_FromString	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyIdentifier_FromString(/;"	d	file:
+__Pyx_PyIndex_AsSsize_t	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {$/;"	f	typeref:typename:CYTHON_INLINE Py_ssize_t	file:
+__Pyx_PyInt_AddObjC	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyInt_AddObjC(/;"	d	file:
+__Pyx_PyInt_AddObjC	ImageAnalysis/findBlobs.c	/^static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED long intval, CY/;"	f	typeref:typename:PyObject *	file:
+__Pyx_PyInt_AsHash_t	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyInt_AsHash_t /;"	d	file:
+__Pyx_PyInt_As_char	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE char __Pyx_PyInt_As_char(PyObject *x) {$/;"	f	typeref:typename:CYTHON_INLINE char	file:
+__Pyx_PyInt_As_int	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyInt_As_long	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {$/;"	f	typeref:typename:CYTHON_INLINE long	file:
+__Pyx_PyInt_FromHash_t	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyInt_FromHash_t /;"	d	file:
+__Pyx_PyInt_FromSize_t	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyInt_From_int	ImageAnalysis/findBlobs.c	/^    static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyInt_From_long	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyList_Append	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyList_Append(/;"	d	file:
+__Pyx_PyList_Append	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyList_Append(PyObject* list, PyObject* x) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyList_Extend	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyList_Extend(PyObject* L, PyObject* v) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyMethod_New	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyMethod_New(/;"	d	file:
+__Pyx_PyNumber_Divide	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyNumber_Divide(/;"	d	file:
+__Pyx_PyNumber_Float	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyNumber_Float(/;"	d	file:
+__Pyx_PyNumber_InPlaceDivide	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyNumber_InPlaceDivide(/;"	d	file:
+__Pyx_PyNumber_Int	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyNumber_Int(/;"	d	file:
+__Pyx_PyNumber_IntOrLong	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyNumber_IntOrLong(PyObject* x) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyNumber_IntOrLongWrongResultType	ImageAnalysis/findBlobs.c	/^static PyObject* __Pyx_PyNumber_IntOrLongWrongResultType(PyObject* result, const char* type_name/;"	f	typeref:typename:PyObject *	file:
+__Pyx_PyObject_AsSString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_AsSString(/;"	d	file:
+__Pyx_PyObject_AsString	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsString(PyObject* o) {$/;"	f	typeref:typename:CYTHON_INLINE const char *	file:
+__Pyx_PyObject_AsStringAndSize	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE const char* __Pyx_PyObject_AsStringAndSize(PyObject* o, Py_ssize_t *length)/;"	f	typeref:typename:CYTHON_INLINE const char *	file:
+__Pyx_PyObject_AsUString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_AsUString(/;"	d	file:
+__Pyx_PyObject_AsWritableSString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_AsWritableSString(/;"	d	file:
+__Pyx_PyObject_AsWritableString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_AsWritableString(/;"	d	file:
+__Pyx_PyObject_AsWritableUString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_AsWritableUString(/;"	d	file:
+__Pyx_PyObject_Call	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_Call(/;"	d	file:
+__Pyx_PyObject_Call	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw) /;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyObject_CallMethO	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject *arg) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyObject_CallOneArg	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyObject_DelAttrStr	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_DelAttrStr(/;"	d	file:
+__Pyx_PyObject_FromCString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_FromCString(/;"	d	file:
+__Pyx_PyObject_FromString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_FromString /;"	d	file:
+__Pyx_PyObject_FromStringAndSize	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_FromStringAndSize /;"	d	file:
+__Pyx_PyObject_GetAttrStr	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_GetAttrStr(/;"	d	file:
+__Pyx_PyObject_GetAttrStr	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyObject_GetAttrStr(PyObject* obj, PyObject* attr_name) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyObject_IsTrue	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyObject_IsTrue(PyObject* x) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyObject_SetAttrStr	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyObject_SetAttrStr(/;"	d	file:
+__Pyx_PyObject_SetAttrStr	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_PyObject_SetAttrStr(PyObject* obj, PyObject* attr_name, PyObject*/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyObject_to_MemoryviewSlice_ds_int	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_ds_int(PyObject /;"	f	typeref:typename:CYTHON_INLINE __Pyx_memviewslice	file:
+__Pyx_PyObject_to_MemoryviewSlice_dsdsds_unsigned_char	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsdsds_unsigned_/;"	f	typeref:typename:CYTHON_INLINE __Pyx_memviewslice	file:
+__Pyx_PySequence_Tuple	ImageAnalysis/findBlobs.c	/^#define __Pyx_PySequence_Tuple(/;"	d	file:
+__Pyx_PyStr_FromCString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyStr_FromCString(/;"	d	file:
+__Pyx_PyStr_FromString	ImageAnalysis/findBlobs.c	/^    #define __Pyx_PyStr_FromString /;"	d	file:
+__Pyx_PyStr_FromStringAndSize	ImageAnalysis/findBlobs.c	/^    #define __Pyx_PyStr_FromStringAndSize /;"	d	file:
+__Pyx_PyString_Equals	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyString_Equals /;"	d	file:
+__Pyx_PyString_Format	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyString_Format(/;"	d	file:
+__Pyx_PyString_FormatSafe	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyString_FormatSafe(/;"	d	file:
+__Pyx_PyThreadState_Current	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyThreadState_Current /;"	d	file:
+__Pyx_PyThreadState_assign	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyThreadState_assign /;"	d	file:
+__Pyx_PyThreadState_assign	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyThreadState_assign$/;"	d	file:
+__Pyx_PyThreadState_declare	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyThreadState_declare /;"	d	file:
+__Pyx_PyThreadState_declare	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyThreadState_declare$/;"	d	file:
+__Pyx_PyType_AsAsync	ImageAnalysis/findBlobs.c	/^    #define __Pyx_PyType_AsAsync(/;"	d	file:
+__Pyx_PyType_AsAsync	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyType_AsAsync(/;"	d	file:
+__Pyx_PyUnicode_AsStringAndSize	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length/;"	f	typeref:typename:CYTHON_INLINE const char *	file:
+__Pyx_PyUnicode_AsStringAndSize	ImageAnalysis/findBlobs.c	/^static const char* __Pyx_PyUnicode_AsStringAndSize(PyObject* o, Py_ssize_t *length) {$/;"	f	typeref:typename:const char *	file:
+__Pyx_PyUnicode_AsUnicode	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_AsUnicode /;"	d	file:
+__Pyx_PyUnicode_Concat	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_Concat(/;"	d	file:
+__Pyx_PyUnicode_ConcatSafe	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_ConcatSafe(/;"	d	file:
+__Pyx_PyUnicode_DATA	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_DATA(/;"	d	file:
+__Pyx_PyUnicode_DecodeUTF16	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_PyUnicode_DecodeUTF16(const char *s, Py_ssize_t size, const/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyUnicode_DecodeUTF16BE	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_PyUnicode_DecodeUTF16BE(const char *s, Py_ssize_t size, con/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyUnicode_DecodeUTF16LE	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject *__Pyx_PyUnicode_DecodeUTF16LE(const char *s, Py_ssize_t size, con/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyUnicode_Equals	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE int __Pyx_PyUnicode_Equals(PyObject* s1, PyObject* s2, int equals) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_PyUnicode_FormatSafe	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_FormatSafe(/;"	d	file:
+__Pyx_PyUnicode_FromCString	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_FromCString(/;"	d	file:
+__Pyx_PyUnicode_FromString	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject* __Pyx_PyUnicode_FromString(const char* c_str) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_PyUnicode_FromStringAndSize	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_FromStringAndSize(/;"	d	file:
+__Pyx_PyUnicode_FromUnicode	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_FromUnicode(/;"	d	file:
+__Pyx_PyUnicode_FromUnicodeAndLength	ImageAnalysis/findBlobs.c	/^#define __Pyx_PyUnicode_FromUnicodeAndLength /;"	d	file:
+__Pyx_PyUnicode_GET_LENGTH	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_GET_LENGTH(/;"	d	file:
+__Pyx_PyUnicode_IS_TRUE	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_IS_TRUE(/;"	d	file:
+__Pyx_PyUnicode_KIND	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_KIND(/;"	d	file:
+__Pyx_PyUnicode_MAX_CHAR_VALUE	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_MAX_CHAR_VALUE(/;"	d	file:
+__Pyx_PyUnicode_READ	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_READ(/;"	d	file:
+__Pyx_PyUnicode_READY	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_READY(/;"	d	file:
+__Pyx_PyUnicode_READ_CHAR	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_READ_CHAR(/;"	d	file:
+__Pyx_PyUnicode_WRITE	ImageAnalysis/findBlobs.c	/^  #define __Pyx_PyUnicode_WRITE(/;"	d	file:
+__Pyx_Py_UNICODE_strlen	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE size_t __Pyx_Py_UNICODE_strlen(const Py_UNICODE *u) {$/;"	f	typeref:typename:CYTHON_INLINE size_t	file:
+__Pyx_Raise	ImageAnalysis/findBlobs.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb, PyObject *cause) {$/;"	f	typeref:typename:void	file:
+__Pyx_Raise	ImageAnalysis/findBlobs.c	/^static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb,$/;"	f	typeref:typename:void	file:
+__Pyx_RaiseArgtupleInvalid	ImageAnalysis/findBlobs.c	/^static void __Pyx_RaiseArgtupleInvalid($/;"	f	typeref:typename:void	file:
+__Pyx_RaiseBufferIndexError	ImageAnalysis/findBlobs.c	/^static void __Pyx_RaiseBufferIndexError(int axis) {$/;"	f	typeref:typename:void	file:
+__Pyx_RaiseDoubleKeywordsError	ImageAnalysis/findBlobs.c	/^static void __Pyx_RaiseDoubleKeywordsError($/;"	f	typeref:typename:void	file:
+__Pyx_RaiseNeedMoreValuesError	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE void __Pyx_RaiseNeedMoreValuesError(Py_ssize_t index) {$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_RaiseNoneNotIterableError	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE void __Pyx_RaiseNoneNotIterableError(void) {$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_RaiseTooManyValuesError	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected) {$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_RaiseUnboundLocalError	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE void __Pyx_RaiseUnboundLocalError(const char *varname) {$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_RefNanny	ImageAnalysis/findBlobs.c	/^  static __Pyx_RefNannyAPIStruct *__Pyx_RefNanny = NULL;$/;"	v	typeref:typename:__Pyx_RefNannyAPIStruct *	file:
+__Pyx_RefNannyAPIStruct	ImageAnalysis/findBlobs.c	/^  } __Pyx_RefNannyAPIStruct;$/;"	t	typeref:struct:__anonf7744edf0708	file:
+__Pyx_RefNannyDeclarations	ImageAnalysis/findBlobs.c	/^  #define __Pyx_RefNannyDeclarations /;"	d	file:
+__Pyx_RefNannyDeclarations	ImageAnalysis/findBlobs.c	/^  #define __Pyx_RefNannyDeclarations$/;"	d	file:
+__Pyx_RefNannyFinishContext	ImageAnalysis/findBlobs.c	/^  #define __Pyx_RefNannyFinishContext(/;"	d	file:
+__Pyx_RefNannyImportAPI	ImageAnalysis/findBlobs.c	/^static __Pyx_RefNannyAPIStruct *__Pyx_RefNannyImportAPI(const char *modname) {$/;"	f	typeref:typename:__Pyx_RefNannyAPIStruct *	file:
+__Pyx_RefNannySetupContext	ImageAnalysis/findBlobs.c	/^  #define __Pyx_RefNannySetupContext(/;"	d	file:
+__Pyx_ReleaseBuffer	ImageAnalysis/findBlobs.c	/^    #define __Pyx_ReleaseBuffer /;"	d	file:
+__Pyx_ReleaseBuffer	ImageAnalysis/findBlobs.c	/^static void __Pyx_ReleaseBuffer(Py_buffer *view) {$/;"	f	typeref:typename:void	file:
+__Pyx_SetVtable	ImageAnalysis/findBlobs.c	/^    static int __Pyx_SetVtable(PyObject *dict, void *vtable) {$/;"	f	typeref:typename:int	file:
+__Pyx_StringTabEntry	ImageAnalysis/findBlobs.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEn/;"	t	typeref:struct:__anonf7744edf0208	file:
+__Pyx_StructField	ImageAnalysis/findBlobs.c	/^} __Pyx_StructField;$/;"	t	typeref:struct:__Pyx_StructField_	file:
+__Pyx_StructField_	ImageAnalysis/findBlobs.c	/^typedef struct __Pyx_StructField_ {$/;"	s	file:
+__Pyx_TypeCheck	ImageAnalysis/findBlobs.c	/^#define __Pyx_TypeCheck(/;"	d	file:
+__Pyx_TypeInfo	ImageAnalysis/findBlobs.c	/^} __Pyx_TypeInfo;$/;"	t	typeref:struct:__anonf7744edf0408	file:
+__Pyx_TypeInfo_int	ImageAnalysis/findBlobs.c	/^static __Pyx_TypeInfo __Pyx_TypeInfo_int = { "int", NULL, sizeof(int), { 0 }, 0, IS_UNSIGNED(int/;"	v	typeref:typename:__Pyx_TypeInfo	file:
+__Pyx_TypeInfo_unsigned_char	ImageAnalysis/findBlobs.c	/^static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned ch/;"	v	typeref:typename:__Pyx_TypeInfo	file:
+__Pyx_TypeTest	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_ValidateAndInit_memviewslice	ImageAnalysis/findBlobs.c	/^static int __Pyx_ValidateAndInit_memviewslice($/;"	f	typeref:typename:int	file:
+__Pyx_WriteUnraisable	ImageAnalysis/findBlobs.c	/^    static void __Pyx_WriteUnraisable(const char *name, CYTHON_UNUSED int clineno,$/;"	f	typeref:typename:void	file:
+__Pyx_XCLEAR	ImageAnalysis/findBlobs.c	/^#define __Pyx_XCLEAR(/;"	d	file:
+__Pyx_XDECREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_XDECREF(/;"	d	file:
+__Pyx_XDECREF_SET	ImageAnalysis/findBlobs.c	/^#define __Pyx_XDECREF_SET(/;"	d	file:
+__Pyx_XDEC_MEMVIEW	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx_XDEC_MEMVIEW(__Pyx_memviewslice *memslice,$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_XGIVEREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_XGIVEREF(/;"	d	file:
+__Pyx_XGOTREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_XGOTREF(/;"	d	file:
+__Pyx_XINCREF	ImageAnalysis/findBlobs.c	/^  #define __Pyx_XINCREF(/;"	d	file:
+__Pyx__ArgTypeTest	ImageAnalysis/findBlobs.c	/^  static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *name, int exact)$/;"	f	typeref:typename:int	file:
+__Pyx__ExceptionReset	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx__ExceptionReset(PyThreadState *tstate, PyObject *type, PyObject /;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx__ExceptionSave	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx__ExceptionSave(PyThreadState *tstate, PyObject **type, PyObject /;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx__ExceptionSwap	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx__ExceptionSwap(PyThreadState *tstate, PyObject **type, PyObject /;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx__GetException	ImageAnalysis/findBlobs.c	/^static int __Pyx__GetException(PyThreadState *tstate, PyObject **type, PyObject **value, PyObjec/;"	f	typeref:typename:int	file:
+__Pyx__PyObject_CallOneArg	ImageAnalysis/findBlobs.c	/^static PyObject* __Pyx__PyObject_CallOneArg(PyObject *func, PyObject *arg) {$/;"	f	typeref:typename:PyObject *	file:
+__Pyx_check_binary_version	ImageAnalysis/findBlobs.c	/^      static int __Pyx_check_binary_version(void) {$/;"	f	typeref:typename:int	file:
+__Pyx_decode_c_string	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE PyObject* __Pyx_decode_c_string($/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__Pyx_div_Py_ssize_t	ImageAnalysis/findBlobs.c	/^  static CYTHON_INLINE Py_ssize_t __Pyx_div_Py_ssize_t(Py_ssize_t a, Py_ssize_t b) {$/;"	f	typeref:typename:CYTHON_INLINE Py_ssize_t	file:
+__Pyx_div_long	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE long __Pyx_div_long(long a, long b) {$/;"	f	typeref:typename:CYTHON_INLINE long	file:
+__Pyx_fits_Py_ssize_t	ImageAnalysis/findBlobs.c	/^#define __Pyx_fits_Py_ssize_t(/;"	d	file:
+__Pyx_init_memviewslice	ImageAnalysis/findBlobs.c	/^__Pyx_init_memviewslice(struct __pyx_memoryview_obj *memview,$/;"	f	typeref:typename:int	file:
+__Pyx_init_sys_getdefaultencoding_params	ImageAnalysis/findBlobs.c	/^static int __Pyx_init_sys_getdefaultencoding_params(void) {$/;"	f	typeref:typename:int	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_t/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__Pyx_inner_PyErr_GivenExceptionMatches2	ImageAnalysis/findBlobs.c	/^static int __Pyx_inner_PyErr_GivenExceptionMatches2(PyObject *err, PyObject* exc_type1, PyObject/;"	f	typeref:typename:int	file:
+__Pyx_long_cast	ImageAnalysis/findBlobs.c	/^#define __Pyx_long_cast(/;"	d	file:
+__Pyx_memviewslice	ImageAnalysis/findBlobs.c	/^} __Pyx_memviewslice;$/;"	t	typeref:struct:__anonf7744edf0308	file:
+__Pyx_pad_double	ImageAnalysis/findBlobs.c	/^typedef struct { double x; char c; } __Pyx_pad_double;$/;"	t	typeref:struct:__anonf7744edf1a08	file:
+__Pyx_pad_float	ImageAnalysis/findBlobs.c	/^typedef struct { float x; char c; } __Pyx_pad_float;$/;"	t	typeref:struct:__anonf7744edf1908	file:
+__Pyx_pad_int	ImageAnalysis/findBlobs.c	/^typedef struct { int x; char c; } __Pyx_pad_int;$/;"	t	typeref:struct:__anonf7744edf1708	file:
+__Pyx_pad_long	ImageAnalysis/findBlobs.c	/^typedef struct { long x; char c; } __Pyx_pad_long;$/;"	t	typeref:struct:__anonf7744edf1808	file:
+__Pyx_pad_longdouble	ImageAnalysis/findBlobs.c	/^typedef struct { long double x; char c; } __Pyx_pad_longdouble;$/;"	t	typeref:struct:__anonf7744edf1b08	file:
+__Pyx_pad_longlong	ImageAnalysis/findBlobs.c	/^typedef struct { PY_LONG_LONG x; char c; } __Pyx_pad_longlong;$/;"	t	typeref:struct:__anonf7744edf1d08	file:
+__Pyx_pad_short	ImageAnalysis/findBlobs.c	/^typedef struct { short x; char c; } __Pyx_pad_short;$/;"	t	typeref:struct:__anonf7744edf1608	file:
+__Pyx_pad_void_p	ImageAnalysis/findBlobs.c	/^typedef struct { void *x; char c; } __Pyx_pad_void_p;$/;"	t	typeref:struct:__anonf7744edf1c08	file:
+__Pyx_pow_long	ImageAnalysis/findBlobs.c	/^      static CYTHON_INLINE long __Pyx_pow_long(long b, long e) {$/;"	f	typeref:typename:CYTHON_INLINE long	file:
+__Pyx_pretend_to_initialize	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __Pyx_pretend_to_initialize(void* ptr) { (void)ptr; }$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__Pyx_setup_reduce	ImageAnalysis/findBlobs.c	/^static int __Pyx_setup_reduce(PyObject* type_obj) {$/;"	f	typeref:typename:int	file:
+__Pyx_setup_reduce_is_named	ImageAnalysis/findBlobs.c	/^    static int __Pyx_setup_reduce_is_named(PyObject* meth, PyObject* name) {$/;"	f	typeref:typename:int	file:
+__Pyx_sst_abs	ImageAnalysis/findBlobs.c	/^    #define __Pyx_sst_abs(/;"	d	file:
+__Pyx_st_double	ImageAnalysis/findBlobs.c	/^typedef struct { char c; double x; } __Pyx_st_double;$/;"	t	typeref:struct:__anonf7744edf1208	file:
+__Pyx_st_float	ImageAnalysis/findBlobs.c	/^typedef struct { char c; float x; } __Pyx_st_float;$/;"	t	typeref:struct:__anonf7744edf1108	file:
+__Pyx_st_int	ImageAnalysis/findBlobs.c	/^typedef struct { char c; int x; } __Pyx_st_int;$/;"	t	typeref:struct:__anonf7744edf0f08	file:
+__Pyx_st_long	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long x; } __Pyx_st_long;$/;"	t	typeref:struct:__anonf7744edf1008	file:
+__Pyx_st_longdouble	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long double x; } __Pyx_st_longdouble;$/;"	t	typeref:struct:__anonf7744edf1308	file:
+__Pyx_st_longlong	ImageAnalysis/findBlobs.c	/^typedef struct { char c; PY_LONG_LONG x; } __Pyx_st_longlong;$/;"	t	typeref:struct:__anonf7744edf1508	file:
+__Pyx_st_short	ImageAnalysis/findBlobs.c	/^typedef struct { char c; short x; } __Pyx_st_short;$/;"	t	typeref:struct:__anonf7744edf0e08	file:
+__Pyx_st_void_p	ImageAnalysis/findBlobs.c	/^typedef struct { char c; void *x; } __Pyx_st_void_p;$/;"	t	typeref:struct:__anonf7744edf1408	file:
+__Pyx_sys_getdefaultencoding_not_ascii	ImageAnalysis/findBlobs.c	/^static int __Pyx_sys_getdefaultencoding_not_ascii;$/;"	v	typeref:typename:int	file:
+__Pyx_truncl	ImageAnalysis/findBlobs.c	/^#define __Pyx_truncl /;"	d	file:
+__Pyx_uchar_cast	ImageAnalysis/findBlobs.c	/^#define __Pyx_uchar_cast(/;"	d	file:
+__Pyx_void_to_None	ImageAnalysis/findBlobs.c	/^#define __Pyx_void_to_None(/;"	d	file:
+__anonf7744edf0108	ImageAnalysis/findBlobs.c	/^    typedef struct {$/;"	s	file:
+__anonf7744edf0208	ImageAnalysis/findBlobs.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	s	file:
+__anonf7744edf0308	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0408	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0508	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0608	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0708	ImageAnalysis/findBlobs.c	/^  typedef struct {$/;"	s	file:
+__anonf7744edf0808	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf090a	ImageAnalysis/findBlobs.c	/^    union {$/;"	u	struct:arrayobject	file:
+__anonf7744edf0a08	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0b08	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0c08	ImageAnalysis/findBlobs.c	/^typedef struct {$/;"	s	file:
+__anonf7744edf0d0a	ImageAnalysis/findBlobs.c	/^  union {$/;"	u	function:__Pyx_Is_Little_Endian	file:
+__anonf7744edf0e08	ImageAnalysis/findBlobs.c	/^typedef struct { char c; short x; } __Pyx_st_short;$/;"	s	file:
+__anonf7744edf0f08	ImageAnalysis/findBlobs.c	/^typedef struct { char c; int x; } __Pyx_st_int;$/;"	s	file:
+__anonf7744edf1008	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long x; } __Pyx_st_long;$/;"	s	file:
+__anonf7744edf1108	ImageAnalysis/findBlobs.c	/^typedef struct { char c; float x; } __Pyx_st_float;$/;"	s	file:
+__anonf7744edf1208	ImageAnalysis/findBlobs.c	/^typedef struct { char c; double x; } __Pyx_st_double;$/;"	s	file:
+__anonf7744edf1308	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long double x; } __Pyx_st_longdouble;$/;"	s	file:
+__anonf7744edf1408	ImageAnalysis/findBlobs.c	/^typedef struct { char c; void *x; } __Pyx_st_void_p;$/;"	s	file:
+__anonf7744edf1508	ImageAnalysis/findBlobs.c	/^typedef struct { char c; PY_LONG_LONG x; } __Pyx_st_longlong;$/;"	s	file:
+__anonf7744edf1608	ImageAnalysis/findBlobs.c	/^typedef struct { short x; char c; } __Pyx_pad_short;$/;"	s	file:
+__anonf7744edf1708	ImageAnalysis/findBlobs.c	/^typedef struct { int x; char c; } __Pyx_pad_int;$/;"	s	file:
+__anonf7744edf1808	ImageAnalysis/findBlobs.c	/^typedef struct { long x; char c; } __Pyx_pad_long;$/;"	s	file:
+__anonf7744edf1908	ImageAnalysis/findBlobs.c	/^typedef struct { float x; char c; } __Pyx_pad_float;$/;"	s	file:
+__anonf7744edf1a08	ImageAnalysis/findBlobs.c	/^typedef struct { double x; char c; } __Pyx_pad_double;$/;"	s	file:
+__anonf7744edf1b08	ImageAnalysis/findBlobs.c	/^typedef struct { long double x; char c; } __Pyx_pad_longdouble;$/;"	s	file:
+__anonf7744edf1c08	ImageAnalysis/findBlobs.c	/^typedef struct { void *x; char c; } __Pyx_pad_void_p;$/;"	s	file:
+__anonf7744edf1d08	ImageAnalysis/findBlobs.c	/^typedef struct { PY_LONG_LONG x; char c; } __Pyx_pad_longlong;$/;"	s	file:
+__cdecl	ImageAnalysis/findBlobs.c	/^    #define __cdecl$/;"	d	file:
+__fastcall	ImageAnalysis/findBlobs.c	/^    #define __fastcall$/;"	d	file:
+__has_attribute	ImageAnalysis/findBlobs.c	/^  #define __has_attribute(/;"	d	file:
+__has_cpp_attribute	ImageAnalysis/findBlobs.c	/^  #define __has_cpp_attribute(/;"	d	file:
+__init__	ImageAnalysis/detect.py	/^    def __init__(self, padding, c):$/;"	m	class:Chunk
+__init__	ImageAnalysis/detect.py	/^    def __init__(self, x, y):$/;"	m	class:Blob
+__init__	ImageAnalysis/findBlobs.pyx	/^    def __init__(self, int num, int x, int y):$/;"	m	class:Blob
+__pyx_MemviewEnum___init__	ImageAnalysis/findBlobs.c	/^static int __pyx_MemviewEnum___init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__/;"	f	typeref:typename:int	file:
+__pyx_MemviewEnum___pyx_pf_15View_dot_MemoryView_4Enum_2__repr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_MemviewEnum___pyx_pf_15View_dot_MemoryView_4Enum_2__repr__(struct __pyx_M/;"	f	typeref:typename:PyObject *	file:
+__pyx_MemviewEnum___pyx_pf_15View_dot_MemoryView_4Enum___init__	ImageAnalysis/findBlobs.c	/^static int __pyx_MemviewEnum___pyx_pf_15View_dot_MemoryView_4Enum___init__(struct __pyx_MemviewE/;"	f	typeref:typename:int	file:
+__pyx_MemviewEnum___repr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_MemviewEnum___repr__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_MemviewEnum_obj	ImageAnalysis/findBlobs.c	/^struct __pyx_MemviewEnum_obj {$/;"	s	file:
+__pyx_MemviewEnum_type	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_MemviewEnum_type = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_PyFloat_AsDouble	ImageAnalysis/findBlobs.c	/^#define __pyx_PyFloat_AsDouble(/;"	d	file:
+__pyx_PyFloat_AsFloat	ImageAnalysis/findBlobs.c	/^#define __pyx_PyFloat_AsFloat(/;"	d	file:
+__pyx_add_acquisition_count	ImageAnalysis/findBlobs.c	/^    #define __pyx_add_acquisition_count(/;"	d	file:
+__pyx_add_acquisition_count_locked	ImageAnalysis/findBlobs.c	/^__pyx_add_acquisition_count_locked(__pyx_atomic_int *acquisition_count,$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_align_pointer	ImageAnalysis/findBlobs.c	/^static void *__pyx_align_pointer(void *__pyx_v_memory, size_t __pyx_v_alignment) {$/;"	f	typeref:typename:void *	file:
+__pyx_array___cinit__	ImageAnalysis/findBlobs.c	/^static int __pyx_array___cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_k/;"	f	typeref:typename:int	file:
+__pyx_array___dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_array___dealloc__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:void	file:
+__pyx_array___getattr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_array___getattr__(PyObject *__pyx_v_self, PyObject *__pyx_v_attr) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_array___getitem__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_array___getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_item) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_array___len__	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_array___len__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_10__getitem__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_array___pyx_pf_15View_dot_MemoryView_5array_10__getitem__(struct __pyx_ar/;"	f	typeref:typename:PyObject *	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__	ImageAnalysis/findBlobs.c	/^static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__(struct __pyx_array_ob/;"	f	typeref:typename:int	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__	ImageAnalysis/findBlobs.c	/^static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_o/;"	f	typeref:typename:int	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_ob/;"	f	typeref:typename:void	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_6__len__	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_array___pyx_pf_15View_dot_MemoryView_5array_6__len__(struct __pyx_array_/;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array_8__getattr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_array___pyx_pf_15View_dot_MemoryView_5array_8__getattr__(struct __pyx_arr/;"	f	typeref:typename:PyObject *	file:
+__pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__	ImageAnalysis/findBlobs.c	/^static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *_/;"	f	typeref:typename:int	file:
+__pyx_array___setitem__	ImageAnalysis/findBlobs.c	/^static int __pyx_array___setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_item, PyObject *__p/;"	f	typeref:typename:int	file:
+__pyx_array_get_memview	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_array_getbuffer	ImageAnalysis/findBlobs.c	/^static CYTHON_UNUSED int __pyx_array_getbuffer(PyObject *__pyx_v_self, Py_buffer *__pyx_v_info, /;"	f	typeref:typename:CYTHON_UNUSED int	file:
+__pyx_array_new	ImageAnalysis/findBlobs.c	/^static struct __pyx_array_obj *__pyx_array_new(PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_items/;"	f	typeref:struct:__pyx_array_obj *	file:
+__pyx_array_obj	ImageAnalysis/findBlobs.c	/^struct __pyx_array_obj {$/;"	s	file:
+__pyx_array_type	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_array_type = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_atomic_decr_aligned	ImageAnalysis/findBlobs.c	/^    #define __pyx_atomic_decr_aligned(/;"	d	file:
+__pyx_atomic_incr_aligned	ImageAnalysis/findBlobs.c	/^    #define __pyx_atomic_incr_aligned(/;"	d	file:
+__pyx_atomic_int	ImageAnalysis/findBlobs.c	/^typedef volatile __pyx_atomic_int_type __pyx_atomic_int;$/;"	t	typeref:typename:volatile __pyx_atomic_int_type	file:
+__pyx_atomic_int_type	ImageAnalysis/findBlobs.c	/^    #define __pyx_atomic_int_type /;"	d	file:
+__pyx_atomic_int_type	ImageAnalysis/findBlobs.c	/^#define __pyx_atomic_int_type /;"	d	file:
+__pyx_b	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_b;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_base	ImageAnalysis/findBlobs.c	/^  struct __pyx_memoryview_obj __pyx_base;$/;"	m	struct:__pyx_memoryviewslice_obj	typeref:struct:__pyx_memoryview_obj	file:
+__pyx_base	ImageAnalysis/findBlobs.c	/^  struct __pyx_vtabstruct_memoryview __pyx_base;$/;"	m	struct:__pyx_vtabstruct__memoryviewslice	typeref:struct:__pyx_vtabstruct_memoryview	file:
+__pyx_bisect_code_objects	ImageAnalysis/findBlobs.c	/^    static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int cod/;"	f	typeref:typename:int	file:
+__pyx_buffmt_parse_array	ImageAnalysis/findBlobs.c	/^__pyx_buffmt_parse_array(__Pyx_BufFmt_Context* ctx, const char** tsp)$/;"	f	typeref:typename:PyObject *	file:
+__pyx_builtin_Ellipsis	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_Ellipsis;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_IndexError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_IndexError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_MemoryError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_MemoryError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_TypeError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_TypeError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_ValueError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_ValueError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_enumerate	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_enumerate;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_id	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_id;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_range	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_range;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_builtin_xrange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_builtin_xrange;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_capsule_create	ImageAnalysis/findBlobs.c	/^__pyx_capsule_create(void *p, CYTHON_UNUSED const char *sig)$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__pyx_cfilenm	ImageAnalysis/findBlobs.c	/^static const char * __pyx_cfilenm= __FILE__;$/;"	v	typeref:typename:const char *	file:
+__pyx_check_strides	ImageAnalysis/findBlobs.c	/^__pyx_check_strides(Py_buffer *buf, int dim, int ndim, int spec)$/;"	f	typeref:typename:int	file:
+__pyx_check_suboffsets	ImageAnalysis/findBlobs.c	/^__pyx_check_suboffsets(Py_buffer *buf, int dim, CYTHON_UNUSED int ndim, int spec)$/;"	f	typeref:typename:int	file:
+__pyx_clineno	ImageAnalysis/findBlobs.c	/^static int __pyx_clineno = 0;$/;"	v	typeref:typename:int	file:
+__pyx_code_cache	ImageAnalysis/findBlobs.c	/^static struct __Pyx_CodeObjectCache __pyx_code_cache = {0,0,NULL};$/;"	v	typeref:struct:__Pyx_CodeObjectCache	file:
+__pyx_codeobj__21	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_codeobj__21;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_codeobj__28	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_codeobj__28;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_cython_runtime	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_cython_runtime;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_d	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_d;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_empty_bytes	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_empty_bytes;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_empty_tuple	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_empty_tuple;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_empty_unicode	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_empty_unicode;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_f	ImageAnalysis/findBlobs.c	/^static const char *__pyx_f[] = {$/;"	v	typeref:typename:const char * []	file:
+__pyx_f_7cpython_5array_clone	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE arrayobject *__pyx_f_7cpython_5array_clone(arrayobject *__pyx_v_template, P/;"	f	typeref:typename:CYTHON_INLINE arrayobject *	file:
+__pyx_f_7cpython_5array_copy	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE arrayobject *__pyx_f_7cpython_5array_copy(arrayobject *__pyx_v_self) {$/;"	f	typeref:typename:CYTHON_INLINE arrayobject *	file:
+__pyx_f_7cpython_5array_extend	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __pyx_f_7cpython_5array_extend(arrayobject *__pyx_v_self, arrayobject */;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_f_7cpython_5array_extend_buffer	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __pyx_f_7cpython_5array_extend_buffer(arrayobject *__pyx_v_self, char */;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_f_7cpython_5array_zero	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE void __pyx_f_7cpython_5array_zero(arrayobject *__pyx_v_self) {$/;"	f	typeref:typename:CYTHON_INLINE void	file:
+__pyx_f_9findBlobs_4Blob_addPoint	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_f_9findBlobs_4Blob_addPoint(struct __pyx_obj_9findBlobs_Blob *__pyx_v_sel/;"	f	typeref:typename:PyObject *	file:
+__pyx_f_9findBlobs_4Blob_inRange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_f_9findBlobs_4Blob_inRange(struct __pyx_obj_9findBlobs_Blob *__pyx_v_self/;"	f	typeref:typename:PyObject *	file:
+__pyx_f_9findBlobs___pyx_unpickle_Blob__set_state	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_f_9findBlobs___pyx_unpickle_Blob__set_state(struct __pyx_obj_9findBlobs_B/;"	f	typeref:typename:PyObject *	file:
+__pyx_f_9findBlobs_findBlobs	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_f_9findBlobs_findBlobs(__Pyx_memviewslice __pyx_v_image, PyObject *__pyx_/;"	f	typeref:typename:PyObject *	file:
+__pyx_fatalerror	ImageAnalysis/findBlobs.c	/^static void __pyx_fatalerror(const char *fmt, ...) Py_NO_RETURN {$/;"	f	typeref:typename:void	file:
+__pyx_filename	ImageAnalysis/findBlobs.c	/^static const char *__pyx_filename;$/;"	v	typeref:typename:const char *	file:
+__pyx_fill_contig_strides_array	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_fill_contig_strides_array(Py_ssize_t *__pyx_v_shape, Py_ssize_t *__pyx_v/;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_find_code_object	ImageAnalysis/findBlobs.c	/^static PyCodeObject *__pyx_find_code_object(int code_line) {$/;"	f	typeref:typename:PyCodeObject *	file:
+__pyx_get_array_memory_extents	ImageAnalysis/findBlobs.c	/^__pyx_get_array_memory_extents(__Pyx_memviewslice *slice,$/;"	f	typeref:typename:void	file:
+__pyx_get_best_slice_order	ImageAnalysis/findBlobs.c	/^static char __pyx_get_best_slice_order(__Pyx_memviewslice *__pyx_v_mslice, int __pyx_v_ndim) {$/;"	f	typeref:typename:char	file:
+__pyx_get_slice_count	ImageAnalysis/findBlobs.c	/^#define __pyx_get_slice_count(/;"	d	file:
+__pyx_get_slice_count_pointer	ImageAnalysis/findBlobs.c	/^#define __pyx_get_slice_count_pointer(/;"	d	file:
+__pyx_getprop_9findBlobs_4Blob_center	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop_9findBlobs_4Blob_center(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop_9findBlobs_4Blob_lastPixelX	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop_9findBlobs_4Blob_lastPixelX(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop_9findBlobs_4Blob_lineStart	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop_9findBlobs_4Blob_lineStart(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop_9findBlobs_4Blob_num	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop_9findBlobs_4Blob_num(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop_9findBlobs_4Blob_rect	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop_9findBlobs_4Blob_rect(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_array_memview	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_array_memview(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_T	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_T(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_base	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_base(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_itemsize	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_itemsize(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_nbytes	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_nbytes(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_ndim	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_ndim(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_shape	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_shape(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_size	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_size(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_strides	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_strides(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryview_suboffsets	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryview_suboffsets(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getprop___pyx_memoryviewslice_base	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_getprop___pyx_memoryviewslice_base(PyObject *o, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_getsets_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static struct PyGetSetDef __pyx_getsets_9findBlobs_Blob[] = {$/;"	v	typeref:struct:PyGetSetDef[]	file:
+__pyx_getsets__memoryviewslice	ImageAnalysis/findBlobs.c	/^static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {$/;"	v	typeref:struct:PyGetSetDef[]	file:
+__pyx_getsets_array	ImageAnalysis/findBlobs.c	/^static struct PyGetSetDef __pyx_getsets_array[] = {$/;"	v	typeref:struct:PyGetSetDef[]	file:
+__pyx_getsets_memoryview	ImageAnalysis/findBlobs.c	/^static struct PyGetSetDef __pyx_getsets_memoryview[] = {$/;"	v	typeref:struct:PyGetSetDef[]	file:
+__pyx_insert_code_object	ImageAnalysis/findBlobs.c	/^static void __pyx_insert_code_object(int code_line, PyCodeObject* code_object) {$/;"	f	typeref:typename:void	file:
+__pyx_int_0	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_0;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_1	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_1;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_1000	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_1000;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_129071292	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_129071292;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_184977713	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_184977713;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_2	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_2;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_640	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_640;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_7000	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_7000;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_int_neg_1	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_int_neg_1;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_k_ASCII	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_ASCII[] = "ASCII";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Buffer_view_does_not_expose_stri	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose stri/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Can_only_create_a_buffer_that_is	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Cannot_index_with_type_s	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Cannot_index_with_type_s[] = "Cannot index with type '%s'";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Ellipsis	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Ellipsis[] = "Ellipsis";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Empty_shape_tuple_for_cython_arr	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Empty_shape_tuple_for_cython_arr[] = "Empty shape tuple for cython.arr/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Incompatible_checksums_s_vs_0x7b	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Incompatible_checksums_s_vs_0x7b[] = "Incompatible checksums (%s vs 0x/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Incompatible_checksums_s_vs_0xb0	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Incompatible_checksums_s_vs_0xb0[] = "Incompatible checksums (%s vs 0x/;"	v	typeref:typename:const char[]	file:
+__pyx_k_IndexError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_IndexError[] = "IndexError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Indirect_dimensions_not_supporte	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Indirect_dimensions_not_supporte[] = "Indirect dimensions not supporte/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Invalid_mode_expected_c_or_fortr	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Invalid_mode_expected_c_or_fortr[] = "Invalid mode, expected 'c' or 'f/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Invalid_shape_in_axis_d_d	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Invalid_shape_in_axis_d_d[] = "Invalid shape in axis %d: %d.";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_MemoryError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_MemoryError[] = "MemoryError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_MemoryView_of_r_at_0x_x	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_MemoryView_of_r_object	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_O	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_O[] = "O";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Out_of_bounds_on_buffer_access_a	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Out_of_bounds_on_buffer_access_a[] = "Out of bounds on buffer access (/;"	v	typeref:typename:const char[]	file:
+__pyx_k_PickleError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_PickleError[] = "PickleError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_TypeError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_TypeError[] = "TypeError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_Unable_to_convert_item_to_object	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_Unable_to_convert_item_to_object[] = "Unable to convert item to object/;"	v	typeref:typename:const char[]	file:
+__pyx_k_ValueError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_ValueError[] = "ValueError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_View_MemoryView	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_View_MemoryView[] = "View.MemoryView";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_addPoint	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_addPoint[] = "addPoint";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_allocate_buffer	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_allocate_buffer[] = "allocate_buffer";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_array	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_array[] = "array";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_base	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_base[] = "base";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_blobs	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_blobs[] = "blobs";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_c	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_c[] = "c";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_center	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_center[] = "center";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_class	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_class[] = "__class__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_cline_in_traceback	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_contiguous_and_direct	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_contiguous_and_indirect	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_cv2	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_cv2[] = "cv2";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_dict	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_dict[] = "__dict__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_dtype_is_object	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_dtype_is_object[] = "dtype_is_object";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_encode	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_encode[] = "encode";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_enumerate	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_enumerate[] = "enumerate";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_error	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_error[] = "error";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_findBlobs	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_findBlobs[] = "findBlobs";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_flags	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_flags[] = "flags";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_format	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_format[] = "format";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_fortran	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_fortran[] = "fortran";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_getstate	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_getstate[] = "__getstate__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_got_differing_extents_in_dimensi	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing extents in dimensi/;"	v	typeref:typename:const char[]	file:
+__pyx_k_i	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_i[] = "i";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_id	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_id[] = "id";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_image	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_image[] = "image";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_import	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_import[] = "__import__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_inRange	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_inRange[] = "inRange";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_itemsize	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_itemsize[] = "itemsize";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_itemsize_0_for_cython_array	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_main	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_main[] = "__main__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_maxint	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_maxint[] = "maxint";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_memview	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_memview[] = "memview";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_mode	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_mode[] = "mode";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_name	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_name[] = "name";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_name_2	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_name_2[] = "__name__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_ndim	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_ndim[] = "ndim";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_new	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_new[] = "__new__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_no_default___reduce___due_to_non	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __reduce__ due to non/;"	v	typeref:typename:const char[]	file:
+__pyx_k_np	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_np[] = "np";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_num	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_num[] = "num";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_numpy	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_numpy[] = "numpy";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_obj	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_obj[] = "obj";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pack	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pack[] = "pack";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pickle	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pickle[] = "pickle";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_PickleError	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_checksum	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_getbuffer	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_result	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_result[] = "__pyx_result";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_state	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_state[] = "__pyx_state";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_type	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_type[] = "__pyx_type";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_unpickle_Blob	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_unpickle_Blob[] = "__pyx_unpickle_Blob";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_unpickle_Enum	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_pyx_vtable	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_range	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_range[] = "range";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_rect	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_rect[] = "rect";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_reduce	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_reduce[] = "__reduce__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_reduce_cython	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_reduce_cython[] = "__reduce_cython__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_reduce_ex	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_reduce_ex[] = "__reduce_ex__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_setstate	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_setstate[] = "__setstate__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_setstate_cython	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_setstate_cython[] = "__setstate_cython__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_shape	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_shape[] = "shape";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_size	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_size[] = "size";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_start	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_start[] = "start";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_step	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_step[] = "step";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_stop	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_stop[] = "stop";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_strided_and_direct	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_strided_and_direct[] = "<strided and direct>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_strided_and_direct_or_indirect	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_strided_and_indirect	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_stringsource	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_stringsource[] = "stringsource";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_struct	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_struct[] = "struct";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_sys	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_sys[] = "sys";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_test	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_test[] = "__test__";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_unable_to_allocate_array_data	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_unable_to_allocate_shape_and_str	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and str/;"	v	typeref:typename:const char[]	file:
+__pyx_k_unpack	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_unpack[] = "unpack";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_update	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_update[] = "update";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_x	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_x[] = "x";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_xrange	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_xrange[] = "xrange";$/;"	v	typeref:typename:const char[]	file:
+__pyx_k_y	ImageAnalysis/findBlobs.c	/^static const char __pyx_k_y[] = "y";$/;"	v	typeref:typename:const char[]	file:
+__pyx_kp_s_Buffer_view_does_not_expose_stri	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Buffer_view_does_not_expose_stri;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Can_only_create_a_buffer_that_is	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Can_only_create_a_buffer_that_is;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Cannot_index_with_type_s	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Cannot_index_with_type_s;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Empty_shape_tuple_for_cython_arr	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Empty_shape_tuple_for_cython_arr;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Incompatible_checksums_s_vs_0x7b	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0x7b;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Incompatible_checksums_s_vs_0xb0	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0xb0;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Indirect_dimensions_not_supporte	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Indirect_dimensions_not_supporte;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Invalid_mode_expected_c_or_fortr	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Invalid_mode_expected_c_or_fortr;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Invalid_shape_in_axis_d_d	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Invalid_shape_in_axis_d_d;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_MemoryView_of_r_at_0x_x	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_MemoryView_of_r_at_0x_x;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_MemoryView_of_r_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_MemoryView_of_r_object;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Out_of_bounds_on_buffer_access_a	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Out_of_bounds_on_buffer_access_a;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_Unable_to_convert_item_to_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_contiguous_and_direct	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_contiguous_and_direct;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_contiguous_and_indirect	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_contiguous_and_indirect;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_got_differing_extents_in_dimensi	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_itemsize_0_for_cython_array	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_itemsize_0_for_cython_array;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_no_default___reduce___due_to_non	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_no_default___reduce___due_to_non;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_strided_and_direct	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_strided_and_direct;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_strided_and_direct_or_indirect	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_strided_and_direct_or_indirect;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_strided_and_indirect	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_strided_and_indirect;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_stringsource	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_stringsource;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_unable_to_allocate_array_data	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_unable_to_allocate_array_data;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_kp_s_unable_to_allocate_shape_and_str	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_lineno	ImageAnalysis/findBlobs.c	/^static int __pyx_lineno;$/;"	v	typeref:typename:int	file:
+__pyx_m	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_m = NULL;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_mdef_15View_dot_MemoryView_1__pyx_unpickle_Enum	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_mdef_15View_dot_MemoryView_1__pyx_unpickle_Enum = {"__pyx_unpickle_Enum/;"	v	typeref:typename:PyMethodDef	file:
+__pyx_mdef_9findBlobs_3__pyx_unpickle_Blob	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_mdef_9findBlobs_3__pyx_unpickle_Blob = {"__pyx_unpickle_Blob", (PyCFunc/;"	v	typeref:typename:PyMethodDef	file:
+__pyx_memoryview___cinit__	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview___cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__/;"	f	typeref:typename:int	file:
+__pyx_memoryview___dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview___dealloc__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:void	file:
+__pyx_memoryview___getitem__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___getitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_index) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___len__	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_memoryview___len__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_10__len__	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_10__len__(struct /;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_12__repr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_12__repr__(struct /;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_14__str__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_14__str__(struct _/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_16is_c_contig	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_16is_c_contig(stru/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_18is_f_contig	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_18is_f_contig(stru/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_20copy	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_20copy(struct __py/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_22copy_fortran	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_22copy_fortran(str/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_2__dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_2__dealloc__(struct __p/;"	f	typeref:typename:void	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_4__getitem__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_4__getitem__(struc/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_6__setitem__	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_6__setitem__(struct __py/;"	f	typeref:typename:int	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_8__getbuffer__	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_8__getbuffer__(struct __/;"	f	typeref:typename:int	file:
+__pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview___cinit__	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview___cinit__(struct __pyx_m/;"	f	typeref:typename:int	file:
+__pyx_memoryview___repr__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___repr__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview___setitem__	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview___setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_index, PyObjec/;"	f	typeref:typename:int	file:
+__pyx_memoryview___str__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview___str__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview__slice_assign_scalar	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview__slice_assign_scalar(char *__pyx_v_data, Py_ssize_t *__pyx_v_shape,/;"	f	typeref:typename:void	file:
+__pyx_memoryview_assign_item_from_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_assign_item_from_object(struct __pyx_memoryview_obj *__pyx_v_s/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_broadcast_leading	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_broadcast_leading(__Pyx_memviewslice *__pyx_v_mslice, int __pyx_v_n/;"	f	typeref:typename:void	file:
+__pyx_memoryview_check	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __pyx_memoryview_check(PyObject *__pyx_v_o) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_memoryview_convert_item_to_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_convert_item_to_object(struct __pyx_memoryview_obj *__pyx_v_se/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_copy	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_copy(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_copy_contents	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_copy_contents(__Pyx_memviewslice __pyx_v_src, __Pyx_memviewslice __p/;"	f	typeref:typename:int	file:
+__pyx_memoryview_copy_data_to_temp	ImageAnalysis/findBlobs.c	/^static void *__pyx_memoryview_copy_data_to_temp(__Pyx_memviewslice *__pyx_v_src, __Pyx_memviewsl/;"	f	typeref:typename:void *	file:
+__pyx_memoryview_copy_fortran	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_copy_fortran(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *u/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_copy_new_contig	ImageAnalysis/findBlobs.c	/^__pyx_memoryview_copy_new_contig(const __Pyx_memviewslice *from_mvs,$/;"	f	typeref:typename:__Pyx_memviewslice	file:
+__pyx_memoryview_copy_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_copy_object(struct __pyx_memoryview_obj *__pyx_v_memview) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_copy_object_from_slice	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_copy_object_from_slice(struct __pyx_memoryview_obj *__pyx_v_me/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_err	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_err(PyObject *__pyx_v_error, char *__pyx_v_msg) {$/;"	f	typeref:typename:int	file:
+__pyx_memoryview_err_dim	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_err_dim(PyObject *__pyx_v_error, char *__pyx_v_msg, int __pyx_v_dim)/;"	f	typeref:typename:int	file:
+__pyx_memoryview_err_extents	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_err_extents(int __pyx_v_i, Py_ssize_t __pyx_v_extent1, Py_ssize_t __/;"	f	typeref:typename:int	file:
+__pyx_memoryview_fromslice	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_fromslice(__Pyx_memviewslice __pyx_v_memviewslice, int __pyx_v/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_get_item_pointer	ImageAnalysis/findBlobs.c	/^static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObje/;"	f	typeref:typename:char *	file:
+__pyx_memoryview_get_slice_from_memoryview	ImageAnalysis/findBlobs.c	/^static __Pyx_memviewslice *__pyx_memoryview_get_slice_from_memoryview(struct __pyx_memoryview_ob/;"	f	typeref:typename:__Pyx_memviewslice *	file:
+__pyx_memoryview_getbuffer	ImageAnalysis/findBlobs.c	/^static CYTHON_UNUSED int __pyx_memoryview_getbuffer(PyObject *__pyx_v_self, Py_buffer *__pyx_v_i/;"	f	typeref:typename:CYTHON_UNUSED int	file:
+__pyx_memoryview_is_c_contig	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_is_c_contig(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *un/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_is_f_contig	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_is_f_contig(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *un/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_is_slice	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject */;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_new	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_new(PyObject *__pyx_v_o, int __pyx_v_flags, int __pyx_v_dtype_/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_obj	ImageAnalysis/findBlobs.c	/^struct __pyx_memoryview_obj {$/;"	s	file:
+__pyx_memoryview_refcount_copying	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_refcount_copying(__Pyx_memviewslice *__pyx_v_dst, int __pyx_v_dtype/;"	f	typeref:typename:void	file:
+__pyx_memoryview_refcount_objects_in_slice	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_refcount_objects_in_slice(char *__pyx_v_data, Py_ssize_t *__pyx_v_s/;"	f	typeref:typename:void	file:
+__pyx_memoryview_refcount_objects_in_slice_with_gil	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_refcount_objects_in_slice_with_gil(char *__pyx_v_data, Py_ssize_t */;"	f	typeref:typename:void	file:
+__pyx_memoryview_setitem_indexed	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_setitem_indexed(struct __pyx_memoryview_obj *__pyx_v_self, PyO/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_setitem_slice_assign_scalar	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_setitem_slice_assign_scalar(struct __pyx_memoryview_obj *__pyx/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_setitem_slice_assignment	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryview_setitem_slice_assignment(struct __pyx_memoryview_obj *__pyx_v_/;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryview_slice_assign_scalar	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *__pyx_v_dst, int __pyx_v_nd/;"	f	typeref:typename:void	file:
+__pyx_memoryview_slice_copy	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryview_slice_copy(struct __pyx_memoryview_obj *__pyx_v_memview, __Pyx_memv/;"	f	typeref:typename:void	file:
+__pyx_memoryview_slice_get_size	ImageAnalysis/findBlobs.c	/^static Py_ssize_t __pyx_memoryview_slice_get_size(__Pyx_memviewslice *__pyx_v_src, int __pyx_v_n/;"	f	typeref:typename:Py_ssize_t	file:
+__pyx_memoryview_slice_memviewslice	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_slice_memviewslice(__Pyx_memviewslice *__pyx_v_dst, Py_ssize_t __pyx/;"	f	typeref:typename:int	file:
+__pyx_memoryview_thread_locks	ImageAnalysis/findBlobs.c	/^static PyThread_type_lock __pyx_memoryview_thread_locks[8];$/;"	v	typeref:typename:PyThread_type_lock[8]	file:
+__pyx_memoryview_thread_locks_used	ImageAnalysis/findBlobs.c	/^static int __pyx_memoryview_thread_locks_used;$/;"	v	typeref:typename:int	file:
+__pyx_memoryview_type	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_memoryview_type = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_memoryviewslice___dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryviewslice___dealloc__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:void	file:
+__pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewslice___dealloc__	ImageAnalysis/findBlobs.c	/^static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewslice___dealloc__(/;"	f	typeref:typename:void	file:
+__pyx_memoryviewslice_assign_item_from_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memoryviewslice_obj /;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryviewslice_convert_item_to_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_memoryviewslice_convert_item_to_object(struct __pyx_memoryviewslice_obj */;"	f	typeref:typename:PyObject *	file:
+__pyx_memoryviewslice_obj	ImageAnalysis/findBlobs.c	/^struct __pyx_memoryviewslice_obj {$/;"	s	file:
+__pyx_memoryviewslice_type	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_memoryviewslice_type = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_memslice_transpose	ImageAnalysis/findBlobs.c	/^static int __pyx_memslice_transpose(__Pyx_memviewslice *__pyx_v_memslice) {$/;"	f	typeref:typename:int	file:
+__pyx_memview_get_int	ImageAnalysis/findBlobs.c	/^    static CYTHON_INLINE PyObject *__pyx_memview_get_int(const char *itemp) {$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+__pyx_memview_set_int	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int __pyx_memview_set_int(const char *itemp, PyObject *obj) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_memview_slice	ImageAnalysis/findBlobs.c	/^static struct __pyx_memoryview_obj *__pyx_memview_slice(struct __pyx_memoryview_obj *__pyx_v_mem/;"	f	typeref:struct:__pyx_memoryview_obj *	file:
+__pyx_memviewslice_is_contig	ImageAnalysis/findBlobs.c	/^__pyx_memviewslice_is_contig(const __Pyx_memviewslice mvs, char order, int ndim)$/;"	f	typeref:typename:int	file:
+__pyx_methods	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_methods_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods_9findBlobs_Blob[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_methods_Enum	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods_Enum[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_methods__memoryviewslice	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods__memoryviewslice[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_methods_array	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods_array[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_methods_memoryview	ImageAnalysis/findBlobs.c	/^static PyMethodDef __pyx_methods_memoryview[] = {$/;"	v	typeref:typename:PyMethodDef[]	file:
+__pyx_module_is_main_findBlobs	ImageAnalysis/findBlobs.c	/^int __pyx_module_is_main_findBlobs = 0;$/;"	v	typeref:typename:int
+__pyx_moduledef	ImageAnalysis/findBlobs.c	/^static struct PyModuleDef __pyx_moduledef = {$/;"	v	typeref:struct:PyModuleDef	file:
+__pyx_moduledef_slots	ImageAnalysis/findBlobs.c	/^static PyModuleDef_Slot __pyx_moduledef_slots[] = {$/;"	v	typeref:typename:PyModuleDef_Slot[]	file:
+__pyx_mp_ass_subscript_array	ImageAnalysis/findBlobs.c	/^static int __pyx_mp_ass_subscript_array(PyObject *o, PyObject *i, PyObject *v) {$/;"	f	typeref:typename:int	file:
+__pyx_mp_ass_subscript_memoryview	ImageAnalysis/findBlobs.c	/^static int __pyx_mp_ass_subscript_memoryview(PyObject *o, PyObject *i, PyObject *v) {$/;"	f	typeref:typename:int	file:
+__pyx_n_b_O	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_b_O;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_ASCII	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_ASCII;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_Ellipsis	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_Ellipsis;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_IndexError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_IndexError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_MemoryError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_MemoryError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_PickleError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_PickleError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_TypeError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_TypeError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_ValueError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_ValueError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_View_MemoryView	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_View_MemoryView;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_addPoint	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_addPoint;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_allocate_buffer	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_allocate_buffer;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_array	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_array;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_base	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_base;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_blobs	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_blobs;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_c	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_c;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_center	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_center;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_class	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_class;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_cline_in_traceback	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_cline_in_traceback;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_cv2	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_cv2;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_dict	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_dict;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_dtype_is_object	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_dtype_is_object;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_encode	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_encode;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_enumerate	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_enumerate;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_error	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_error;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_findBlobs	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_findBlobs;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_flags	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_flags;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_format	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_format;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_fortran	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_fortran;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_getstate	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_getstate;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_i	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_i;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_id	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_id;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_image	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_image;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_import	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_import;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_inRange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_inRange;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_itemsize	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_itemsize;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_main	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_main;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_maxint	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_maxint;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_memview	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_memview;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_mode	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_mode;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_name	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_name;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_name_2	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_name_2;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_ndim	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_ndim;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_new	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_new;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_np	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_np;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_num	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_num;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_numpy	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_numpy;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_obj	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_obj;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pack	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pack;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pickle	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pickle;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_PickleError	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_PickleError;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_checksum	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_checksum;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_getbuffer	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_getbuffer;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_result	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_result;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_state	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_state;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_type	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_type;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_unpickle_Blob	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_unpickle_Blob;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_unpickle_Enum	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_unpickle_Enum;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_pyx_vtable	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_pyx_vtable;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_range	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_range;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_rect	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_rect;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_reduce	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_reduce;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_reduce_cython	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_reduce_cython;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_reduce_ex	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_reduce_ex;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_setstate	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_setstate;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_setstate_cython	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_setstate_cython;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_shape	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_shape;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_size	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_size;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_start	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_start;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_step	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_step;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_stop	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_stop;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_struct	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_struct;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_sys	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_sys;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_test	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_test;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_unpack	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_unpack;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_update	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_update;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_x	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_x;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_xrange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_xrange;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_s_y	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_s_y;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_u_c	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_u_c;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_n_u_fortran	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_n_u_fortran;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_obj_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^struct __pyx_obj_9findBlobs_Blob {$/;"	s	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_10suboffsets___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_10suboffsets___get__(struct __pyx_m/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_1T___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_1T___get__(struct __pyx_memoryview_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_4base___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_4base___get__(struct __pyx_memoryvi/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_4ndim___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_4ndim___get__(struct __pyx_memoryvi/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_4size___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_4size___get__(struct __pyx_memoryvi/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_5shape___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_5shape___get__(struct __pyx_memoryv/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_6nbytes___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_6nbytes___get__(struct __pyx_memory/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_7strides___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_7strides___get__(struct __pyx_memor/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_10memoryview_8itemsize___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_8itemsize___get__(struct __pyx_memo/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__(struct __pyx_me/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView_5array_7memview___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView_5array_7memview___get__(struct __pyx_array_obj */;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__py/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_7cpython_5array_5array_2__releasebuffer__	ImageAnalysis/findBlobs.c	/^static void __pyx_pf_7cpython_5array_5array_2__releasebuffer__(CYTHON_UNUSED arrayobject *__pyx_/;"	f	typeref:typename:void	file:
+__pyx_pf_7cpython_5array_5array___getbuffer__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_7cpython_5array_5array___getbuffer__(arrayobject *__pyx_v_self, Py_buffer *_/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_2__pyx_unpickle_Blob	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_2__pyx_unpickle_Blob(CYTHON_UNUSED PyObject *__pyx_self, Py/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_10lastPixelX_2__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob_10lastPixelX_2__set__(struct __pyx_obj_9findBlobs_Blob *__p/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_4Blob_10lastPixelX___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_10lastPixelX___get__(struct __pyx_obj_9findBlobs_Blob/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_2addPoint	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_2addPoint(struct __pyx_obj_9findBlobs_Blob *__pyx_v_s/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_3num_2__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob_3num_2__set__(struct __pyx_obj_9findBlobs_Blob *__pyx_v_sel/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_4Blob_3num___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_3num___get__(struct __pyx_obj_9findBlobs_Blob *__pyx_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_4inRange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_4inRange(struct __pyx_obj_9findBlobs_Blob *__pyx_v_se/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_4rect_2__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob_4rect_2__set__(struct __pyx_obj_9findBlobs_Blob *__pyx_v_se/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_4Blob_4rect___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_4rect___get__(struct __pyx_obj_9findBlobs_Blob *__pyx/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_6__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_6__reduce_cython__(struct __pyx_obj_9findBlobs_Blob */;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_6center_2__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob_6center_2__set__(struct __pyx_obj_9findBlobs_Blob *__pyx_v_/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_4Blob_6center___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_6center___get__(struct __pyx_obj_9findBlobs_Blob *__p/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_8__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_8__setstate_cython__(struct __pyx_obj_9findBlobs_Blob/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob_9lineStart_2__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob_9lineStart_2__set__(struct __pyx_obj_9findBlobs_Blob *__pyx/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_4Blob_9lineStart___get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_4Blob_9lineStart___get__(struct __pyx_obj_9findBlobs_Blob */;"	f	typeref:typename:PyObject *	file:
+__pyx_pf_9findBlobs_4Blob___init__	ImageAnalysis/findBlobs.c	/^static int __pyx_pf_9findBlobs_4Blob___init__(struct __pyx_obj_9findBlobs_Blob *__pyx_v_self, in/;"	f	typeref:typename:int	file:
+__pyx_pf_9findBlobs_findBlobs	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf_9findBlobs_findBlobs(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memview/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_MemviewEnum_2__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_MemviewEnum_2__setstate_cython__(struct __pyx_MemviewEnum_obj *_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_MemviewEnum___reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_MemviewEnum___reduce_cython__(struct __pyx_MemviewEnum_obj *__py/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_array_2__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_array_2__setstate_cython__(CYTHON_UNUSED struct __pyx_array_obj /;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_array___reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_array___reduce_cython__(CYTHON_UNUSED struct __pyx_array_obj *__/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_memoryview_2__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_memoryview_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memor/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_memoryview___reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_memoryview___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryvi/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_memoryviewslice_2__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pf___pyx_memoryviewslice___reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_mem/;"	f	typeref:typename:PyObject *	file:
+__pyx_ptype_7cpython_4bool_bool	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_ptype_7cpython_4bool_bool = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_ptype_7cpython_4type_type	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_ptype_7cpython_4type_type = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_ptype_7cpython_5array_array	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_ptype_7cpython_5array_array = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_ptype_7cpython_7complex_complex	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_ptype_7cpython_7complex_complex = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_ptype_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static PyTypeObject *__pyx_ptype_9findBlobs_Blob = 0;$/;"	v	typeref:typename:PyTypeObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_10suboffsets_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_10suboffsets_1__get__(PyObject *__p/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_1T_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_1T_1__get__(PyObject *__pyx_v_self)/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_4base_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_4base_1__get__(PyObject *__pyx_v_se/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_4ndim_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_4ndim_1__get__(PyObject *__pyx_v_se/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_4size_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_4size_1__get__(PyObject *__pyx_v_se/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_5shape_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_5shape_1__get__(PyObject *__pyx_v_s/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_6nbytes_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_6nbytes_1__get__(PyObject *__pyx_v_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_7strides_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_7strides_1__get__(PyObject *__pyx_v/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_10memoryview_8itemsize_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_10memoryview_8itemsize_1__get__(PyObject *__pyx_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_16_memoryviewslice_4base_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_16_memoryviewslice_4base_1__get__(PyObject *__py/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_1__pyx_unpickle_Enum	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_1__pyx_unpickle_Enum(PyObject *__pyx_self, PyObj/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_15View_dot_MemoryView_5array_7memview_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_15View_dot_MemoryView_5array_7memview_1__get__(PyObject *__pyx_v_self)/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_7cpython_5array_5array_1__getbuffer__	ImageAnalysis/findBlobs.c	/^static CYTHON_UNUSED int __pyx_pw_7cpython_5array_5array_1__getbuffer__(PyObject *__pyx_v_self, /;"	f	typeref:typename:CYTHON_UNUSED int	file:
+__pyx_pw_7cpython_5array_5array_3__releasebuffer__	ImageAnalysis/findBlobs.c	/^static CYTHON_UNUSED void __pyx_pw_7cpython_5array_5array_3__releasebuffer__(PyObject *__pyx_v_s/;"	f	typeref:typename:CYTHON_UNUSED void	file:
+__pyx_pw_9findBlobs_1findBlobs	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_1findBlobs(PyObject *__pyx_self, PyObject *__pyx_args, PyOb/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_3__pyx_unpickle_Blob	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_3__pyx_unpickle_Blob(PyObject *__pyx_self, PyObject *__pyx_/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_10lastPixelX_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_10lastPixelX_1__get__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_10lastPixelX_3__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_10lastPixelX_3__set__(PyObject *__pyx_v_self, PyObject *__p/;"	f	typeref:typename:int	file:
+__pyx_pw_9findBlobs_4Blob_1__init__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyO/;"	f	typeref:typename:int	file:
+__pyx_pw_9findBlobs_4Blob_3addPoint	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_3addPoint(PyObject *__pyx_v_self, PyObject *__pyx_arg/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_3num_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_3num_1__get__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_3num_3__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_3num_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_val/;"	f	typeref:typename:int	file:
+__pyx_pw_9findBlobs_4Blob_4rect_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_4rect_1__get__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_4rect_3__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_4rect_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_va/;"	f	typeref:typename:int	file:
+__pyx_pw_9findBlobs_4Blob_5inRange	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_5inRange(PyObject *__pyx_v_self, PyObject *__pyx_args/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_6center_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_6center_1__get__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_6center_3__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_6center_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_/;"	f	typeref:typename:int	file:
+__pyx_pw_9findBlobs_4Blob_7__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNU/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_9__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_9__setstate_cython__(PyObject *__pyx_v_self, PyObject/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_9lineStart_1__get__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw_9findBlobs_4Blob_9lineStart_1__get__(PyObject *__pyx_v_self) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw_9findBlobs_4Blob_9lineStart_3__set__	ImageAnalysis/findBlobs.c	/^static int __pyx_pw_9findBlobs_4Blob_9lineStart_3__set__(PyObject *__pyx_v_self, PyObject *__pyx/;"	f	typeref:typename:int	file:
+__pyx_pw___pyx_MemviewEnum_1__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_MemviewEnum_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UN/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_MemviewEnum_3__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_MemviewEnum_3__setstate_cython__(PyObject *__pyx_v_self, PyObjec/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_array_1__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_array_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED P/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_array_3__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_array_3__setstate_cython__(PyObject *__pyx_v_self, PyObject *__p/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_memoryview_1__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_memoryview_1__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNU/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_memoryview_3__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_memoryview_3__setstate_cython__(PyObject *__pyx_v_self, PyObject/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_memoryviewslice_1__reduce_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_memoryviewslice_1__reduce_cython__(PyObject *__pyx_v_self, CYTHO/;"	f	typeref:typename:PyObject *	file:
+__pyx_pw___pyx_memoryviewslice_3__setstate_cython__	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_pw___pyx_memoryviewslice_3__setstate_cython__(PyObject *__pyx_v_self, PyO/;"	f	typeref:typename:PyObject *	file:
+__pyx_pybuffer_index	ImageAnalysis/findBlobs.c	/^static char *__pyx_pybuffer_index(Py_buffer *__pyx_v_view, char *__pyx_v_bufp, Py_ssize_t __pyx_/;"	f	typeref:typename:char *	file:
+__pyx_setprop_9findBlobs_4Blob_center	ImageAnalysis/findBlobs.c	/^static int __pyx_setprop_9findBlobs_4Blob_center(PyObject *o, PyObject *v, CYTHON_UNUSED void *x/;"	f	typeref:typename:int	file:
+__pyx_setprop_9findBlobs_4Blob_lastPixelX	ImageAnalysis/findBlobs.c	/^static int __pyx_setprop_9findBlobs_4Blob_lastPixelX(PyObject *o, PyObject *v, CYTHON_UNUSED voi/;"	f	typeref:typename:int	file:
+__pyx_setprop_9findBlobs_4Blob_lineStart	ImageAnalysis/findBlobs.c	/^static int __pyx_setprop_9findBlobs_4Blob_lineStart(PyObject *o, PyObject *v, CYTHON_UNUSED void/;"	f	typeref:typename:int	file:
+__pyx_setprop_9findBlobs_4Blob_num	ImageAnalysis/findBlobs.c	/^static int __pyx_setprop_9findBlobs_4Blob_num(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {$/;"	f	typeref:typename:int	file:
+__pyx_setprop_9findBlobs_4Blob_rect	ImageAnalysis/findBlobs.c	/^static int __pyx_setprop_9findBlobs_4Blob_rect(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) /;"	f	typeref:typename:int	file:
+__pyx_slice__14	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_slice__14;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_slice__15	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_slice__15;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_slice__16	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_slice__16;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_slices_overlap	ImageAnalysis/findBlobs.c	/^__pyx_slices_overlap(__Pyx_memviewslice *slice1,$/;"	f	typeref:typename:int	file:
+__pyx_sq_item_array	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_sq_item_array(PyObject *o, Py_ssize_t i) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_sq_item_memoryview	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_sq_item_memoryview(PyObject *o, Py_ssize_t i) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_string_tab	ImageAnalysis/findBlobs.c	/^static __Pyx_StringTabEntry __pyx_string_tab[] = {$/;"	v	typeref:typename:__Pyx_StringTabEntry[]	file:
+__pyx_sub_acquisition_count	ImageAnalysis/findBlobs.c	/^    #define __pyx_sub_acquisition_count(/;"	d	file:
+__pyx_sub_acquisition_count_locked	ImageAnalysis/findBlobs.c	/^__pyx_sub_acquisition_count_locked(__pyx_atomic_int *acquisition_count,$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+__pyx_tp_as_buffer_array	ImageAnalysis/findBlobs.c	/^static PyBufferProcs __pyx_tp_as_buffer_array = {$/;"	v	typeref:typename:PyBufferProcs	file:
+__pyx_tp_as_buffer_memoryview	ImageAnalysis/findBlobs.c	/^static PyBufferProcs __pyx_tp_as_buffer_memoryview = {$/;"	v	typeref:typename:PyBufferProcs	file:
+__pyx_tp_as_mapping_array	ImageAnalysis/findBlobs.c	/^static PyMappingMethods __pyx_tp_as_mapping_array = {$/;"	v	typeref:typename:PyMappingMethods	file:
+__pyx_tp_as_mapping_memoryview	ImageAnalysis/findBlobs.c	/^static PyMappingMethods __pyx_tp_as_mapping_memoryview = {$/;"	v	typeref:typename:PyMappingMethods	file:
+__pyx_tp_as_sequence_array	ImageAnalysis/findBlobs.c	/^static PySequenceMethods __pyx_tp_as_sequence_array = {$/;"	v	typeref:typename:PySequenceMethods	file:
+__pyx_tp_as_sequence_memoryview	ImageAnalysis/findBlobs.c	/^static PySequenceMethods __pyx_tp_as_sequence_memoryview = {$/;"	v	typeref:typename:PySequenceMethods	file:
+__pyx_tp_clear_Enum	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_clear_Enum(PyObject *o) {$/;"	f	typeref:typename:int	file:
+__pyx_tp_clear__memoryviewslice	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_clear__memoryviewslice(PyObject *o) {$/;"	f	typeref:typename:int	file:
+__pyx_tp_clear_memoryview	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_clear_memoryview(PyObject *o) {$/;"	f	typeref:typename:int	file:
+__pyx_tp_dealloc_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static void __pyx_tp_dealloc_9findBlobs_Blob(PyObject *o) {$/;"	f	typeref:typename:void	file:
+__pyx_tp_dealloc_Enum	ImageAnalysis/findBlobs.c	/^static void __pyx_tp_dealloc_Enum(PyObject *o) {$/;"	f	typeref:typename:void	file:
+__pyx_tp_dealloc__memoryviewslice	ImageAnalysis/findBlobs.c	/^static void __pyx_tp_dealloc__memoryviewslice(PyObject *o) {$/;"	f	typeref:typename:void	file:
+__pyx_tp_dealloc_array	ImageAnalysis/findBlobs.c	/^static void __pyx_tp_dealloc_array(PyObject *o) {$/;"	f	typeref:typename:void	file:
+__pyx_tp_dealloc_memoryview	ImageAnalysis/findBlobs.c	/^static void __pyx_tp_dealloc_memoryview(PyObject *o) {$/;"	f	typeref:typename:void	file:
+__pyx_tp_getattro_array	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_getattro_array(PyObject *o, PyObject *n) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_new_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_new_9findBlobs_Blob(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_new_Enum	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyO/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_new__memoryviewslice	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_new__memoryviewslice(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_new_array	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_new_memoryview	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k) {$/;"	f	typeref:typename:PyObject *	file:
+__pyx_tp_traverse_Enum	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_traverse_Enum(PyObject *o, visitproc v, void *a) {$/;"	f	typeref:typename:int	file:
+__pyx_tp_traverse__memoryviewslice	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_traverse__memoryviewslice(PyObject *o, visitproc v, void *a) {$/;"	f	typeref:typename:int	file:
+__pyx_tp_traverse_memoryview	ImageAnalysis/findBlobs.c	/^static int __pyx_tp_traverse_memoryview(PyObject *o, visitproc v, void *a) {$/;"	f	typeref:typename:int	file:
+__pyx_tuple_	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple_;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__10	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__10;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__11	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__11;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__12	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__12;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__13	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__13;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__17	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__17;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__18	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__18;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__19	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__19;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__2	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__2;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__20	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__20;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__22	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__22;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__23	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__23;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__24	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__24;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__25	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__25;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__26	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__26;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__27	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__27;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__3	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__3;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__4	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__4;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__5	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__5;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__6	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__6;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__7	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__7;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__8	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__8;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_tuple__9	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_tuple__9;$/;"	v	typeref:typename:PyObject *	file:
+__pyx_type_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static PyTypeObject __pyx_type_9findBlobs_Blob = {$/;"	v	typeref:typename:PyTypeObject	file:
+__pyx_type___pyx_MemviewEnum	ImageAnalysis/findBlobs.c	/^static PyTypeObject __pyx_type___pyx_MemviewEnum = {$/;"	v	typeref:typename:PyTypeObject	file:
+__pyx_type___pyx_array	ImageAnalysis/findBlobs.c	/^static PyTypeObject __pyx_type___pyx_array = {$/;"	v	typeref:typename:PyTypeObject	file:
+__pyx_type___pyx_memoryview	ImageAnalysis/findBlobs.c	/^static PyTypeObject __pyx_type___pyx_memoryview = {$/;"	v	typeref:typename:PyTypeObject	file:
+__pyx_type___pyx_memoryviewslice	ImageAnalysis/findBlobs.c	/^static PyTypeObject __pyx_type___pyx_memoryviewslice = {$/;"	v	typeref:typename:PyTypeObject	file:
+__pyx_typeinfo_cmp	ImageAnalysis/findBlobs.c	/^__pyx_typeinfo_cmp(__Pyx_TypeInfo *a, __Pyx_TypeInfo *b)$/;"	f	typeref:typename:int	file:
+__pyx_unpickle_Enum__set_state	ImageAnalysis/findBlobs.c	/^static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__pyx_v___pyx_resu/;"	f	typeref:typename:PyObject *	file:
+__pyx_verify_contig	ImageAnalysis/findBlobs.c	/^__pyx_verify_contig(Py_buffer *buf, int ndim, int c_or_f_flag)$/;"	f	typeref:typename:int	file:
+__pyx_vtab	ImageAnalysis/findBlobs.c	/^  struct __pyx_vtabstruct_9findBlobs_Blob *__pyx_vtab;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:struct:__pyx_vtabstruct_9findBlobs_Blob *	file:
+__pyx_vtab	ImageAnalysis/findBlobs.c	/^  struct __pyx_vtabstruct_array *__pyx_vtab;$/;"	m	struct:__pyx_array_obj	typeref:struct:__pyx_vtabstruct_array *	file:
+__pyx_vtab	ImageAnalysis/findBlobs.c	/^  struct __pyx_vtabstruct_memoryview *__pyx_vtab;$/;"	m	struct:__pyx_memoryview_obj	typeref:struct:__pyx_vtabstruct_memoryview *	file:
+__pyx_vtable_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_9findBlobs_Blob __pyx_vtable_9findBlobs_Blob;$/;"	v	typeref:struct:__pyx_vtabstruct_9findBlobs_Blob	file:
+__pyx_vtable__memoryviewslice	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct__memoryviewslice __pyx_vtable__memoryviewslice;$/;"	v	typeref:struct:__pyx_vtabstruct__memoryviewslice	file:
+__pyx_vtable_array	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_array __pyx_vtable_array;$/;"	v	typeref:struct:__pyx_vtabstruct_array	file:
+__pyx_vtable_memoryview	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_memoryview __pyx_vtable_memoryview;$/;"	v	typeref:struct:__pyx_vtabstruct_memoryview	file:
+__pyx_vtabptr_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_9findBlobs_Blob *__pyx_vtabptr_9findBlobs_Blob;$/;"	v	typeref:struct:__pyx_vtabstruct_9findBlobs_Blob *	file:
+__pyx_vtabptr__memoryviewslice	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct__memoryviewslice *__pyx_vtabptr__memoryviewslice;$/;"	v	typeref:struct:__pyx_vtabstruct__memoryviewslice *	file:
+__pyx_vtabptr_array	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_array *__pyx_vtabptr_array;$/;"	v	typeref:struct:__pyx_vtabstruct_array *	file:
+__pyx_vtabptr_memoryview	ImageAnalysis/findBlobs.c	/^static struct __pyx_vtabstruct_memoryview *__pyx_vtabptr_memoryview;$/;"	v	typeref:struct:__pyx_vtabstruct_memoryview *	file:
+__pyx_vtabstruct_9findBlobs_Blob	ImageAnalysis/findBlobs.c	/^struct __pyx_vtabstruct_9findBlobs_Blob {$/;"	s	file:
+__pyx_vtabstruct__memoryviewslice	ImageAnalysis/findBlobs.c	/^struct __pyx_vtabstruct__memoryviewslice {$/;"	s	file:
+__pyx_vtabstruct_array	ImageAnalysis/findBlobs.c	/^struct __pyx_vtabstruct_array {$/;"	s	file:
+__pyx_vtabstruct_memoryview	ImageAnalysis/findBlobs.c	/^struct __pyx_vtabstruct_memoryview {$/;"	s	file:
+__stdcall	ImageAnalysis/findBlobs.c	/^    #define __stdcall$/;"	d	file:
+_array_interface	ImageAnalysis/findBlobs.c	/^  PyObject *_array_interface;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:PyObject *	file:
+_copy_strided_to_strided	ImageAnalysis/findBlobs.c	/^static void _copy_strided_to_strided(char *__pyx_v_src_data, Py_ssize_t *__pyx_v_src_strides, ch/;"	f	typeref:typename:void	file:
+_format	ImageAnalysis/findBlobs.c	/^  PyObject *_format;$/;"	m	struct:__pyx_array_obj	typeref:typename:PyObject *	file:
+_shape	ImageAnalysis/findBlobs.c	/^  Py_ssize_t *_shape;$/;"	m	struct:__pyx_array_obj	typeref:typename:Py_ssize_t *	file:
+_size	ImageAnalysis/findBlobs.c	/^  PyObject *_size;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:PyObject *	file:
+_strides	ImageAnalysis/findBlobs.c	/^  Py_ssize_t *_strides;$/;"	m	struct:__pyx_array_obj	typeref:typename:Py_ssize_t *	file:
+_unellipsify	ImageAnalysis/findBlobs.c	/^static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {$/;"	f	typeref:typename:PyObject *	file:
+a	ImageAnalysis/note.py	/^a = np.zeros(1005, dtype='B')$/;"	v
+abs_py_ssize_t	ImageAnalysis/findBlobs.c	/^static Py_ssize_t abs_py_ssize_t(Py_ssize_t __pyx_v_arg) {$/;"	f	typeref:typename:Py_ssize_t	file:
+acquisition_count	ImageAnalysis/findBlobs.c	/^  __pyx_atomic_int acquisition_count[2];$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:__pyx_atomic_int[2]	file:
+acquisition_count_aligned_p	ImageAnalysis/findBlobs.c	/^  __pyx_atomic_int *acquisition_count_aligned_p;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:__pyx_atomic_int *	file:
+addPixel	ImageAnalysis/findBlobs.pyx	/^    cpdef addPixel(self, int x, int y):$/;"	m	class:Blob
+addPoint	ImageAnalysis/detect.py	/^    def addPoint(self, x, y):$/;"	m	class:Blob
+addPoint	ImageAnalysis/findBlobs.c	/^  PyObject *(*addPoint)(struct __pyx_obj_9findBlobs_Blob *, int, int, int __pyx_skip_dispatch);$/;"	m	struct:__pyx_vtabstruct_9findBlobs_Blob	typeref:typename:PyObject * (*)(struct __pyx_obj_9findBlobs_Blob *,int,int,int __pyx_skip_dispatch)	file:
+allocated	ImageAnalysis/findBlobs.c	/^    Py_ssize_t allocated;$/;"	m	struct:arrayobject	typeref:typename:Py_ssize_t	file:
+am_aiter	ImageAnalysis/findBlobs.c	/^        unaryfunc am_aiter;$/;"	m	struct:__anonf7744edf0108	typeref:typename:unaryfunc	file:
+am_anext	ImageAnalysis/findBlobs.c	/^        unaryfunc am_anext;$/;"	m	struct:__anonf7744edf0108	typeref:typename:unaryfunc	file:
+am_await	ImageAnalysis/findBlobs.c	/^        unaryfunc am_await;$/;"	m	struct:__anonf7744edf0108	typeref:typename:unaryfunc	file:
+arraydescr	ImageAnalysis/findBlobs.c	/^typedef struct arraydescr {$/;"	s	file:
+arraydescr	ImageAnalysis/findBlobs.c	/^} arraydescr;$/;"	t	typeref:struct:arraydescr	file:
+arrayobject	ImageAnalysis/findBlobs.c	/^struct arrayobject {$/;"	s	file:
+arrayobject	ImageAnalysis/findBlobs.c	/^typedef struct arrayobject arrayobject;$/;"	t	typeref:struct:arrayobject	file:
+arraysize	ImageAnalysis/findBlobs.c	/^  size_t arraysize[8];$/;"	m	struct:__anonf7744edf0408	typeref:typename:size_t[8]	file:
+as_chars	ImageAnalysis/findBlobs.c	/^        char *as_chars;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:char *	file:
+as_doubles	ImageAnalysis/findBlobs.c	/^        double *as_doubles;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:double *	file:
+as_floats	ImageAnalysis/findBlobs.c	/^        float *as_floats;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:float *	file:
+as_ints	ImageAnalysis/findBlobs.c	/^        int *as_ints;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:int *	file:
+as_longlongs	ImageAnalysis/findBlobs.c	/^        long long *as_longlongs;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:long long *	file:
+as_longs	ImageAnalysis/findBlobs.c	/^        long *as_longs;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:long *	file:
+as_pyunicodes	ImageAnalysis/findBlobs.c	/^        Py_UNICODE *as_pyunicodes;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:Py_UNICODE *	file:
+as_schars	ImageAnalysis/findBlobs.c	/^        signed char *as_schars;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:signed char *	file:
+as_shorts	ImageAnalysis/findBlobs.c	/^        short *as_shorts;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:short *	file:
+as_uchars	ImageAnalysis/findBlobs.c	/^        unsigned char *as_uchars;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:unsigned char *	file:
+as_uints	ImageAnalysis/findBlobs.c	/^        unsigned int *as_uints;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:unsigned int *	file:
+as_ulonglongs	ImageAnalysis/findBlobs.c	/^        unsigned long long *as_ulonglongs;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:unsigned long long *	file:
+as_ulongs	ImageAnalysis/findBlobs.c	/^        unsigned long *as_ulongs;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:unsigned long *	file:
+as_ushorts	ImageAnalysis/findBlobs.c	/^        unsigned short *as_ushorts;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:unsigned short *	file:
+as_voidptr	ImageAnalysis/findBlobs.c	/^        void *as_voidptr;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:void *	file:
+assert_direct_dimensions	ImageAnalysis/findBlobs.c	/^static PyObject *assert_direct_dimensions(Py_ssize_t *__pyx_v_suboffsets, int __pyx_v_ndim) {$/;"	f	typeref:typename:PyObject *	file:
+assign_item_from_object	ImageAnalysis/findBlobs.c	/^  PyObject *(*assign_item_from_object)(struct __pyx_memoryview_obj *, char *, PyObject *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,char *,PyObject *)	file:
+board	.vscode/arduino.json	/^    "board": "arduino:avr:uno",$/;"	s
+board	ServoTester/.vscode/arduino.json	/^    "board": "arduino:avr:uno",$/;"	s
+browse	.vscode/c_cpp_properties.json	/^            "browse": {$/;"	o	object:configurations.0
+browse	ServoTester/.vscode/c_cpp_properties.json	/^            "browse": {$/;"	o	object:configurations.0
+browse	ServoTester/.vscode/c_cpp_properties.json	/^            "browse": {$/;"	o	object:configurations.1
+browse	ServoTester/.vscode/c_cpp_properties.json	/^            "browse": {$/;"	o	object:configurations.2
+c	ImageAnalysis/findBlobs.c	/^typedef struct { PY_LONG_LONG x; char c; } __Pyx_pad_longlong;$/;"	m	struct:__anonf7744edf1d08	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; PY_LONG_LONG x; } __Pyx_st_longlong;$/;"	m	struct:__anonf7744edf1508	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; double x; } __Pyx_st_double;$/;"	m	struct:__anonf7744edf1208	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; float x; } __Pyx_st_float;$/;"	m	struct:__anonf7744edf1108	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; int x; } __Pyx_st_int;$/;"	m	struct:__anonf7744edf0f08	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long double x; } __Pyx_st_longdouble;$/;"	m	struct:__anonf7744edf1308	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long x; } __Pyx_st_long;$/;"	m	struct:__anonf7744edf1008	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; short x; } __Pyx_st_short;$/;"	m	struct:__anonf7744edf0e08	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { char c; void *x; } __Pyx_st_void_p;$/;"	m	struct:__anonf7744edf1408	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { double x; char c; } __Pyx_pad_double;$/;"	m	struct:__anonf7744edf1a08	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { float x; char c; } __Pyx_pad_float;$/;"	m	struct:__anonf7744edf1908	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { int x; char c; } __Pyx_pad_int;$/;"	m	struct:__anonf7744edf1708	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { long double x; char c; } __Pyx_pad_longdouble;$/;"	m	struct:__anonf7744edf1b08	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { long x; char c; } __Pyx_pad_long;$/;"	m	struct:__anonf7744edf1808	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { short x; char c; } __Pyx_pad_short;$/;"	m	struct:__anonf7744edf1608	typeref:typename:char	file:
+c	ImageAnalysis/findBlobs.c	/^typedef struct { void *x; char c; } __Pyx_pad_void_p;$/;"	m	struct:__anonf7744edf1c08	typeref:typename:char	file:
+callback_free_data	ImageAnalysis/findBlobs.c	/^  void (*callback_free_data)(void *);$/;"	m	struct:__pyx_array_obj	typeref:typename:void (*)(void *)	file:
+center	ImageAnalysis/findBlobs.c	/^  __Pyx_memviewslice center;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:typename:__Pyx_memviewslice	file:
+cmd	PanTilt/main.py	/^def cmd(command):$/;"	f
+code_line	ImageAnalysis/findBlobs.c	/^    int code_line;$/;"	m	struct:__anonf7744edf0808	typeref:typename:int	file:
+code_object	ImageAnalysis/findBlobs.c	/^    PyCodeObject* code_object;$/;"	m	struct:__anonf7744edf0808	typeref:typename:PyCodeObject *	file:
+configurations	.vscode/c_cpp_properties.json	/^    "configurations": [$/;"	a
+configurations	ServoTester/.vscode/c_cpp_properties.json	/^    "configurations": [$/;"	a
+contiguous	ImageAnalysis/findBlobs.c	/^static PyObject *contiguous = 0;$/;"	v	typeref:typename:PyObject *	file:
+convert_item_to_object	ImageAnalysis/findBlobs.c	/^  PyObject *(*convert_item_to_object)(struct __pyx_memoryview_obj *, char *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,char *)	file:
+copy_strided_to_strided	ImageAnalysis/findBlobs.c	/^static void copy_strided_to_strided(__Pyx_memviewslice *__pyx_v_src, __Pyx_memviewslice *__pyx_v/;"	f	typeref:typename:void	file:
+count	ImageAnalysis/findBlobs.c	/^    int count;$/;"	m	struct:__Pyx_CodeObjectCache	typeref:typename:int	file:
+data	ImageAnalysis/findBlobs.c	/^    } data;$/;"	m	struct:arrayobject	typeref:union:arrayobject::__anonf7744edf090a	file:
+data	ImageAnalysis/findBlobs.c	/^  char *data;$/;"	m	struct:__anonf7744edf0308	typeref:typename:char *	file:
+data	ImageAnalysis/findBlobs.c	/^  char *data;$/;"	m	struct:__anonf7744edf0c08	typeref:typename:char *	file:
+data	ImageAnalysis/findBlobs.c	/^  char *data;$/;"	m	struct:__pyx_array_obj	typeref:typename:char *	file:
+databaseFilename	ServoTester/.vscode/c_cpp_properties.json	/^                "databaseFilename": ""$/;"	s	object:configurations.0.browse
+databaseFilename	ServoTester/.vscode/c_cpp_properties.json	/^                "databaseFilename": ""$/;"	s	object:configurations.1.browse
+databaseFilename	ServoTester/.vscode/c_cpp_properties.json	/^                "databaseFilename": ""$/;"	s	object:configurations.2.browse
+defines	ServoTester/.vscode/c_cpp_properties.json	/^            "defines": [$/;"	a	object:configurations.2
+defines	ServoTester/.vscode/c_cpp_properties.json	/^            "defines": [],$/;"	a	object:configurations.0
+defines	ServoTester/.vscode/c_cpp_properties.json	/^            "defines": [],$/;"	a	object:configurations.1
+diminfo	ImageAnalysis/findBlobs.c	/^  __Pyx_Buf_DimInfo diminfo[8];$/;"	m	struct:__anonf7744edf0c08	typeref:typename:__Pyx_Buf_DimInfo[8]	file:
+dtype_is_object	ImageAnalysis/findBlobs.c	/^  int dtype_is_object;$/;"	m	struct:__pyx_array_obj	typeref:typename:int	file:
+dtype_is_object	ImageAnalysis/findBlobs.c	/^  int dtype_is_object;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:int	file:
+enc_count	ImageAnalysis/findBlobs.c	/^  size_t new_count, enc_count;$/;"	m	struct:__anonf7744edf0608	typeref:typename:size_t	file:
+enc_packmode	ImageAnalysis/findBlobs.c	/^  char enc_packmode;$/;"	m	struct:__anonf7744edf0608	typeref:typename:char	file:
+enc_type	ImageAnalysis/findBlobs.c	/^  char enc_type;$/;"	m	struct:__anonf7744edf0608	typeref:typename:char	file:
+encoding	ImageAnalysis/findBlobs.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anonf7744edf0208	typeref:typename:const char *	file:
+entries	ImageAnalysis/findBlobs.c	/^    __Pyx_CodeObjectCacheEntry* entries;$/;"	m	struct:__Pyx_CodeObjectCache	typeref:typename:__Pyx_CodeObjectCacheEntry *	file:
+fb	ImageAnalysis/detectV2.py	/^import findBlobs as fb$/;"	I
+field	ImageAnalysis/findBlobs.c	/^  __Pyx_StructField* field;$/;"	m	struct:__anonf7744edf0508	typeref:typename:__Pyx_StructField *	file:
+fields	ImageAnalysis/findBlobs.c	/^  struct __Pyx_StructField_* fields;$/;"	m	struct:__anonf7744edf0408	typeref:struct:__Pyx_StructField_ *	file:
+findBlobs	ImageAnalysis/detect.py	/^def findBlobs(chunk):$/;"	f
+findBlobs	ImageAnalysis/findBlobs.pyx	/^cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):$/;"	f
+findBlobs1	ImageAnalysis/detect.py	/^def findBlobs1(chunk):$/;"	f
+flags	ImageAnalysis/findBlobs.c	/^  int flags;$/;"	m	struct:__anonf7744edf0408	typeref:typename:int	file:
+flags	ImageAnalysis/findBlobs.c	/^  int flags;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:int	file:
+fmt_offset	ImageAnalysis/findBlobs.c	/^  size_t fmt_offset;$/;"	m	struct:__anonf7744edf0608	typeref:typename:size_t	file:
+format	ImageAnalysis/findBlobs.c	/^  char *format;$/;"	m	struct:__pyx_array_obj	typeref:typename:char *	file:
+formats	ImageAnalysis/findBlobs.c	/^    char *formats;$/;"	m	struct:arraydescr	typeref:typename:char *	file:
+free_data	ImageAnalysis/findBlobs.c	/^  int free_data;$/;"	m	struct:__pyx_array_obj	typeref:typename:int	file:
+from_object	ImageAnalysis/findBlobs.c	/^  PyObject *from_object;$/;"	m	struct:__pyx_memoryviewslice_obj	typeref:typename:PyObject *	file:
+from_slice	ImageAnalysis/findBlobs.c	/^  __Pyx_memviewslice from_slice;$/;"	m	struct:__pyx_memoryviewslice_obj	typeref:typename:__Pyx_memviewslice	file:
+generic	ImageAnalysis/findBlobs.c	/^static PyObject *generic = 0;$/;"	v	typeref:typename:PyObject *	file:
+get_item_pointer	ImageAnalysis/findBlobs.c	/^  char *(*get_item_pointer)(struct __pyx_memoryview_obj *, PyObject *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:char * (*)(struct __pyx_memoryview_obj *,PyObject *)	file:
+get_memview	ImageAnalysis/findBlobs.c	/^  PyObject *(*get_memview)(struct __pyx_array_obj *);$/;"	m	struct:__pyx_vtabstruct_array	typeref:typename:PyObject * (*)(struct __pyx_array_obj *)	file:
+getitem	ImageAnalysis/findBlobs.c	/^    PyObject * (*getitem)(struct arrayobject *, Py_ssize_t);$/;"	m	struct:arraydescr	typeref:typename:PyObject * (*)(struct arrayobject *,Py_ssize_t)	file:
+head	ImageAnalysis/findBlobs.c	/^  __Pyx_BufFmt_StackElem* head;$/;"	m	struct:__anonf7744edf0608	typeref:typename:__Pyx_BufFmt_StackElem *	file:
+i	ImageAnalysis/note.py	/^i = N\/\/8$/;"	v
+inRange	ImageAnalysis/detect.py	/^    def inRange(self, x, y):$/;"	m	class:Blob
+inRange	ImageAnalysis/findBlobs.c	/^  PyObject *(*inRange)(struct __pyx_obj_9findBlobs_Blob *, int, int, int __pyx_skip_dispatch);$/;"	m	struct:__pyx_vtabstruct_9findBlobs_Blob	typeref:typename:PyObject * (*)(struct __pyx_obj_9findBlobs_Blob *,int,int,int __pyx_skip_dispatch)	file:
+inRange	ImageAnalysis/findBlobs.pyx	/^    cpdef inRange(self, int x, int y):$/;"	m	class:Blob
+includePath	.vscode/c_cpp_properties.json	/^            "includePath": [$/;"	a	object:configurations.0
+includePath	ServoTester/.vscode/c_cpp_properties.json	/^            "includePath": [$/;"	a	object:configurations.0
+includePath	ServoTester/.vscode/c_cpp_properties.json	/^            "includePath": [$/;"	a	object:configurations.1
+includePath	ServoTester/.vscode/c_cpp_properties.json	/^            "includePath": [$/;"	a	object:configurations.2
+indirect	ImageAnalysis/findBlobs.c	/^static PyObject *indirect = 0;$/;"	v	typeref:typename:PyObject *	file:
+indirect_contiguous	ImageAnalysis/findBlobs.c	/^static PyObject *indirect_contiguous = 0;$/;"	v	typeref:typename:PyObject *	file:
+initfindBlobs	ImageAnalysis/findBlobs.c	/^PyMODINIT_FUNC initfindBlobs(void)$/;"	f	typeref:typename:PyMODINIT_FUNC
+intelliSenseMode	.vscode/c_cpp_properties.json	/^            "intelliSenseMode": "msvc-x64"$/;"	s	object:configurations.0
+intelliSenseMode	ServoTester/.vscode/c_cpp_properties.json	/^            "intelliSenseMode": "clang-x64",$/;"	s	object:configurations.0
+intelliSenseMode	ServoTester/.vscode/c_cpp_properties.json	/^            "intelliSenseMode": "clang-x64",$/;"	s	object:configurations.1
+intelliSenseMode	ServoTester/.vscode/c_cpp_properties.json	/^            "intelliSenseMode": "msvc-x64",$/;"	s	object:configurations.2
+intern	ImageAnalysis/findBlobs.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEn/;"	m	struct:__anonf7744edf0208	typeref:typename:const char	file:
+is_complex	ImageAnalysis/findBlobs.c	/^  int is_complex;$/;"	m	struct:__anonf7744edf0608	typeref:typename:int	file:
+is_slice	ImageAnalysis/findBlobs.c	/^  PyObject *(*is_slice)(struct __pyx_memoryview_obj *, PyObject *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,PyObject *)	file:
+is_str	ImageAnalysis/findBlobs.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEn/;"	m	struct:__anonf7744edf0208	typeref:typename:const char	file:
+is_unicode	ImageAnalysis/findBlobs.c	/^                const char is_unicode; const char is_str; const char intern; } __Pyx_StringTabEn/;"	m	struct:__anonf7744edf0208	typeref:typename:const char	file:
+is_unsigned	ImageAnalysis/findBlobs.c	/^  char is_unsigned;$/;"	m	struct:__anonf7744edf0408	typeref:typename:char	file:
+is_valid_array	ImageAnalysis/findBlobs.c	/^  char is_valid_array;$/;"	m	struct:__anonf7744edf0608	typeref:typename:char	file:
+itemsize	ImageAnalysis/findBlobs.c	/^    int itemsize;$/;"	m	struct:arraydescr	typeref:typename:int	file:
+itemsize	ImageAnalysis/findBlobs.c	/^  Py_ssize_t itemsize;$/;"	m	struct:__pyx_array_obj	typeref:typename:Py_ssize_t	file:
+j	ImageAnalysis/note.py	/^j = N - i*8$/;"	v
+lastPixelX	ImageAnalysis/findBlobs.c	/^  int lastPixelX;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:typename:int	file:
+len	ImageAnalysis/findBlobs.c	/^  Py_ssize_t len;$/;"	m	struct:__pyx_array_obj	typeref:typename:Py_ssize_t	file:
+likely	ImageAnalysis/findBlobs.c	/^  #define likely(/;"	d	file:
+limitSymbolsToIncludedHeaders	.vscode/c_cpp_properties.json	/^                "limitSymbolsToIncludedHeaders": false,$/;"	b	object:configurations.0.browse
+limitSymbolsToIncludedHeaders	ServoTester/.vscode/c_cpp_properties.json	/^                "limitSymbolsToIncludedHeaders": false,$/;"	b	object:configurations.2.browse
+limitSymbolsToIncludedHeaders	ServoTester/.vscode/c_cpp_properties.json	/^                "limitSymbolsToIncludedHeaders": true,$/;"	b	object:configurations.0.browse
+limitSymbolsToIncludedHeaders	ServoTester/.vscode/c_cpp_properties.json	/^                "limitSymbolsToIncludedHeaders": true,$/;"	b	object:configurations.1.browse
+lineStart	ImageAnalysis/findBlobs.c	/^  __Pyx_memviewslice lineStart;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:typename:__Pyx_memviewslice	file:
+lock	ImageAnalysis/findBlobs.c	/^  PyThread_type_lock lock;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:PyThread_type_lock	file:
+macFrameworkPath	ServoTester/.vscode/c_cpp_properties.json	/^            "macFrameworkPath": [$/;"	a	object:configurations.0
+main	ImageAnalysis/detect.py	/^def main():$/;"	f
+main	ImageAnalysis/detectV2.py	/^def main():$/;"	f
+max_count	ImageAnalysis/findBlobs.c	/^    int max_count;$/;"	m	struct:__Pyx_CodeObjectCache	typeref:typename:int	file:
+memview	ImageAnalysis/findBlobs.c	/^  struct __pyx_memoryview_obj *memview;$/;"	m	struct:__anonf7744edf0308	typeref:struct:__pyx_memoryview_obj *	file:
+mode	ImageAnalysis/findBlobs.c	/^  PyObject *mode;$/;"	m	struct:__pyx_array_obj	typeref:typename:PyObject *	file:
+n	ImageAnalysis/findBlobs.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anonf7744edf0208	typeref:typename:const Py_ssize_t	file:
+name	.vscode/c_cpp_properties.json	/^            "name": "Win32",$/;"	s	object:configurations.0
+name	ImageAnalysis/findBlobs.c	/^  PyObject *name;$/;"	m	struct:__pyx_MemviewEnum_obj	typeref:typename:PyObject_HEAD PyObject *	file:
+name	ImageAnalysis/findBlobs.c	/^  const char* name;$/;"	m	struct:__Pyx_StructField_	typeref:typename:const char *	file:
+name	ImageAnalysis/findBlobs.c	/^  const char* name;$/;"	m	struct:__anonf7744edf0408	typeref:typename:const char *	file:
+name	ServoTester/.vscode/c_cpp_properties.json	/^            "name": "Linux",$/;"	s	object:configurations.1
+name	ServoTester/.vscode/c_cpp_properties.json	/^            "name": "Mac",$/;"	s	object:configurations.0
+name	ServoTester/.vscode/c_cpp_properties.json	/^            "name": "Win32",$/;"	s	object:configurations.2
+ndim	ImageAnalysis/findBlobs.c	/^  int ndim;$/;"	m	struct:__anonf7744edf0408	typeref:typename:int	file:
+ndim	ImageAnalysis/findBlobs.c	/^  int ndim;$/;"	m	struct:__pyx_array_obj	typeref:typename:int	file:
+new_count	ImageAnalysis/findBlobs.c	/^  size_t new_count, enc_count;$/;"	m	struct:__anonf7744edf0608	typeref:typename:size_t	file:
+new_packmode	ImageAnalysis/findBlobs.c	/^  char new_packmode;$/;"	m	struct:__anonf7744edf0608	typeref:typename:char	file:
+newarrayobject	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE PyObject * newarrayobject(PyTypeObject *type, Py_ssize_t size,$/;"	f	typeref:typename:CYTHON_INLINE PyObject *	file:
+np	ImageAnalysis/detect.py	/^import numpy as np$/;"	I
+np	ImageAnalysis/detectV2.py	/^import numpy as np$/;"	I
+np	ImageAnalysis/findBlobs.pyx	/^import numpy as np$/;"	I
+num	ImageAnalysis/findBlobs.c	/^  int num;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:typename:int	file:
+ob_descr	ImageAnalysis/findBlobs.c	/^    struct arraydescr *ob_descr;$/;"	m	struct:arrayobject	typeref:struct:arraydescr *	file:
+ob_exports	ImageAnalysis/findBlobs.c	/^        int ob_exports;$/;"	m	struct:arrayobject	typeref:typename:int	file:
+ob_item	ImageAnalysis/findBlobs.c	/^        char *ob_item;$/;"	m	union:arrayobject::__anonf7744edf090a	typeref:typename:char *	file:
+ob_size	ImageAnalysis/findBlobs.c	/^    Py_ssize_t ob_size;$/;"	m	struct:arrayobject	typeref:typename:PyObject_HEAD Py_ssize_t	file:
+obj	ImageAnalysis/findBlobs.c	/^  PyObject *obj;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:PyObject *	file:
+offset	ImageAnalysis/findBlobs.c	/^  size_t offset;$/;"	m	struct:__Pyx_StructField_	typeref:typename:size_t	file:
+offsetof	ImageAnalysis/findBlobs.c	/^  #define offsetof(/;"	d	file:
+out	PanTilt/main.py	/^    out = ''$/;"	v
+p	ImageAnalysis/findBlobs.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anonf7744edf0208	typeref:typename:PyObject **	file:
+parent_offset	ImageAnalysis/findBlobs.c	/^  size_t parent_offset;$/;"	m	struct:__anonf7744edf0508	typeref:typename:size_t	file:
+path	.vscode/c_cpp_properties.json	/^                "path": [$/;"	a	object:configurations.0.browse
+path	ServoTester/.vscode/c_cpp_properties.json	/^                "path": [$/;"	a	object:configurations.0.browse
+path	ServoTester/.vscode/c_cpp_properties.json	/^                "path": [$/;"	a	object:configurations.1.browse
+path	ServoTester/.vscode/c_cpp_properties.json	/^                "path": [$/;"	a	object:configurations.2.browse
+port	ServoTester/.vscode/arduino.json	/^    "port": "\/dev\/ttyUSB0",$/;"	s
+pybuffer	ImageAnalysis/findBlobs.c	/^  Py_buffer pybuffer;$/;"	m	struct:__anonf7744edf0b08	typeref:typename:Py_buffer	file:
+python.formatting.provider	.vscode/settings.json	/^    "python.formatting.provider": "autopep8"$/;"	s
+python.pythonPath	.vscode/settings.json	/^    "python.pythonPath": "C:\\\\Users\\\\samue\\\\Anaconda2\\\\python.exe",$/;"	s
+rcbuffer	ImageAnalysis/findBlobs.c	/^  __Pyx_Buffer *rcbuffer;$/;"	m	struct:__anonf7744edf0c08	typeref:typename:__Pyx_Buffer *	file:
+rect	ImageAnalysis/findBlobs.c	/^  __Pyx_memviewslice rect;$/;"	m	struct:__pyx_obj_9findBlobs_Blob	typeref:typename:__Pyx_memviewslice	file:
+refcount	ImageAnalysis/findBlobs.c	/^  size_t refcount;$/;"	m	struct:__anonf7744edf0b08	typeref:typename:size_t	file:
+resize	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int resize(arrayobject *self, Py_ssize_t n) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+resize_smart	ImageAnalysis/findBlobs.c	/^static CYTHON_INLINE int resize_smart(arrayobject *self, Py_ssize_t n) {$/;"	f	typeref:typename:CYTHON_INLINE int	file:
+root	ImageAnalysis/findBlobs.c	/^  __Pyx_StructField root;$/;"	m	struct:__anonf7744edf0608	typeref:typename:__Pyx_StructField	file:
+s	ImageAnalysis/findBlobs.c	/^typedef struct {PyObject **p; const char *s; const Py_ssize_t n; const char* encoding;$/;"	m	struct:__anonf7744edf0208	typeref:typename:const char *	file:
+ser	PanTilt/main.py	/^ser = serial.Serial('COM1', 115200)$/;"	v
+setitem	ImageAnalysis/findBlobs.c	/^    int (*setitem)(struct arrayobject *, Py_ssize_t, PyObject *);$/;"	m	struct:arraydescr	typeref:typename:int (*)(struct arrayobject *,Py_ssize_t,PyObject *)	file:
+setitem_indexed	ImageAnalysis/findBlobs.c	/^  PyObject *(*setitem_indexed)(struct __pyx_memoryview_obj *, PyObject *, PyObject *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,PyObject *,PyObject *)	file:
+setitem_slice_assign_scalar	ImageAnalysis/findBlobs.c	/^  PyObject *(*setitem_slice_assign_scalar)(struct __pyx_memoryview_obj *, struct __pyx_memoryvie/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,struct __pyx_memoryview_obj *,PyObject *)	file:
+setitem_slice_assignment	ImageAnalysis/findBlobs.c	/^  PyObject *(*setitem_slice_assignment)(struct __pyx_memoryview_obj *, PyObject *, PyObject *);$/;"	m	struct:__pyx_vtabstruct_memoryview	typeref:typename:PyObject * (*)(struct __pyx_memoryview_obj *,PyObject *,PyObject *)	file:
+shape	ImageAnalysis/findBlobs.c	/^  Py_ssize_t shape, strides, suboffsets;$/;"	m	struct:__anonf7744edf0a08	typeref:typename:Py_ssize_t	file:
+shape	ImageAnalysis/findBlobs.c	/^  Py_ssize_t shape[8];$/;"	m	struct:__anonf7744edf0308	typeref:typename:Py_ssize_t[8]	file:
+size	ImageAnalysis/findBlobs.c	/^  size_t size;$/;"	m	struct:__anonf7744edf0408	typeref:typename:size_t	file:
+sketch	.vscode/arduino.json	/^    "sketch": "ServoTester\\\\ServoTester.ino"$/;"	s
+sketch	ServoTester/.vscode/arduino.json	/^    "sketch": "ServoTester.ino"$/;"	s
+strided	ImageAnalysis/findBlobs.c	/^static PyObject *strided = 0;$/;"	v	typeref:typename:PyObject *	file:
+strides	ImageAnalysis/findBlobs.c	/^  Py_ssize_t shape, strides, suboffsets;$/;"	m	struct:__anonf7744edf0a08	typeref:typename:Py_ssize_t	file:
+strides	ImageAnalysis/findBlobs.c	/^  Py_ssize_t strides[8];$/;"	m	struct:__anonf7744edf0308	typeref:typename:Py_ssize_t[8]	file:
+struct_alignment	ImageAnalysis/findBlobs.c	/^  size_t struct_alignment;$/;"	m	struct:__anonf7744edf0608	typeref:typename:size_t	file:
+suboffsets	ImageAnalysis/findBlobs.c	/^  Py_ssize_t shape, strides, suboffsets;$/;"	m	struct:__anonf7744edf0a08	typeref:typename:Py_ssize_t	file:
+suboffsets	ImageAnalysis/findBlobs.c	/^  Py_ssize_t suboffsets[8];$/;"	m	struct:__anonf7744edf0308	typeref:typename:Py_ssize_t[8]	file:
+to_dtype_func	ImageAnalysis/findBlobs.c	/^  int (*to_dtype_func)(char *, PyObject *);$/;"	m	struct:__pyx_memoryviewslice_obj	typeref:typename:int (*)(char *,PyObject *)	file:
+to_object_func	ImageAnalysis/findBlobs.c	/^  PyObject *(*to_object_func)(char *);$/;"	m	struct:__pyx_memoryviewslice_obj	typeref:typename:PyObject * (*)(char *)	file:
+type	ImageAnalysis/findBlobs.c	/^  __Pyx_TypeInfo* type;$/;"	m	struct:__Pyx_StructField_	typeref:typename:__Pyx_TypeInfo *	file:
+typecode	ImageAnalysis/findBlobs.c	/^    int typecode;$/;"	m	struct:arraydescr	typeref:typename:int	file:
+typegroup	ImageAnalysis/findBlobs.c	/^  char typegroup;$/;"	m	struct:__anonf7744edf0408	typeref:typename:char	file:
+typeinfo	ImageAnalysis/findBlobs.c	/^  __Pyx_TypeInfo *typeinfo;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:__Pyx_TypeInfo *	file:
+u32	ImageAnalysis/findBlobs.c	/^    uint32_t u32;$/;"	m	union:__Pyx_Is_Little_Endian::__anonf7744edf0d0a	typeref:typename:uint32_t	file:
+u8	ImageAnalysis/findBlobs.c	/^    uint8_t u8[4];$/;"	m	union:__Pyx_Is_Little_Endian::__anonf7744edf0d0a	typeref:typename:uint8_t[4]	file:
+uint32_t	ImageAnalysis/findBlobs.c	/^           typedef unsigned __int32  uint32_t;$/;"	t	typeref:typename:unsigned __int32	file:
+uint32_t	ImageAnalysis/findBlobs.c	/^           typedef unsigned int      uint32_t;$/;"	t	typeref:typename:unsigned int	file:
+uint8_t	ImageAnalysis/findBlobs.c	/^           typedef unsigned __int8   uint8_t;$/;"	t	typeref:typename:unsigned __int8	file:
+uint8_t	ImageAnalysis/findBlobs.c	/^           typedef unsigned char     uint8_t;$/;"	t	typeref:typename:unsigned char	file:
+unlikely	ImageAnalysis/findBlobs.c	/^  #define unlikely(/;"	d	file:
+v	ImageAnalysis/note.py	/^v = (a[i] & (1 << j)) >> j$/;"	v
+version	.vscode/c_cpp_properties.json	/^    "version": 3$/;"	n
+version	ServoTester/.vscode/c_cpp_properties.json	/^    "version": 3$/;"	n
+view	ImageAnalysis/findBlobs.c	/^  Py_buffer view;$/;"	m	struct:__pyx_memoryview_obj	typeref:typename:Py_buffer	file:
+weakreflist	ImageAnalysis/findBlobs.c	/^    PyObject *weakreflist;$/;"	m	struct:arrayobject	typeref:typename:PyObject *	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { PY_LONG_LONG x; char c; } __Pyx_pad_longlong;$/;"	m	struct:__anonf7744edf1d08	typeref:typename:PY_LONG_LONG	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; PY_LONG_LONG x; } __Pyx_st_longlong;$/;"	m	struct:__anonf7744edf1508	typeref:typename:PY_LONG_LONG	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; double x; } __Pyx_st_double;$/;"	m	struct:__anonf7744edf1208	typeref:typename:double	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; float x; } __Pyx_st_float;$/;"	m	struct:__anonf7744edf1108	typeref:typename:float	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; int x; } __Pyx_st_int;$/;"	m	struct:__anonf7744edf0f08	typeref:typename:int	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long double x; } __Pyx_st_longdouble;$/;"	m	struct:__anonf7744edf1308	typeref:typename:long double	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; long x; } __Pyx_st_long;$/;"	m	struct:__anonf7744edf1008	typeref:typename:long	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; short x; } __Pyx_st_short;$/;"	m	struct:__anonf7744edf0e08	typeref:typename:short	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { char c; void *x; } __Pyx_st_void_p;$/;"	m	struct:__anonf7744edf1408	typeref:typename:void *	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { double x; char c; } __Pyx_pad_double;$/;"	m	struct:__anonf7744edf1a08	typeref:typename:double	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { float x; char c; } __Pyx_pad_float;$/;"	m	struct:__anonf7744edf1908	typeref:typename:float	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { int x; char c; } __Pyx_pad_int;$/;"	m	struct:__anonf7744edf1708	typeref:typename:int	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { long double x; char c; } __Pyx_pad_longdouble;$/;"	m	struct:__anonf7744edf1b08	typeref:typename:long double	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { long x; char c; } __Pyx_pad_long;$/;"	m	struct:__anonf7744edf1808	typeref:typename:long	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { short x; char c; } __Pyx_pad_short;$/;"	m	struct:__anonf7744edf1608	typeref:typename:short	file:
+x	ImageAnalysis/findBlobs.c	/^typedef struct { void *x; char c; } __Pyx_pad_void_p;$/;"	m	struct:__anonf7744edf1c08	typeref:typename:void *	file:
