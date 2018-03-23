@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Hello</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/main.css" /> -->
+
+    <script type="text/javascript" src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            setInterval(function () {
+                var test1 = $('#testinput').val();
+                $.ajax({
+                    url: '/',
+                    data: {
+                        "testinput": test1
+                    },
+                    type: 'POST',
+                    success: function (response) {
+                        console.log(response);
+                        jQuery('#output').html(response);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }, 3000);
+        });
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        <input type="text" name="testinput" id="testinput" />
+    </form>
+
+    <button type="button" id="button">button</button>
+
+    <div id="output"></div>
+</body>
+
+</html>
