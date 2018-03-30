@@ -1,12 +1,9 @@
-#!/bin/python2
-
-import time
+from time import sleep
 import serial
 
 print "Opening serial port..."
-# ser = serial.Serial('/dev/ttyUSB0', 115200)
-ser = serial.Serial('COM1', 115200)
-time.sleep(2)
+ser = serial.Serial('COM3', 115200, timeout=50, write_timeout=50)
+sleep(2)
 if ser.isOpen():
     print "Serial port is open..."
 else:
@@ -15,15 +12,7 @@ else:
 
 def cmd(command):
     ser.write(command + '\0')
-    print ser.writable()
-    time.sleep(1)
-    while ser.out_waiting > 0:
-        pass
-    # output = ''
-    print ser.readline()
-    # while ser.inWaiting() > 0:
-    #     output += str(ser.read(1))
-    # print output
+    sleep(0.01)
 
 if ser.inWaiting() > 0:
     print 'There is currently ' + str(ser.inWaiting()) + ' bytes in the buffer...'
@@ -35,19 +24,11 @@ if ser.inWaiting() > 0:
     print out
 
 print 'Executing commands...'
-# cmd('$20=0')
-# cmd('$21=0')
-# cmd('$22=1')
-# cmd('$25=500')
-# cmd('$24=500')
-# cmd('$5=0')
-# cmd('$X')
-# cmd('M119')
-# cmd('G1 F30 X-2 Y-4')
-# cmd('G28')
-# cmd('G1 F30 X0 Y0')
-cmd("PAN3");
-cmd("PAN-3");
+for x in xrange(0, 300, 1): 
+    cmd("PT" + str(x) + "x0");
+
+for x in xrange(300, 0, -1):
+    cmd("PT" + str(x) + "x0")
 
 print 'Closing port...'
 ser.close()

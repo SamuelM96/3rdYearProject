@@ -1,41 +1,79 @@
 <html>
 
 <head>
-    <title>Hello</title>
-    <!-- <link rel="stylesheet" type="text/css" href="/static/main.css" /> -->
-
+    <title>Automated Camera Control Page</title>
     <script type="text/javascript" src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
 
     <script type="text/javascript">
-        $(function () {
-            setInterval(function () {
-                var test1 = $('#testinput').val();
-                $.ajax({
-                    url: '/',
-                    data: {
-                        "testinput": test1
-                    },
-                    type: 'POST',
-                    success: function (response) {
-                        console.log(response);
-                        jQuery('#output').html(response);
-                    },
-                    error: function (error) {
-                        console.log(error);
-                    }
-                });
-            }, 3000);
-        });
+        function move(direction) {
+            console.log("Moving in direction " + direction);
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"move",
+                    "direction":direction,
+                },
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+        }
+
+        function step(axis) {
+            var amount = $("input#stepAmount").val();
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"step",
+                    "axis":axis,
+                    "amount":amount
+                },
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+        }
+
+        // Get thumbnails every 5 seconds from camera
+//        $(function () {
+//            setInterval(function () {
+//                $.ajax({
+//                    url: '/',
+//                    data: {
+//                        "type":"thumbnails"
+//                    },
+//                    type: 'POST',
+//                    success: function (response) {
+//                        jQuery('#output').html(response);
+//                    },
+//                    error: function (error) {
+//                        console.log(error);
+//                    }
+//                });
+//            }, 5000);
+//        });
     </script>
 </head>
 
 <body>
+    <h1>Automated Camera Control Page</h1>
+
+    <h3>Camera Controls</h3>
     <form method="post">
-        <input type="text" name="testinput" id="testinput" />
+        <button type="button" onclick="move('left')">Left</button>
+        <button type="button" onclick="move('down')">Down</button>
+        <button type="button" onclick="move('up')">Up</button>
+        <button type="button" onclick="move('right')">Right</button><br>
+        <button type="button" onclick="move('reset')">Reset</button><br><br>
+        <input type="text" id="stepAmount" value="10"/>
+        <button type="button" onclick="step('pan')">Change Pan Step</button><br>
+        <input type="text" id="stepAmount" value="10"/>
+        <button type="button" onclick="step('tilt')">Change Tilt Step</button><br>
     </form>
 
-    <button type="button" id="button">button</button>
-
+    <h3>Thumbnails</h3>
     <div id="output"></div>
 </body>
 
