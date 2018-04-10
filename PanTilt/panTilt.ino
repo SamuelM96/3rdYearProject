@@ -40,8 +40,6 @@ void loop() {
     memset(inputBuf, 0, sizeof(inputBuf));
     int count = Serial.readBytesUntil('\0', inputBuf, sizeof(inputBuf));
     String inputStr(inputBuf);
-    Serial.print("Received: ");
-    Serial.println(inputBuf);
 
     // Check which command was given
     if (inputStr.startsWith("PT ")) {
@@ -60,6 +58,12 @@ void loop() {
       // Find step count for tilt
       int num = inputStr.substring(4).toInt();
       tiltPos += num;
+    } else if (inputStr.startsWith("SET_PAN ")) {
+      int num = inputStr.substring(7).toInt();
+      panPos = num;
+    } else if (inputStr.startsWith("SET_TILT")) {
+      int num = inputStr.substring(8).toInt();
+      tiltPos = num;
     } else if (inputStr.startsWith("RESET")) {
       // Reset pan and tilt back to home
       panPos = 0;
@@ -78,11 +82,10 @@ void loop() {
 
     pan.moveTo(panPos);
     tilt.moveTo(tiltPos);
-    Serial.print("New pan position: ");
+    Serial.print("Pan: ");
     Serial.println(panPos);
-    Serial.print("New tilt position: ");
+    Serial.print("Tilt: ");
     Serial.println(tiltPos);
-    Serial.println("OK");
   }
 
   if (manualMode) {

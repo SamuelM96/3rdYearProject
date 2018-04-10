@@ -16,6 +16,10 @@
                 },
                 success: function (response) {
                     console.log(response);
+                    if (response !== "False") {
+                        $('input#panPos')[0].value = response.pan;
+                        $('input#tiltPos')[0].value = response.tilt;
+                    }
                 }
             });
         }
@@ -36,6 +40,19 @@
             });
         }
 
+        function takePicture() {
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"picture"
+                },
+                success: function(response) {
+                    console.log("Taken picture.");
+                }
+            });
+        }
+
         function command() {
             var cmd = $("input#commandText").val();
             $.ajax({
@@ -46,9 +63,12 @@
                     "cmd":cmd
                 },
                 success: function(response) {
-                    if (response == "Success") {
+                    console.log(response);
+                    if (response !== "False") {
                         $("input#commandText").css("background-color", "white");
                         console.log("Executed command: " + cmd);
+                        $('input#panPos')[0].value = response.pan;
+                        $('input#tiltPos')[0].value = response.tilt;
                     } else {
                         $("input#commandText").css("background-color", "red");
                         console.log("Failed to execute command: " + cmd);
@@ -68,6 +88,34 @@
                 },
                 success: function(response) {
                     console.log("Changed blocking state to " + block + ".");
+                }
+            });
+        }
+
+        function setPos(axis) {
+            var pos = 0;
+            var input;
+            if (axis == "pan") {
+                input = $('input#panPos');
+            } else if (axis == "tilt") {
+                input = $('input#tiltPos');
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"setPos",
+                    "axis":axis,
+                    "value":input.val()
+                },
+                success: function(response) {
+                    if (response == "True") {
+                        console.log("Set " + axis + " positon to: " + pos);
+                        input.css("background-color", "white");
+                    } else {
+                        console.log("Failed to set " + axis + " position to: " + pos);
+                        input.css("background-color", "red");
+                    }
                 }
             });
         }
@@ -116,11 +164,12 @@
         <button type="button" onclick="move('up')">Up</button>
         <button type="button" onclick="move('right')">Right</button>
         <button type="button" onclick="move('reset')">Reset</button><br>
+        <button type="button" onclick="takePicture()">Take Picture</button><br>
         Block until movement has finished? <input type="checkbox" id="block" onclick="setBlock()" checked><br><br>
-        <input type="text" id="stepAmount" value="10"/>
-        <button type="button" onclick="step('pan')">Change Pan Step</button><br>
-        <input type="text" id="stepAmount" value="10"/>
-        <button type="button" onclick="step('tilt')">Change Tilt Step</button><br><br>
+        <input type="text" id="panPos" value="0"/> <button type="button" onclick="setPos('pan')">Set Pan Position</button></br>
+        <input type="text" id="tiltPos" value="0"/> <button type="button" onclick="setPos('tilt')">Set Tilt Position</button></br>
+        <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('pan')">Change Pan Step</button><br>
+        <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('tilt')">Change Tilt Step</button><br><br>
         Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
 
         <button type="button" onclick="demo()">Toggle Demo Mode</button>
@@ -145,6 +194,14 @@
           <tr>
             <td class="tg-yw4l">PAN [NUM]</td>
             <td class="tg-yw4l">Pans the [NUM] amount in steps.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">SET_PAN [NUM]</td>
+            <td class="tg-yw4l">Set the pan position to [NUM].</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">SET_TILT [NUM]</td>
+            <td class="tg-yw4l">Sets the tilt positon to [NUM].</td>
           </tr>
           <tr>
             <td class="tg-yw4l">TILT [NUM]</td>

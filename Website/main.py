@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from flask import render_template
 from flask import json
+from flask.json import jsonify
 import zmq
 import select
 from time import sleep
@@ -39,11 +40,23 @@ except serial.serialutil.SerialException as e:
 def cmd(command):
     print "Sending command: '" + command + "'..."
     ser.write(command.encode('ascii'))
-    sleep(0.1)
+
+    # Wait until received reply from arduino
+    while ser.in_waiting == 0: pass
+
+    # Read reply
     out = ''
     while ser.in_waiting > 0:
         out += str(ser.read(1))
-    print out
+    if out == "INVALID COMMAND":
+        return None
+    else:
+        out = out.split('\n')
+        try:
+            # Parse current (pan, tilt) values
+            return (int(out[0].split(' ')[1]), int(out[1].split(' ')[1]))
+        except ValueError:
+            return None
 
 @app.route('/', methods=['POST', 'GET'])
 def site():
@@ -70,15 +83,30 @@ def site():
             direction = request.form['direction']
             print "Attempting to move in direction " + direction + "..."
             if direction == 'left':
-                cmd('PAN -' + PAN_STEP)
+                positions = cmd('PAN -' + PAN_STEP)
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             elif direction == 'down':
-                cmd('TILT -' + TILT_STEP)
+                positions = cmd('TILT -' + TILT_STEP)
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             elif direction == 'up':
-                cmd('TILT ' + TILT_STEP)
+                positions = cmd('TILT ' + TILT_STEP)
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             elif direction == 'right':
-                cmd('PAN ' + PAN_STEP)
+                positions = cmd('PAN ' + PAN_STEP)
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             elif direction == 'reset':
-                cmd('RESET')
+                positions = cmd('RESET')
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             else:
                 print "Unknown movement: " + direction
                 failed = True
@@ -90,24 +118,50 @@ def site():
             elif request.form['axis'] == "tilt":
                 global TILT_STEP
                 TILT_STEP = axis
+        elif reqType == "picture":
+            print "Taking picture..."
+            pass
         elif reqType == "command":
             command = request.form['cmd']
-            if (command.startswith("PT") or 
-                command.startswith("PAN") or
-                command.startswith("TILT") or
+            if (command.startswith("PT ") or 
+                command.startswith("PAN ") or
+                command.startswith("TILT ") or
+                command.startswith("SET_PAN ") or
+                command.startswith("SET_TILT ") or
                 command.startswith("RESET") or
                 command.startswith("RESET_PAN") or
                 command.startswith("RESET_TILT") or
                 command.startswith("DEMO")):
-                    cmd(command)
+                positions = cmd(command)
+                if positions is None:
+                    return "False"
+                return jsonify(pan=positions[0], tilt=positions[1])
             else:
-                return "Failure"
+                return "False"
         elif reqType == "block":
             if request.form['value'] == "true":
+                print "Setting blocking mode to manual..."
                 cmd('MANUAL')
             else:
+                print "Setting blocking mode to auto..."
                 cmd('AUTO')
+        elif reqType == "setPos":
+            val = request.form['value']
+            try:
+                int(val)
+                axis = request.form['axis']
+                if axis == "pan":
+                    print "Setting pan to position " + val + "..."
+                    cmd('SET_PAN ' + val)
+                elif axis == "tilt":
+                    print "Setting tilt to position " + val + "..."
+                    cmd('SET_TILT ' + val)
+                else:
+                    failed = True
+            except ValueError:
+                return "False"
         elif reqType == "demo":
+            print "Toggling demonstration mode..."
             pass
         else:
             print "Unknown request type: " + request.form['type']
@@ -120,7 +174,7 @@ def site():
         print "Failed."
         return render_template('error.html')
     else:
-        return "Success"
+        return "True" 
 
 if __name__ == "__main__":
     cmd('MANUAL')

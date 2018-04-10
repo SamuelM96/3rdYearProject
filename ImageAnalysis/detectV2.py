@@ -8,19 +8,20 @@ import findBlobs as fb
 
 
 def main():
-    cap = cv2.VideoCapture(0) 
     blobs = []
-    HEIGHT = 640
-    HHEIGHT = 320
-    WIDTH = 480
-    HWIDTH = 240
+    WIDTH = 640
+    HEIGHT = 480
+    HWIDTH = WIDTH/2
+    HHEIGHT = HEIGHT/2
     STEP_CONV = 1
+    cap = cv2.VideoCapture(0) 
     # camera = PiCamera()
-    # camera.resolution = (640, 480)
+    # camera.resolution = (WIDTH, HEIGHT)
     # camera.framerate = 32
-    # rawCapture = PiRGBArray(camera, size=(640, 480))
+    # rawCapture = PiRGBArray(camera, size=(WIDTH, HEIGHT))
     trackedBlob = None
 
+    # Process camera frames
     while True:
         ret, frame = cap.read()
     # for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
@@ -42,10 +43,12 @@ def main():
             blobDistSq = (blobCenter[0] - HWIDTH)**2 + (blobCenter[1] - HHEIGHT)**2
 
             if trackedBlob is not None and b.num == trackedBlob.num:
+                # Found blob that needs to be tracked
                 found = True
                 trackedBlob = b
                 break
             elif closestBlobToCenter is None or distSq < cBlobDist:
+                # Find closest blob to the center, in case tracked blob is lost
                 closestBlobToCenter = b
                 cBlobCenter = blobCenter
                 cBlobDistSq = distSq
@@ -62,13 +65,14 @@ def main():
                 blobCenter = cBlobCenter
                 blobDistSq = cBlobDistSq
             else:
+                # No blobs found, reset tracked blob
                 trackedBlob = None
 
         # Move system to blobs new position
         if trackedBlob is not None:
             steps = sqrt(distSq) * STEP_CONV
 
-
+        # Show camera display
         cv2.imshow('image', frame)
         # rawCapture.truncate(0)
 
@@ -79,6 +83,5 @@ def main():
     # Clean up
     cap.release()
     cv2.destroyAllWindows()
-
 
 main()
