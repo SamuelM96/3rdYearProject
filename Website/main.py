@@ -22,7 +22,7 @@ socket.bind("tcp://*:5555")
 
 # Setup serial connection to pan/tilt controller
 try:
-    ser = serial.Serial('COM3', 115200, timeout=50, write_timeout=50)
+    ser = serial.Serial('COM3', 115200, timeout=0.01, write_timeout=0.01)
     sleep(2)
     if ser.isOpen():
         print "Serial port is open..."
@@ -31,15 +31,19 @@ try:
         exit(1)
 except serial.serialutil.SerialException as e:
     print "Failed to open serial port."
+    exit(1)
 
 
 # Sends command over serial to pan/tilt controller
 # command : Command to send
 def cmd(command):
     print "Sending command: '" + command + "'..."
-    ser.write(command + '\0')
-    # sleep(0.1)
-
+    ser.write(command.encode('ascii'))
+    sleep(0.1)
+    out = ''
+    while ser.in_waiting > 0:
+        out += str(ser.read(1))
+    print out
 
 @app.route('/', methods=['POST', 'GET'])
 def site():
@@ -86,6 +90,25 @@ def site():
             elif request.form['axis'] == "tilt":
                 global TILT_STEP
                 TILT_STEP = axis
+        elif reqType == "command":
+            command = request.form['cmd']
+            if (command.startswith("PT") or 
+                command.startswith("PAN") or
+                command.startswith("TILT") or
+                command.startswith("RESET") or
+                command.startswith("RESET_PAN") or
+                command.startswith("RESET_TILT") or
+                command.startswith("DEMO")):
+                    cmd(command)
+            else:
+                return "Failure"
+        elif reqType == "block":
+            if request.form['value'] == "true":
+                cmd('MANUAL')
+            else:
+                cmd('AUTO')
+        elif reqType == "demo":
+            pass
         else:
             print "Unknown request type: " + request.form['type']
             failed = True
@@ -94,6 +117,7 @@ def site():
         failed = True
 
     if failed:
+        print "Failed."
         return render_template('error.html')
     else:
         return "Success"

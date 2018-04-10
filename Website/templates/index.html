@@ -36,6 +36,55 @@
             });
         }
 
+        function command() {
+            var cmd = $("input#commandText").val();
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"command",
+                    "cmd":cmd
+                },
+                success: function(response) {
+                    if (response == "Success") {
+                        $("input#commandText").css("background-color", "white");
+                        console.log("Executed command: " + cmd);
+                    } else {
+                        $("input#commandText").css("background-color", "red");
+                        console.log("Failed to execute command: " + cmd);
+                    }
+                }
+            });
+        }
+
+        function setBlock() {
+            var block = $("input#block")[0].checked;
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"block",
+                    "value":block
+                },
+                success: function(response) {
+                    console.log("Changed blocking state to " + block + ".");
+                }
+            });
+        }
+
+        function demo() {
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"demo"
+                },
+                success: function(response) {
+                    console.log("Toggled demonstration mode.");
+                }
+            });
+        }
+
         // Get thumbnails every 5 seconds from camera
 //        $(function () {
 //            setInterval(function () {
@@ -65,14 +114,62 @@
         <button type="button" onclick="move('left')">Left</button>
         <button type="button" onclick="move('down')">Down</button>
         <button type="button" onclick="move('up')">Up</button>
-        <button type="button" onclick="move('right')">Right</button><br>
-        <button type="button" onclick="move('reset')">Reset</button><br><br>
+        <button type="button" onclick="move('right')">Right</button>
+        <button type="button" onclick="move('reset')">Reset</button><br>
+        Block until movement has finished? <input type="checkbox" id="block" onclick="setBlock()" checked><br><br>
         <input type="text" id="stepAmount" value="10"/>
         <button type="button" onclick="step('pan')">Change Pan Step</button><br>
         <input type="text" id="stepAmount" value="10"/>
-        <button type="button" onclick="step('tilt')">Change Tilt Step</button><br>
+        <button type="button" onclick="step('tilt')">Change Tilt Step</button><br><br>
+        Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
+
+        <button type="button" onclick="demo()">Toggle Demo Mode</button>
+        
+        <h4>Available commands:</h4>
+        <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+        .tg .tg-cpu2{border-color:#000000;vertical-align:top}
+        .tg .tg-yw4l{vertical-align:top}
+        </style>
+        <table class="tg">
+          <tr>
+            <th class="tg-yw4l">Command</th>
+            <th class="tg-cpu2">Help</th>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">PT [PAN_NUM]x[TILT_NUM]</td>
+            <td class="tg-yw4l">Pans and tilts to the given position in steps.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">PAN [NUM]</td>
+            <td class="tg-yw4l">Pans the [NUM] amount in steps.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">TILT [NUM]</td>
+            <td class="tg-yw4l">Tilts the [NUM] amount in steps.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">RESET</td>
+            <td class="tg-yw4l">Resets pan and tilt to their original positions.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">RESET_PAN</td>
+            <td class="tg-yw4l">Resets pan to its original position.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">RESET_TILT</td>
+            <td class="tg-yw4l">Resets tilt to its original position.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">DEMO</td>
+            <td class="tg-yw4l">Toggles demonstration mode. In this mode, only solid red blobs will be tracked.</td>
+          </tr>
+</table>
     </form>
 
+    <br>
     <h3>Thumbnails</h3>
     <div id="output"></div>
 </body>

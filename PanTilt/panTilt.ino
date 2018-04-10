@@ -37,9 +37,11 @@ void loop() {
   // Check for commands and read them into a buffer if available
   if (Serial.available()) {
     static char inputBuf[20];
+    memset(inputBuf, 0, sizeof(inputBuf));
     int count = Serial.readBytesUntil('\0', inputBuf, sizeof(inputBuf));
     String inputStr(inputBuf);
-    Serial.println("Read data");
+    Serial.print("Received: ");
+    Serial.println(inputBuf);
 
     // Check which command was given
     if (inputStr.startsWith("PT ")) {
@@ -76,6 +78,10 @@ void loop() {
 
     pan.moveTo(panPos);
     tilt.moveTo(tiltPos);
+    Serial.print("New pan position: ");
+    Serial.println(panPos);
+    Serial.print("New tilt position: ");
+    Serial.println(tiltPos);
     Serial.println("OK");
   }
 
