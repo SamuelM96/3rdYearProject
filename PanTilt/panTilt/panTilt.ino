@@ -13,21 +13,29 @@
 
 AccelStepper pan(AccelStepper::DRIVER, PAN_STEP, PAN_DIR, 0, 0, true);
 AccelStepper tilt(AccelStepper::DRIVER, TILT_STEP, TILT_DIR, 0, 0, true);
+MultiStepper panTilt;
 
-int panPos = 0;
-int tiltPos = 0;
+long panPos = 0;
+long tiltPos = 0;
 bool manualMode = false;
 
 void setup() {
   Serial.begin(115200);
   Serial.setTimeout(50);
 
+/*
   pan.setMaxSpeed(100);
   tilt.setMaxSpeed(100);
   tilt.setSpeed(100);
   pan.setSpeed(100);
   tilt.setAcceleration(100);
   pan.setAcceleration(100);
+*/
+    pan.setMaxSpeed(80);
+    tilt.setMaxSpeed(80);
+
+    panTilt.addStepper(pan);
+    panTilt.addStepper(tilt);
 
   pinMode(8, OUTPUT);
   digitalWrite(8, LOW);
@@ -48,16 +56,22 @@ void loop() {
       String panAndTilt = inputStr.substring(2);
       int separator = panAndTilt.indexOf('x');
 
-      panPos += panAndTilt.substring(0, separator).toInt();
-      tiltPos += panAndTilt.substring(separator + 1).toInt();
+      panPos = pan.currentPosition() + panAndTilt.substring(0, separator).toInt();
+      tiltPos = tilt.currentPosition() + panAndTilt.substring(separator + 1).toInt();
     } else if (inputStr.startsWith("PAN ")) {
       // Find step count for pan
       int num = inputStr.substring(3).toInt();
-      panPos += num;
+      panPos = pan.currentPosition() + num;
     } else if (inputStr.startsWith("TILT ")) {
       // Find step count for tilt
       int num = inputStr.substring(4).toInt();
-      tiltPos += num;
+      tiltPos = tilt.currentPosition() + num;
+    } else if (inputStr.startsWith("PAN_SPEED ")) {
+        int num = inputStr.substring(9).toInt();
+        pan.setMaxSpeed(num);
+    } else if (inputStr.startsWith("TILT_SPEED ")) {
+        int num = inputStr.substring(10).toInt();
+        tilt.setMaxSpeed(num);
     } else if (inputStr.startsWith("SET_PAN ")) {
       int num = inputStr.substring(7).toInt();
       panPos = num;
@@ -80,8 +94,10 @@ void loop() {
       Serial.println("INVALID COMMAND");
     }
 
-    pan.moveTo(panPos);
-    tilt.moveTo(tiltPos);
+    long positions[2];
+    positions[0] = panPos;
+    positions[1] = tiltPos;
+    panTilt.moveTo(positions);
     Serial.print("Pan: ");
     Serial.println(panPos);
     Serial.print("Tilt: ");
@@ -90,10 +106,9 @@ void loop() {
 
   if (manualMode) {
     // Block until at position
-    while (pan.run() || tilt.run());
+    panTilt.runSpeedToPosition();
   } else {
     // Iteratively move to new position
-    pan.run();
-    tilt.run();
+    panTilt.run();
   }
 }

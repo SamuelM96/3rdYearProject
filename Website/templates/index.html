@@ -40,6 +40,27 @@
             });
         }
 
+        function setSpeed(axis) {
+            var amount;
+            if (axis == "pan") {
+               amount = $("input#panSpeed").val();
+            } else {
+               amount = $("input#tiltSpeed").val();
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"speed",
+                    "axis":axis,
+                    "amount":amount
+                },
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+        }
+
         function takePicture() {
             $.ajax({
                 type: 'POST',
@@ -120,6 +141,21 @@
             });
         }
 
+        function zero() {
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"zero"
+                },
+                success: function(response) {
+                    console.log(response);
+                    $('input#panPos')[0].value = 0;
+                    $('input#tiltPos')[0].value = 0;
+                }
+            });
+        }
+
         function demo() {
             $.ajax({
                 type: 'POST',
@@ -162,14 +198,17 @@
         <button type="button" onclick="move('left')">Left</button>
         <button type="button" onclick="move('down')">Down</button>
         <button type="button" onclick="move('up')">Up</button>
-        <button type="button" onclick="move('right')">Right</button>
-        <button type="button" onclick="move('reset')">Reset</button><br>
+        <button type="button" onclick="move('right')">Right</button><br>
+        <button type="button" onclick="move('reset')">Reset</button>
+        <button type="button" onclick="zero()">Zero Pan and Tilt</button><br>
         <button type="button" onclick="takePicture()">Take Picture</button><br>
         Block until movement has finished? <input type="checkbox" id="block" onclick="setBlock()" checked><br><br>
         <input type="text" id="panPos" value="0"/> <button type="button" onclick="setPos('pan')">Set Pan Position</button></br>
         <input type="text" id="tiltPos" value="0"/> <button type="button" onclick="setPos('tilt')">Set Tilt Position</button></br>
         <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('pan')">Change Pan Step</button><br>
-        <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('tilt')">Change Tilt Step</button><br><br>
+        <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('tilt')">Change Tilt Step</button><br>
+        <input type="text" id="panSpeed" value="80"/> <button type="button" onclick="setSpeed('pan')">Set panning speed</button><br>
+        <input type="text" id="tiltSpeed" value="80"/> <button type="button" onclick="setSpeed('tilt')">Set tilting speed</button><br><br>
         Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
 
         <button type="button" onclick="demo()">Toggle Demo Mode</button>
@@ -196,6 +235,10 @@
             <td class="tg-yw4l">Pans the [NUM] amount in steps.</td>
           </tr>
           <tr>
+            <td class="tg-yw4l">TILT [NUM]</td>
+            <td class="tg-yw4l">Tilts the [NUM] amount in steps.</td>
+          </tr>
+          <tr>
             <td class="tg-yw4l">SET_PAN [NUM]</td>
             <td class="tg-yw4l">Set the pan position to [NUM].</td>
           </tr>
@@ -204,8 +247,12 @@
             <td class="tg-yw4l">Sets the tilt positon to [NUM].</td>
           </tr>
           <tr>
-            <td class="tg-yw4l">TILT [NUM]</td>
-            <td class="tg-yw4l">Tilts the [NUM] amount in steps.</td>
+            <td class="tg-yw4l">PAN_SPEED</td>
+            <td class="tg-yw4l">Sets the panning speed.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">TILT_SPEED</td>
+            <td class="tg-yw4l">Sets the tilting speed.</td>
           </tr>
           <tr>
             <td class="tg-yw4l">RESET</td>
@@ -218,6 +265,10 @@
           <tr>
             <td class="tg-yw4l">RESET_TILT</td>
             <td class="tg-yw4l">Resets tilt to its original position.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">ZERO</td>
+            <td class="tg-yw4l">Zeros pan and tilt positions to zero without moving them.</td>
           </tr>
           <tr>
             <td class="tg-yw4l">DEMO</td>

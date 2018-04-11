@@ -1,3 +1,4 @@
+import threading
 from flask import Flask
 from flask import request
 from flask import render_template
@@ -7,6 +8,8 @@ import zmq
 import select
 from time import sleep
 import serial
+
+PAN_TILT_PORT = "/dev/ttyUSB1"
 
 # Web app
 app = Flask(__name__)
@@ -18,22 +21,30 @@ TILT_STEP = "10"
 # Setup interprocess communication with blob detector
 context = zmq.Context()
 socket = context.socket(zmq.PAIR)
-socket.RCVTIMEO = 1000
 socket.bind("tcp://*:5555")
 
-# Setup serial connection to pan/tilt controller
-try:
-    ser = serial.Serial('COM3', 115200, timeout=0.01, write_timeout=0.01)
-    sleep(2)
-    if ser.isOpen():
-        print "Serial port is open..."
-    else:
-        print "Serial port is not open..."
-        exit(1)
-except serial.serialutil.SerialException as e:
-    print "Failed to open serial port."
-    exit(1)
+# Serial connection to pan/tilt
+ser = None
 
+# Setup serial connection to pan/tilt controller
+def connectToSerial():
+    global ser
+    try:
+        if ser is not None:
+            ser.close()
+
+        # ser = serial.Serial('COM3', 115200, timeout=0.01, write_timeout=0.01)
+        ser = serial.Serial(PAN_TILT_PORT, 115200, timeout=0.01, write_timeout=0.01)
+        sleep(2)
+
+        if ser.isOpen():
+            print "Serial port is open..."
+        else:
+            print "Serial port is not open..."
+            exit(1)
+    except serial.serialutil.SerialException as e:
+        print "Failed to open serial port."
+        exit(1)
 
 # Sends command over serial to pan/tilt controller
 # command : Command to send
@@ -52,11 +63,22 @@ def cmd(command):
         return None
     else:
         out = out.split('\n')
+        if len(out) < 2:
+            return None
         try:
             # Parse current (pan, tilt) values
             return (int(out[0].split(' ')[1]), int(out[1].split(' ')[1]))
         except ValueError:
             return None
+
+
+# Gets the new pan/tilt positons from the blob detector
+def getPositions():
+    while True:
+        positions = socket.recv()
+        panTilt = positions.split(',')
+        print "Received positions: " + positions
+        cmd('PT ' + panTilt[0] + 'x' + panTilt[1])
 
 @app.route('/', methods=['POST', 'GET'])
 def site():
@@ -64,16 +86,6 @@ def site():
     if request.method == 'GET':
         return render_template('index.html')
     elif request.method == 'POST':
-        # inputText = request.form['testinput']
-        # socket.send_string(inputText)
-
-        # try:
-        #     message = socket.recv()
-        # except Exception as e:
-        #     print e
-
-        # return message
-
         reqType = request.form['type']
 
         if reqType == "thumbnails":
@@ -111,31 +123,47 @@ def site():
                 print "Unknown movement: " + direction
                 failed = True
         elif reqType == "step":
-            axis = request.form['amount'].encode('ascii')
+            amount = request.form['amount'].encode('ascii')
             if request.form['axis'] == "pan":
                 global PAN_STEP
-                PAN_STEP = axis
+                PAN_STEP = amount
             elif request.form['axis'] == "tilt":
                 global TILT_STEP
-                TILT_STEP = axis
+                TILT_STEP = amount
+        elif reqType == "speed":
+            amount = request.form['amount'].encode('ascii') 
+            axis = request.form['axis']
+            if axis == "pan":
+                cmd('PAN_SPEED ' + amount)
+                return "True"
+            elif axis == "tilt":
+                cmd('TILT_SPEED ' + amount)
+                return "True"
+            else:
+                failed = True
         elif reqType == "picture":
             print "Taking picture..."
             pass
         elif reqType == "command":
             command = request.form['cmd']
-            if (command.startswith("PT ") or 
-                command.startswith("PAN ") or
-                command.startswith("TILT ") or
-                command.startswith("SET_PAN ") or
-                command.startswith("SET_TILT ") or
-                command.startswith("RESET") or
-                command.startswith("RESET_PAN") or
-                command.startswith("RESET_TILT") or
-                command.startswith("DEMO")):
+            if (command.startswith("PT ") or
+                    command.startswith("PAN ") or
+                    command.startswith("TILT ") or
+                    command.startswith("SET_PAN ") or
+                    command.startswith("SET_TILT ") or
+                    command.startswith("PAN_SPEED") or
+                    command.startswith("TILT_SPEED") or
+                    command.startswith("RESET") or
+                    command.startswith("RESET_PAN") or
+                    command.startswith("RESET_TILT") or
+                    command.startswith("DEMO")):
                 positions = cmd(command)
                 if positions is None:
                     return "False"
                 return jsonify(pan=positions[0], tilt=positions[1])
+            elif command.startswith("ZERO"):
+                connectToSerial()
+                return jsonify(pan=0, tilt=0)
             else:
                 return "False"
         elif reqType == "block":
@@ -160,6 +188,9 @@ def site():
                     failed = True
             except ValueError:
                 return "False"
+        elif reqType == "zero":
+            connectToSerial()
+            return jsonify(pan=0, tilt=0)
         elif reqType == "demo":
             print "Toggling demonstration mode..."
             pass
@@ -174,8 +205,12 @@ def site():
         print "Failed."
         return render_template('error.html')
     else:
-        return "True" 
+        return "True"
 
 if __name__ == "__main__":
-    cmd('MANUAL')
+    connectToSerial()
+    backgroundThread = threading.Thread(target=getPositions)
+    backgroundThread.daemon = True
+    backgroundThread.start()
+    # cmd('MANUAL')
     app.run()

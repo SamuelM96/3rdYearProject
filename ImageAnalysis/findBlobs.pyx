@@ -6,6 +6,7 @@ from sys import maxint
 from random import randint
 from math import ceil
 
+cdef int BOUNDING_BOX = 30
 
 # Stores information about the blobs in an image
 cdef class Blob:
@@ -40,7 +41,7 @@ cdef class Blob:
 
     # Returns True if the give pixel coords are within range of the blob, False otherwise
     cpdef inRange(self, int x, int y):
-        return y < self.rect[3] + 50 and x > self.rect[0] - 50 and x < self.rect[2] + 50
+        return y < self.rect[3] + BOUNDING_BOX and x > self.rect[0] - BOUNDING_BOX and x < self.rect[2] + BOUNDING_BOX
 
 # Returns a list of founds blobs in the given image
 # image : Image to search for blobs in
@@ -62,7 +63,9 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
             red = image[y, x, 2]
 
             # Test brightness of pixel (threshold function)
-            if (blue + green + red)/3 < 50:
+            # if (blue + green + red)/3 < 50:
+            # if max(blue, max(green, red)) > 128:
+            if blue > 80 and green < 30 and red < 30:
                 newBlob = True
 
                 # Try to add the detected pixel to the last used blob as an optimisation
