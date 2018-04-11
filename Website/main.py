@@ -8,8 +8,13 @@ import zmq
 import select
 from time import sleep
 import serial
+from subprocess import call
+from datetime import datetime
 
-PAN_TILT_PORT = "/dev/ttyUSB1"
+# Pan/tilt connected port
+PAN_TILT_PORT = "/dev/ttyUSB0"
+
+LAST_PICTURE = datetime.now()
 
 # Web app
 app = Flask(__name__)
@@ -50,34 +55,48 @@ def connectToSerial():
 # command : Command to send
 def cmd(command):
     print "Sending command: '" + command + "'..."
-    ser.write(command.encode('ascii'))
+    try:
+        ser.write(command.encode('ascii'))
 
-    # Wait until received reply from arduino
-    while ser.in_waiting == 0: pass
+        # Wait until received reply from arduino
+        while ser.in_waiting == 0: pass
 
-    # Read reply
-    out = ''
-    while ser.in_waiting > 0:
-        out += str(ser.read(1))
-    if out == "INVALID COMMAND":
+        # Read reply
+        out = ''
+        while ser.in_waiting > 0:
+            out += str(ser.read(1))
+        if out == "INVALID COMMAND":
+            return None
+        else:
+            out = out.split('\n')
+            if len(out) < 2:
+                return None
+            try:
+                # Parse current (pan, tilt) values
+                return (int(out[0].split(' ')[1]), int(out[1].split(' ')[1]))
+            except ValueError:
+                return None
+    except SerialTimeoutException:
         return None
-    else:
-        out = out.split('\n')
-        if len(out) < 2:
-            return None
-        try:
-            # Parse current (pan, tilt) values
-            return (int(out[0].split(' ')[1]), int(out[1].split(' ')[1]))
-        except ValueError:
-            return None
 
 
 # Gets the new pan/tilt positons from the blob detector
 def getPositions():
+    global LAST_PICTURE
+    photoThread = None
     while True:
         positions = socket.recv()
         panTilt = positions.split(',')
         print "Received positions: " + positions
+
+        # If in position, take photots every 3 seconds
+        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 3:
+            LAST_PICTURE = datetime.now()
+            if photoThread is not None:
+                photoThread.join()
+            photoThread = threading.Thread(target=call, args=(["/home/pi/3rdYearProject/ImageAnalysis/takePhotos.sh"],))
+            photoThread.start()
+
         cmd('PT ' + panTilt[0] + 'x' + panTilt[1])
 
 @app.route('/', methods=['POST', 'GET'])
@@ -143,7 +162,7 @@ def site():
                 failed = True
         elif reqType == "picture":
             print "Taking picture..."
-            pass
+            call(["/home/pi/3rdYearProject/ImageAnalysis/takePhotos.sh"])
         elif reqType == "command":
             command = request.form['cmd']
             if (command.startswith("PT ") or
@@ -166,6 +185,9 @@ def site():
                 return jsonify(pan=0, tilt=0)
             else:
                 return "False"
+        elif reqType == "manualToggle":
+            socket.send_string("MANUAL_TOGGLE")
+            return "True"
         elif reqType == "block":
             if request.form['value'] == "true":
                 print "Setting blocking mode to manual..."
@@ -193,7 +215,7 @@ def site():
             return jsonify(pan=0, tilt=0)
         elif reqType == "demo":
             print "Toggling demonstration mode..."
-            pass
+            socket.send_string("DEMO_TOGGLE")
         else:
             print "Unknown request type: " + request.form['type']
             failed = True
