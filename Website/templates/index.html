@@ -98,6 +98,19 @@
             });
         }
 
+        function manualToggle() {
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type": "manualToggle"
+                },
+                success: function(response) {
+                    console.log("Toggled manual mode.");
+                }
+            });
+        }
+
         function setBlock() {
             var block = $("input#block")[0].checked;
             $.ajax({
@@ -212,6 +225,7 @@
         Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
 
         <button type="button" onclick="demo()">Toggle Demo Mode</button>
+        <button type="button" onclick="manualToggle()">Toggle Manual/Auto Mode</button>
         
         <h4>Available commands:</h4>
         <style type="text/css">
@@ -265,6 +279,10 @@
           <tr>
             <td class="tg-yw4l">RESET_TILT</td>
             <td class="tg-yw4l">Resets tilt to its original position.</td>
+          </tr>
+          <tr>
+            <td class="tg-yw4l">MANUAL_TOGGLE</td>
+            <td class="tg-yw4l">Toggles between manual and auto tracking mode.</td>
           </tr>
           <tr>
             <td class="tg-yw4l">ZERO</td>

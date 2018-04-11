@@ -10,14 +10,23 @@ import pyximport; pyximport.install()
 import findBlobs as fb
 
 
-AUTO_MODE = True
+AUTO_MODE = False
+DEMO_MODE = False
 
 
 def getData(socket):
+    global AUTO_MODE
+    global DEMO_MODE
     while True:
         message = socket.recv()
-        print "Received: " + message
-
+        if message == "MANUAL_TOGGLE":
+            AUTO_MODE = not AUTO_MODE
+            if AUTO_MODE:
+                print "Mode: AUTO"
+            else:
+                print "Mode: Manual"
+        elif message == "DEMO_TOGGLE":
+            DEMO_MODE = not DEMO_MODE
 
 def main():
     # Setup interprocess communication with blob detector
@@ -50,41 +59,39 @@ def main():
     # Process camera frames
     # while True:
     #    ret, frame = cap.read()
-    if AUTO_MODE:
-        for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-            frame = frameCam.array
-            frame.flags.writeable = True
+    for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+        frame = frameCam.array
+        frame.flags.writeable = True
 
-            # Find blobs in the image
-            blobs = fb.findBlobs(frame, blobs)
+        # Find blobs in the image
+        blobs = fb.findBlobs(frame, blobs, DEMO_MODE)
 
-            # Process blobs
-            closestBlobToCenter = None
-            cBlobCenter = ()
-            cBlobDistSq = None
-            blobCenter = ()
-            blobDistSq = -1
-            found = False
-            for b in blobs:
-                if b.alive == 1:
-                    blobCenter = (b.rect[0] + (b.rect[2] - b.rect[0]) / 2, b.rect[1] + (b.rect[3] - b.rect[1]) / 2)
-                    blobDistSq = (blobCenter[0] - HWIDTH)**2 + (blobCenter[1] - HHEIGHT)**2
+        # Process blobs
+        closestBlobToCenter = None
+        cBlobCenter = ()
+        cBlobDistSq = None
+        blobCenter = ()
+        blobDistSq = -1
+        found = False
+        for b in blobs:
+            if b.alive == 1:
+                blobCenter = (b.rect[0] + (b.rect[2] - b.rect[0]) / 2, b.rect[1] + (b.rect[3] - b.rect[1]) / 2)
+                blobDistSq = (blobCenter[0] - HWIDTH)**2 + (blobCenter[1] - HHEIGHT)**2
 
-                    # Draw bounding boxes and IDs
-                    # if b.alive == 1:
-                    cv2.rectangle(frame, (b.rect[0], b.rect[1]), (b.rect[2], b.rect[3]), (128, 0, 0), 3)
-                    cv2.putText(frame, str(b.num), blobCenter, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 128, 0), 2)
+                # Draw bounding boxes and IDs
+                cv2.rectangle(frame, (b.rect[0], b.rect[1]), (b.rect[2], b.rect[3]), (128, 0, 0), 3)
+                cv2.putText(frame, str(b.num), blobCenter, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 128, 0), 2)
 
-                    if trackedBlob is not None and b.num == trackedBlob.num:
-                        # Found blob that needs to be tracked
-                        found = True
-                        trackedBlob = b
-                        break
-                    elif closestBlobToCenter is None or blobDistSq < cBlobDistSq:
-                        # Find closest blob to the center, in case tracked blob is lost
-                        closestBlobToCenter = b
-                        cBlobCenter = blobCenter
-                        cBlobDistSq = blobDistSq
+                if trackedBlob is not None and b.num == trackedBlob.num:
+                    # Found blob that needs to be tracked
+                    found = True
+                    trackedBlob = b
+                    break
+                elif closestBlobToCenter is None or blobDistSq < cBlobDistSq:
+                    # Find closest blob to the center, in case tracked blob is lost
+                    closestBlobToCenter = b
+                    cBlobCenter = blobCenter
+                    cBlobDistSq = blobDistSq
 
             # Lost tracked blob, so track blob closest to center
             if found == False:
@@ -96,32 +103,36 @@ def main():
                     # No blobs found, reset tracked blob
                     trackedBlob = None
 
+
+        # Automated tracking mode
+        if AUTO_MODE:
             # Move system to blobs new position
             if trackedBlob is not None:
                 panSteps = int(PAN_STEP_CONV * (blobCenter[0] - HWIDTH))
-                tiltSteps = int(TILT_STEP_CONV * (HHEIGHT - blobCenter[1])) + 73
+                tiltSteps = int(TILT_STEP_CONV * (HHEIGHT - blobCenter[1])) + 25
                 
-                if panSteps < 10 and panSteps > -10:
+                panPadding = 4
+                tiltPadding = 10
+                if panSteps < panPadding and panSteps > -panPadding:
                     panSteps = 0
-                if tiltSteps < 20 and tiltSteps > -20:
+                if tiltSteps < tiltPadding and tiltSteps > -tiltPadding:
                     tiltSteps = 0
 
                 message = str(panSteps) + "," + str(tiltSteps)
                 socket.send_string(message)
-                print "Sent data: " + message 
 
-            cv2.rectangle(frame, (HWIDTH,HHEIGHT), (HWIDTH, HHEIGHT), (128, 0, 0), 3)
+        cv2.rectangle(frame, (HWIDTH,HHEIGHT), (HWIDTH, HHEIGHT), (128, 0, 0), 3)
 
-            # Show camera display
-            cv2.imshow('image', frame)
-            rawCapture.truncate(0)
+        # Show camera display
+        cv2.imshow('image', frame)
+        rawCapture.truncate(0)
 
-            # Loop until 'q' is pressed to exit
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+        # Loop until 'q' is pressed to exit
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
 
-        # Clean up
-        # cap.release()
-        cv2.destroyAllWindows()
+    # Clean up
+    # cap.release()
+    cv2.destroyAllWindows()
 
 main()

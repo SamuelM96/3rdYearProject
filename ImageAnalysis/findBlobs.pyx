@@ -46,11 +46,13 @@ cdef class Blob:
 # Returns a list of founds blobs in the given image
 # image : Image to search for blobs in
 # blobs : Previously detected blobs if persistant detection is needed
-cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
+cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=False):
     cdef list currentBlobs = [] # List of detected blobs
     cdef Blob lastBlob = None   # Last detected blob
     cdef int x, y, w, h         # x,y coords and width,height of image
     cdef unsigned char val      # Pixel value
+    cdef bint condition = False
+    cdef int maxBlobSize = 20000
 
     # Height and width of image
     h = image.shape[0]
@@ -61,11 +63,16 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
             blue = image[y, x, 0]
             green = image[y, x, 1]
             red = image[y, x, 2]
+            
+            if DEMO_MODE:
+                # Find blue blobs
+                condition = blue > 80 and green < 30 and red < 30
+            else:
+                # Find dark blobs using relative luminance in colorimetric spaces
+                # https://en.wikipedia.org/wiki/Relative_luminance
+                condition = (0.2126 * red + 0.7152 * green + 0.0722 * blue) < 0.4
 
-            # Test brightness of pixel (threshold function)
-            # if (blue + green + red)/3 < 50:
-            # if max(blue, max(green, red)) > 128:
-            if blue > 80 and green < 30 and red < 30:
+            if condition:
                 newBlob = True
 
                 # Try to add the detected pixel to the last used blob as an optimisation
@@ -93,8 +100,8 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
         for i in xrange(len(currentBlobs)-1, -1, -1):
             curBlob = currentBlobs[i]
 
-            # Removes small blobs
-            if curBlob.pixelCount < 1000:
+            # Removes large blobs
+            if (curBlob.rect[2] - curBlob.rect[0]) * (curBlob.rect[3] - curBlob.rect[1]) > maxBlobSize:
                 del blobs[i]
                 continue
 
@@ -126,8 +133,8 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[]):
             for j in xrange(len(currentBlobs)-1, -1, -1):
                 curBlob = currentBlobs[j]
 
-                # Remove small blobs
-                if curBlob.pixelCount < 1000:
+                # Remove large blobs
+                if (curBlob.rect[2] - curBlob.rect[0]) * (curBlob.rect[3] - curBlob.rect[1]) > maxBlobSize:
                     del currentBlobs[j]
                     continue
 
