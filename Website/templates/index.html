@@ -154,30 +154,19 @@
             });
         }
 
-        function zero() {
+        function reset() {
+            console.log("H");
             $.ajax({
                 type: 'POST',
                 url: '/',
                 data: {
-                    "type":"zero"
+                    "type":"reset"
                 },
                 success: function(response) {
                     console.log(response);
+                    console.log("H");
                     $('input#panPos')[0].value = 0;
                     $('input#tiltPos')[0].value = 0;
-                }
-            });
-        }
-
-        function demo() {
-            $.ajax({
-                type: 'POST',
-                url: '/',
-                data: {
-                    "type":"demo"
-                },
-                success: function(response) {
-                    console.log("Toggled demonstration mode.");
                 }
             });
         }
@@ -212,8 +201,8 @@
         <button type="button" onclick="move('down')">Down</button>
         <button type="button" onclick="move('up')">Up</button>
         <button type="button" onclick="move('right')">Right</button><br>
-        <button type="button" onclick="move('reset')">Reset</button>
-        <button type="button" onclick="zero()">Zero Pan and Tilt</button><br>
+        <button type="button" onclick="reset()">Reset</button>
+        <button type="button" onclick="move('zero')">Zero Pan and Tilt</button><br>
         <button type="button" onclick="takePicture()">Take Picture</button><br>
         Block until movement has finished? <input type="checkbox" id="block" onclick="setBlock()" checked><br><br>
         <input type="text" id="panPos" value="0"/> <button type="button" onclick="setPos('pan')">Set Pan Position</button></br>
@@ -224,7 +213,6 @@
         <input type="text" id="tiltSpeed" value="80"/> <button type="button" onclick="setSpeed('tilt')">Set tilting speed</button><br><br>
         Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
 
-        <button type="button" onclick="demo()">Toggle Demo Mode</button>
         <button type="button" onclick="manualToggle()">Toggle Manual/Auto Mode</button>
         
         <h4>Available commands:</h4>
@@ -269,28 +257,12 @@
             <td class="tg-yw4l">Sets the tilting speed.</td>
           </tr>
           <tr>
-            <td class="tg-yw4l">RESET</td>
-            <td class="tg-yw4l">Resets pan and tilt to their original positions.</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">RESET_PAN</td>
-            <td class="tg-yw4l">Resets pan to its original position.</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">RESET_TILT</td>
-            <td class="tg-yw4l">Resets tilt to its original position.</td>
-          </tr>
-          <tr>
             <td class="tg-yw4l">MANUAL_TOGGLE</td>
             <td class="tg-yw4l">Toggles between manual and auto tracking mode.</td>
           </tr>
           <tr>
             <td class="tg-yw4l">ZERO</td>
-            <td class="tg-yw4l">Zeros pan and tilt positions to zero without moving them.</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">DEMO</td>
-            <td class="tg-yw4l">Toggles demonstration mode. In this mode, only solid red blobs will be tracked.</td>
+            <td class="tg-yw4l">Sets pan and tilt positions to zero.</td>
           </tr>
 </table>
     </form>

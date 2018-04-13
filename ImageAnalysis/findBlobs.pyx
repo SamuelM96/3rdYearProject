@@ -46,13 +46,15 @@ cdef class Blob:
 # Returns a list of founds blobs in the given image
 # image : Image to search for blobs in
 # blobs : Previously detected blobs if persistant detection is needed
-cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=False):
+# lumiLevel : Max pixel luminescence
+# maxBlobSize : Maximum size of blob bounding box side
+# minBlobSize : Minimum size of blob bounding box side
+cpdef findBlobs(unsigned char[:, :] image, list blobs=[], int lumiLevel=20, int maxBlobSize=80, int minBlobSize=10):
     cdef list currentBlobs = [] # List of detected blobs
     cdef Blob lastBlob = None   # Last detected blob
     cdef int x, y, w, h         # x,y coords and width,height of image
     cdef unsigned char val      # Pixel value
-    cdef bint condition = False
-    cdef int maxBlobSize = 20000
+    cdef int blobWidth, blobHeight # Blob bounding box dimensions
 
     # Height and width of image
     h = image.shape[0]
@@ -60,19 +62,9 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=Fals
 
     for y in xrange(0, h):
         for x in xrange(0, w):
-            blue = image[y, x, 0]
-            green = image[y, x, 1]
-            red = image[y, x, 2]
-            
-            if DEMO_MODE:
-                # Find blue blobs
-                condition = blue > 80 and green < 30 and red < 30
-            else:
-                # Find dark blobs using relative luminance in colorimetric spaces
-                # https://en.wikipedia.org/wiki/Relative_luminance
-                condition = (0.2126 * red + 0.7152 * green + 0.0722 * blue) < 0.4
+            lumi = image[y, x]
 
-            if condition:
+            if lumi < lumiLevel:
                 newBlob = True
 
                 # Try to add the detected pixel to the last used blob as an optimisation
@@ -91,6 +83,21 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=Fals
                         lastBlob = Blob(randint(0, 1000), x, y)
                         currentBlobs.append(lastBlob)
 
+
+    # Removes too large and small blobs
+    for i in xrange(len(currentBlobs)-1, -1, -1):
+        curBlob = currentBlobs[i]
+        blobWidth = curBlob.rect[2] - curBlob.rect[0]
+        blobHeight = curBlob.rect[3] - curBlob.rect[1]
+
+        if (blobWidth > maxBlobSize or
+            blobHeight > maxBlobSize or
+                blobWidth < minBlobSize or
+                blobHeight < minBlobSize):
+
+                del currentBlobs[i]
+                continue
+
     # Blob persistence:
     # Tries to find matching blobs (current blobs that are closest to previous blobs) and
     # assigns the previous blobs number to the current one
@@ -99,22 +106,21 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=Fals
     elif len(blobs) >= len(currentBlobs):
         for i in xrange(len(currentBlobs)-1, -1, -1):
             curBlob = currentBlobs[i]
-
-            # Removes large blobs
-            if (curBlob.rect[2] - curBlob.rect[0]) * (curBlob.rect[3] - curBlob.rect[1]) > maxBlobSize:
-                del blobs[i]
-                continue
+            blobWidth = curBlob.rect[2] - curBlob.rect[0]
+            blobHeight = curBlob.rect[3] - curBlob.rect[1]
 
             # Finds closest previous blob based on distance between their centers
             dist = maxint
             b = -1
             for j in xrange(len(blobs)):
                 blob = blobs[j]
-                
+
                 # Calculate distance between centers from bounding rectangles
-                newDist = (blob.rect[0] - curBlob.rect[0] + (blob.rect[2] - blob.rect[0] - curBlob.rect[2] + curBlob.rect[0]) / 2)**2 + (
-                    blob.rect[1] - curBlob.rect[1] + (blob.rect[3] - blob.rect[1] - curBlob.rect[3] + curBlob.rect[1]) / 2)**2
-                
+                newDist = ((blob.rect[0] - curBlob.rect[0] +
+                    (blob.rect[2] - blob.rect[0] - blobWidth) / 2)**2 +
+                    (blob.rect[1] - curBlob.rect[1] +
+                    (blob.rect[3] - blob.rect[1] - blobHeight) / 2)**2)
+
                 if newDist < dist:
                     dist = newDist
                     b = j
@@ -132,16 +138,15 @@ cpdef findBlobs(unsigned char[:, :, :] image, list blobs=[], bint DEMO_MODE=Fals
             b = None
             for j in xrange(len(currentBlobs)-1, -1, -1):
                 curBlob = currentBlobs[j]
-
-                # Remove large blobs
-                if (curBlob.rect[2] - curBlob.rect[0]) * (curBlob.rect[3] - curBlob.rect[1]) > maxBlobSize:
-                    del currentBlobs[j]
-                    continue
+                blobWidth = curBlob.rect[2] - curBlob.rect[0]
+                blobHeight = curBlob.rect[3] - curBlob.rect[1]
 
                 # Calculate distance between centers from bounding rectangles
-                newDist = (blob.rect[0] - curBlob.rect[0] + (blob.rect[2] - blob.rect[0] - curBlob.rect[2] + curBlob.rect[0]) / 2)**2 + (
-                    blob.rect[1] - curBlob.rect[1] + (blob.rect[3] - blob.rect[1] - curBlob.rect[3] + curBlob.rect[1]) / 2)**2
-                
+                newDist = ((blob.rect[0] - curBlob.rect[0] +
+                    (blob.rect[2] - blob.rect[0] - blobWidth) / 2)**2 +
+                    (blob.rect[1] - curBlob.rect[1] +
+                    (blob.rect[3] - blob.rect[1] - blobHeight) / 2)**2)
+
                 if newDist < dist:
                     dist = newDist
                     b = curBlob

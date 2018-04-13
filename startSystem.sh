@@ -4,4 +4,4 @@
 . /home/pi/3rdYearProject/stopSystem.sh
 
 # Run website and blob detection
-$WEB_COMMAND & $BLOB_COMMAND &
+sudo $WEB_COMMAND & $BLOB_COMMAND &

@@ -6,7 +6,6 @@ import select
 import numpy as np
 import math
 import cv2
-from picamera.array import PiRGBArray
 from picamera import PiCamera
 import pyximport; pyximport.install()
 import findBlobs as fb
@@ -14,6 +13,16 @@ import findBlobs as fb
 
 AUTO_MODE = False
 DEMO_MODE = False
+
+
+class Luminescence():
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.data = None
+
+    def write(self, buf):
+        self.data = np.frombuffer(buf, dtype=np.uint8, count=self.width*self.height).reshape((self.height,self.width))
 
 
 def getData(socket):
@@ -47,26 +56,29 @@ def main():
     HWIDTH = WIDTH/2
     HHEIGHT = HEIGHT/2
     # Number of steps from the edge to reach the center
-    PAN_STEPS_TO_CENTER = 48 
+    PAN_STEPS_TO_CENTER = 66
     PAN_STEP_CONV = float(PAN_STEPS_TO_CENTER)/HWIDTH
-    TILT_STEPS_TO_CENTER = 240
+    TILT_STEPS_TO_CENTER = 220
     TILT_STEP_CONV = float(TILT_STEPS_TO_CENTER)/HHEIGHT
-    # cap = cv2.VideoCapture(0)
     camera = PiCamera()
     camera.resolution = (WIDTH, HEIGHT)
-    camera.framerate = 32
-    rawCapture = PiRGBArray(camera, size=(WIDTH, HEIGHT))
+    camera.framerate = 49
+    camera.sensor_mode = 5
+    camera.exposure_mode = 'sports'
+    lumi = Luminescence(WIDTH, HEIGHT)
     trackedBlob = None
+    lumiLevel = 5
+    maxBlobSize = 80
+    minBlobSize = 10
+    speedComp = 0.75
 
     # Process camera frames
-    # while True:
-    #    ret, frame = cap.read()
-    for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-        frame = frameCam.array
+    for cap in camera.capture_continuous(lumi, format="yuv", use_video_port=True):
+        frame = cap.data
         frame.flags.writeable = True
 
         # Find blobs in the image
-        blobs = fb.findBlobs(frame, blobs, DEMO_MODE)
+        blobs = fb.findBlobs(frame, blobs, lumiLevel, maxBlobSize, minBlobSize)
 
         # Process blobs
         closestBlobToCenter = None
@@ -110,8 +122,8 @@ def main():
         if AUTO_MODE:
             # Move system to blobs new position
             if trackedBlob is not None:
-                panSteps = int(PAN_STEP_CONV * (blobCenter[0] - HWIDTH))
-                tiltSteps = int(TILT_STEP_CONV * (HHEIGHT - blobCenter[1])) + 25
+                panSteps = int(PAN_STEP_CONV * (blobCenter[0] - HWIDTH)) * speedComp
+                tiltSteps = (int(TILT_STEP_CONV * (HHEIGHT - blobCenter[1])) + 25) * speedComp
                 
                 panPadding = 4
                 tiltPadding = 10
@@ -127,7 +139,6 @@ def main():
 
         # Show camera display
         cv2.imshow('image', frame)
-        rawCapture.truncate(0)
 
         # Loop until 'q' is pressed to exit
         if cv2.waitKey(1) & 0xFF == ord('q'):

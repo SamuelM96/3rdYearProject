@@ -174,17 +174,11 @@ def site():
                     command.startswith("SET_TILT ") or
                     command.startswith("PAN_SPEED") or
                     command.startswith("TILT_SPEED") or
-                    command.startswith("RESET") or
-                    command.startswith("RESET_PAN") or
-                    command.startswith("RESET_TILT") or
-                    command.startswith("DEMO")):
+                    command.startswith("ZERO")):
                 positions = cmd(command)
                 if positions is None:
                     return "False"
                 return jsonify(pan=positions[0], tilt=positions[1])
-            elif command.startswith("ZERO"):
-                connectToSerial()
-                return jsonify(pan=0, tilt=0)
             else:
                 return "False"
         elif reqType == "manualToggle":
@@ -213,11 +207,9 @@ def site():
             except ValueError:
                 return "False"
         elif reqType == "reset":
+            print "Reseting system..."
             connectToSerial()
             return jsonify(pan=0, tilt=0)
-        elif reqType == "demo":
-            print "Toggling demonstration mode..."
-            socket.send_string("DEMO_TOGGLE")
         else:
             print "Unknown request type: " + request.form['type']
             failed = True
@@ -236,5 +228,4 @@ if __name__ == "__main__":
     backgroundThread = threading.Thread(target=getPositions)
     backgroundThread.daemon = True
     backgroundThread.start()
-    # cmd('MANUAL')
     app.run(host='0.0.0.0', port=80)
