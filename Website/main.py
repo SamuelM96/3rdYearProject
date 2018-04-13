@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 import threading
 from flask import Flask
 from flask import request
