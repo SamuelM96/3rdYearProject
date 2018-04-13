@@ -38,7 +38,6 @@ def connectToSerial():
         if ser is not None:
             ser.close()
 
-        # ser = serial.Serial('COM3', 115200, timeout=0.01, write_timeout=0.01)
         ser = serial.Serial(PAN_TILT_PORT, 115200, timeout=0.01, write_timeout=0.01)
         sleep(2)
 
@@ -90,7 +89,7 @@ def getPositions():
         print "Received positions: " + positions
 
         # If in position, take photots every 3 seconds
-        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 3:
+        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 4:
             LAST_PICTURE = datetime.now()
             if photoThread is not None:
                 photoThread.join()
@@ -98,6 +97,7 @@ def getPositions():
             photoThread.start()
 
         cmd('PT ' + panTilt[0] + 'x' + panTilt[1])
+#         sleep(0.1)
 
 @app.route('/', methods=['POST', 'GET'])
 def site():
@@ -133,8 +133,8 @@ def site():
                 if positions is None:
                     return "False"
                 return jsonify(pan=positions[0], tilt=positions[1])
-            elif direction == 'reset':
-                positions = cmd('RESET')
+            elif direction == 'zero':
+                positions = cmd('ZERO')
                 if positions is None:
                     return "False"
                 return jsonify(pan=positions[0], tilt=positions[1])
@@ -191,10 +191,10 @@ def site():
         elif reqType == "block":
             if request.form['value'] == "true":
                 print "Setting blocking mode to manual..."
-                cmd('MANUAL')
+                cmd('BLOCK')
             else:
                 print "Setting blocking mode to auto..."
-                cmd('AUTO')
+                cmd('NON_BLOCK')
         elif reqType == "setPos":
             val = request.form['value']
             try:
@@ -210,7 +210,7 @@ def site():
                     failed = True
             except ValueError:
                 return "False"
-        elif reqType == "zero":
+        elif reqType == "reset":
             connectToSerial()
             return jsonify(pan=0, tilt=0)
         elif reqType == "demo":
@@ -235,4 +235,4 @@ if __name__ == "__main__":
     backgroundThread.daemon = True
     backgroundThread.start()
     # cmd('MANUAL')
-    app.run()
+    app.run(host='0.0.0.0', port=80)
