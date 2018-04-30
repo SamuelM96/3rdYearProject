@@ -43,7 +43,6 @@ def main():
     # Setup interprocess communication with blob detector
     context = zmq.Context()
     socket = context.socket(zmq.PAIR)
-    # socket.RCVTIMEO = 1000
     socket.connect("tcp://localhost:5555")
 
     backgroundThread = threading.Thread(target=getData, args = (socket,))
@@ -135,6 +134,7 @@ def main():
                 message = str(panSteps) + "," + str(tiltSteps)
                 socket.send_string(message)
 
+        # Draw center dot
         cv2.rectangle(frame, (HWIDTH,HHEIGHT), (HWIDTH, HHEIGHT), (128, 0, 0), 3)
 
         # Show camera display

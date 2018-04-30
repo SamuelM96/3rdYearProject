@@ -6,7 +6,7 @@ from sys import maxint
 from random import randint
 from math import ceil
 
-cdef int BOUNDING_BOX = 30
+cdef int AREA_CHECK = 30
 
 # Stores information about the blobs in an image
 cdef class Blob:
@@ -25,7 +25,7 @@ cdef class Blob:
         self.rect = array.array('i', [x, y, x, y])
         self.alive = 1
         self.iteration = 5
-        self.pixelCount = 0
+        # self.pixelCount = 0
 
     # Adds a point to the blob
     # x : x coordinate of pixel
@@ -37,11 +37,11 @@ cdef class Blob:
             self.rect[2] = x
         elif y > self.rect[3]:
             self.rect[3] = y
-        self.pixelCount += 1
+        # self.pixelCount += 1
 
     # Returns True if the give pixel coords are within range of the blob, False otherwise
     cpdef inRange(self, int x, int y):
-        return y < self.rect[3] + BOUNDING_BOX and x > self.rect[0] - BOUNDING_BOX and x < self.rect[2] + BOUNDING_BOX
+        return y < self.rect[3] + AREA_CHECK and x > self.rect[0] - AREA_CHECK and x < self.rect[2] + AREA_CHECK
 
 # Returns a list of founds blobs in the given image
 # image : Image to search for blobs in

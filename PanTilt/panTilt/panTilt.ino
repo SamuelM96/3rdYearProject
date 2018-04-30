@@ -20,22 +20,12 @@ MultiStepper panTilt;
 
 long panPos = 0;
 long tiltPos = 0;
-bool blockingMode = false;
-volatile int endstopState = LOW;
+int endstopState = LOW;
 long tiltComp = 0;
 
 void setup() {
     Serial.begin(115200);
     Serial.setTimeout(50);
-
-    /*
-       pan.setMaxSpeed(100);
-       tilt.setMaxSpeed(100);
-       tilt.setSpeed(100);
-       pan.setSpeed(100);
-       tilt.setAcceleration(100);
-       pan.setAcceleration(100);
-     */
 
     panTilt.addStepper(pan);
     panTilt.addStepper(tilt);
@@ -55,19 +45,11 @@ void setup() {
         tiltPos -= 1;
         tilt.moveTo(tiltPos);
         tilt.runSpeed();
-        // Serial.print("Pos: ");
-        // Serial.println(tiltPos);
     }
     
     tilt.stop();
     tiltComp = tilt.currentPosition() - MIN_TILT;
-    Serial.print("Tilt comp: ");
-    Serial.println(tiltComp);
-    
     tiltPos = tiltComp;
-    Serial.print("New tilt: ");
-    Serial.println(tiltPos);
-    
     tilt.moveTo(tiltPos);
     tilt.runSpeedToPosition();
     
@@ -123,10 +105,6 @@ void loop() {
             panPos = 0;
         } else if (inputStr.startsWith("ZERO_TILT")) {
             tiltPos = tiltComp;
-        } else if (inputStr.startsWith("BLOCK")) {
-            blockingMode = true;
-        } else if (inputStr.startsWith("NON_BLOCK")) {
-            blockingMode = false;
         } else {
             Serial.println("INVALID COMMAND");
         }
@@ -162,11 +140,6 @@ void loop() {
         Serial.println(tiltPos);
     }
 
-    if (blockingMode) {
-        // Block until at position
-        panTilt.runSpeedToPosition();
-    } else {
-        // Iteratively move to new position
-        panTilt.run();
-    }
+    // Iteratively move to new position
+    panTilt.run();
 }
