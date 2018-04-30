@@ -52,7 +52,7 @@ def connectToCamera():
 
     print "Connecting to camera..."
     camera = Popen('gphoto2 --shell', shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-    camera.stdin.write('set-config /main/settings/capturetarget 0\n')
+    camera.stdin.write('set-config /main/settings/capturetarget 1\n')
     camera.stdin.write('set-config /main/actions/autofocusdrive 1\n')
     sleep(0.1)
     print "Connected to camera"
