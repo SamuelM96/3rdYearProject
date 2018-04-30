@@ -114,8 +114,8 @@ def getPositions():
         panTilt = positions.split(',')
         print "Received positions: " + positions
 
-        # If in position, take photots every 3 seconds
-        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 3:
+        # If in position, take photots every 1.5 seconds
+        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 1.5:
             LAST_PICTURE = datetime.now()
             camera.stdin.write('set-config /main/actions/autofocusdrive 1\ncapture-image\n')
             # if photoThread is not None:
