@@ -10,13 +10,20 @@ import zmq
 import select
 from time import sleep
 import serial
-from subprocess import call
+from subprocess import call, Popen, PIPE
+from os import system
+from os.path import basename
+from glob import glob
 from datetime import datetime
 
 # Pan/tilt connected port
 PAN_TILT_PORT = "/dev/ttyUSB0"
 
+# Last time an automatic picture was taken
 LAST_PICTURE = datetime.now()
+
+# Path containing thumbnails
+IMAGES_PATH = '/home/pi/3rdYearProject/Website/static/images/'
 
 # Web app
 app = Flask(__name__)
@@ -33,6 +40,23 @@ socket.bind("tcp://*:5555")
 # Serial connection to pan/tilt
 ser = None
 
+# gPhoto2 process for taking interfacing with the camera
+camera = None
+
+# Setup connection to camera
+def connectToCamera():
+    global camera
+    if camera is not None and camera.poll() is None:
+        camera.communicate()
+        print "Terminated old camera process..."
+
+    print "Connecting to camera..."
+    camera = Popen('gphoto2 --shell', shell=True, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+    camera.stdin.write('set-config /main/settings/capturetarget 0\n')
+    camera.stdin.write('set-config /main/actions/autofocusdrive 1\n')
+    sleep(0.1)
+    print "Connected to camera"
+
 # Setup serial connection to pan/tilt controller
 def connectToSerial():
     global ser
@@ -47,10 +71,10 @@ def connectToSerial():
             print "Serial port is open..."
         else:
             print "Serial port is not open..."
-            exit(1)
+            # exit(1)
     except serial.serialutil.SerialException as e:
         print "Failed to open serial port."
-        exit(1)
+        # exit(1)
 
 # Sends command over serial to pan/tilt controller
 # command : Command to send
@@ -84,19 +108,20 @@ def cmd(command):
 # Gets the new pan/tilt positons from the blob detector
 def getPositions():
     global LAST_PICTURE
-    photoThread = None
+    # photoThread = None
     while True:
         positions = socket.recv()
         panTilt = positions.split(',')
         print "Received positions: " + positions
 
         # If in position, take photots every 3 seconds
-        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 4:
+        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 3:
             LAST_PICTURE = datetime.now()
-            if photoThread is not None:
-                photoThread.join()
-            photoThread = threading.Thread(target=call, args=(["/home/pi/3rdYearProject/ImageAnalysis/takePhotos.sh"],))
-            photoThread.start()
+            camera.stdin.write('set-config /main/actions/autofocusdrive 1\ncapture-image\n')
+            # if photoThread is not None:
+            #     photoThread.join()
+            # photoThread = threading.Thread(target=call, args=(["/home/pi/3rdYearProject/ImageAnalysis/takePhotos.sh"],))
+            # photoThread.start()
 
         cmd('PT ' + panTilt[0] + 'x' + panTilt[1])
 #         sleep(0.1)
@@ -111,7 +136,18 @@ def site():
 
         if reqType == "thumbnails":
             print "Getting thumbnails..."
-            return "Thumbnails"
+            camera.communicate()
+            system('cd ' + IMAGES_PATH + ' && gphoto2 --get-all-thumbnails --skip-existing && cd -')
+            images = [basename(f) for f in glob(IMAGES_PATH + '*.jpg')]
+
+            imagesHTML = ''
+            for index,filename in enumerate(images):
+                if index % 5 == 0:
+                    imagesHTML += '<br>\n'
+                imagesHTML += '<img src="static/images/' + filename + '">'
+
+            connectToCamera()
+            return imagesHTML
         elif reqType == "move":
             direction = request.form['direction']
             print "Attempting to move in direction " + direction + "..."
@@ -164,7 +200,7 @@ def site():
                 failed = True
         elif reqType == "picture":
             print "Taking picture..."
-            call(["/home/pi/3rdYearProject/ImageAnalysis/takePhotos.sh"])
+            camera.stdin.write('set-config /main/actions/autofocusdrive 1\ncapture-image\n')
         elif reqType == "command":
             command = request.form['cmd']
             if (command.startswith("PT ") or
@@ -184,13 +220,6 @@ def site():
         elif reqType == "manualToggle":
             socket.send_string("MANUAL_TOGGLE")
             return "True"
-        elif reqType == "block":
-            if request.form['value'] == "true":
-                print "Setting blocking mode to manual..."
-                cmd('BLOCK')
-            else:
-                print "Setting blocking mode to auto..."
-                cmd('NON_BLOCK')
         elif reqType == "setPos":
             val = request.form['value']
             try:
@@ -224,6 +253,7 @@ def site():
         return "True"
 
 if __name__ == "__main__":
+    connectToCamera()
     connectToSerial()
     backgroundThread = threading.Thread(target=getPositions)
     backgroundThread.daemon = True

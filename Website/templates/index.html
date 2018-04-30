@@ -5,6 +5,7 @@
     <script type="text/javascript" src="{{url_for('static', filename='jquery-3.3.1.min.js')}}"></script>
 
     <script type="text/javascript">
+        // Move the system in a given direction with a current step amount
         function move(direction) {
             console.log("Moving in direction " + direction);
             $.ajax({
@@ -24,6 +25,7 @@
             });
         }
 
+        // Set pan/tilt step amount
         function step(axis) {
             var amount = $("input#stepAmount").val();
             $.ajax({
@@ -40,6 +42,7 @@
             });
         }
 
+        // Set pan/tilt speed
         function setSpeed(axis) {
             var amount;
             if (axis == "pan") {
@@ -61,6 +64,7 @@
             });
         }
 
+        // Take pictures with attached camera
         function takePicture() {
             $.ajax({
                 type: 'POST',
@@ -74,6 +78,7 @@
             });
         }
 
+        // Send commands to controller
         function command() {
             var cmd = $("input#commandText").val();
             $.ajax({
@@ -98,6 +103,7 @@
             });
         }
 
+        // Toggle between automated tracking and manual control
         function manualToggle() {
             $.ajax({
                 type: 'POST',
@@ -111,21 +117,7 @@
             });
         }
 
-        function setBlock() {
-            var block = $("input#block")[0].checked;
-            $.ajax({
-                type: 'POST',
-                url: '/',
-                data: {
-                    "type":"block",
-                    "value":block
-                },
-                success: function(response) {
-                    console.log("Changed blocking state to " + block + ".");
-                }
-            });
-        }
-
+        // Set pan/tilt absolute position
         function setPos(axis) {
             var pos = 0;
             var input;
@@ -154,8 +146,8 @@
             });
         }
 
+        // Reset serial connection
         function reset() {
-            console.log("H");
             $.ajax({
                 type: 'POST',
                 url: '/',
@@ -164,31 +156,29 @@
                 },
                 success: function(response) {
                     console.log(response);
-                    console.log("H");
                     $('input#panPos')[0].value = 0;
                     $('input#tiltPos')[0].value = 0;
                 }
             });
         }
 
-        // Get thumbnails every 5 seconds from camera
-//        $(function () {
-//            setInterval(function () {
-//                $.ajax({
-//                    url: '/',
-//                    data: {
-//                        "type":"thumbnails"
-//                    },
-//                    type: 'POST',
-//                    success: function (response) {
-//                        jQuery('#output').html(response);
-//                    },
-//                    error: function (error) {
-//                        console.log(error);
-//                    }
-//                });
-//            }, 5000);
-//        });
+        // Get thumbnails 
+       function getThumbnails() {
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"thumbnails"
+                },
+                success: function (response) {
+                    jQuery('#output').html(response);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+       }
+
     </script>
 </head>
 
@@ -204,7 +194,6 @@
         <button type="button" onclick="reset()">Reset</button>
         <button type="button" onclick="move('zero')">Zero Pan and Tilt</button><br>
         <button type="button" onclick="takePicture()">Take Picture</button><br>
-        Block until movement has finished? <input type="checkbox" id="block" onclick="setBlock()" checked><br><br>
         <input type="text" id="panPos" value="0"/> <button type="button" onclick="setPos('pan')">Set Pan Position</button></br>
         <input type="text" id="tiltPos" value="0"/> <button type="button" onclick="setPos('tilt')">Set Tilt Position</button></br>
         <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('pan')">Change Pan Step</button><br>
@@ -269,6 +258,7 @@
 
     <br>
     <h3>Thumbnails</h3>
+    <button type="button" onclick="getThumbnails()">Get Thumbnails</button><br></br>
     <div id="output"></div>
 </body>
 
