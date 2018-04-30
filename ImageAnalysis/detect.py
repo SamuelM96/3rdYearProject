@@ -1,162 +1,163 @@
-from multiprocessing.dummy import Pool as ThreadPool
-from picamera.array import PiRGBArray
-from picamera import PiCamera
+#!/usr/bin/python2
+
+import threading
+import zmq
+import select
 import numpy as np
+import math
 import cv2
+from picamera import PiCamera
+import pyximport; pyximport.install()
+import findBlobs as fb
+
+# Automated tracking toggle
+AUTO_MODE = False
+
+# Retreives just the luminescence data from a camera setup with the YUV420 image format
+class Luminescence():
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.data = None
+
+    def write(self, buf):
+        self.data = np.frombuffer(buf, dtype=np.uint8, count=self.width*self.height).reshape((self.height,self.width))
 
 
-DISTSQ = 10000
+# Receives messages from the server
+def getData(socket):
+    global AUTO_MODE
+    while True:
+        message = socket.recv()
 
-
-class Blob:
-    def __init__(self, x, y):
-        self.rect = [x, y, x, y]
-        self.points = [(x, y)]
-        self.center = (x, y)
-
-    def addPoint(self, x, y):
-        self.points.append((x, y))
-
-        changed = False
-        if x < self.rect[0]:
-            self.rect[0] = x
-            changed = True
-        elif x > self.rect[2]:
-            self.rect[2] = x
-            changed = True
-        if y < self.rect[1]:
-            self.rect[1] = y
-            changed = True
-        elif y > self.rect[3]:
-            self.rect[3] = y
-            changed = True
-        if changed:
-            self.center = (self.rect[0] + (self.rect[2] - self.rect[0]) / 2,
-                           self.rect[1] + (self.rect[3] - self.rect[1]) / 2)
-
-    def inRange(self, x, y):
-        # halfWidth = (self.rect[2] - self.rect[1])/2
-        # halfHeight = (self.rect[1] - self.rect[3])/2
-        # x,y = self.center
-        
-        # dx = max(abs(px - x) - halfWidth, 0)
-        # dy = max(abs(py - y) - halfHeight, 0)
-        # return (dx * dx + dy * dy) < DISTSQ
-        distSq = ((x - self.center[0])**2 + (y - self.center[1])**2)
-        # print distSq
-        return distSq < DISTSQ
-
-
-class Chunk:
-    def __init__(self, padding, c):
-        self.padding = padding
-        self.c = c
-
-
-def findBlobs1(chunk):
-    blobs = []
-    lastBlob = None
-    for y, row in enumerate(chunk.c):
-        for x, val in enumerate(row):
-            if val == 0:
-                y += chunk.padding
-                newBlob = True
-                if lastBlob is not None and lastBlob.inRange(x, y):
-                    lastBlob.addPoint(x, y)
-                else:
-                    for b in blobs:
-                        if b.inRange(x, y):
-                            b.addPoint(x, y)
-                            lastBlob = b
-                            newBlob = False
-                            break
-                    if newBlob:
-                        lastBlob = Blob(x, y)
-                        blobs.append(lastBlob)
-
-    return blobs
-
-
-def findBlobs(chunk):
-    blobs = []
-    lastBlob = None
-    for coords in chunk:
-        y,x = coords
-        if lastBlob is not None and lastBlob.inRange(x, y):
-            lastBlob.addPoint(x, y)
-        else:
-            newBlob = True
-            for b in blobs:
-                if b.inRange(x, y):
-                    b.addPoint(x, y)
-                    lastBlob = b
-                    newBlob = False
-                    break
-            if newBlob:
-                lastBlob = Blob(x, y)
-                blobs.append(lastBlob)
-    return blobs
-
+        # Toggle automated tracking on/off
+        if message == "MANUAL_TOGGLE":
+            AUTO_MODE = not AUTO_MODE
+            if AUTO_MODE:
+                print "Mode: AUTO"
+            else:
+                print "Mode: Manual"
 
 def main():
-    # cap = cv2.VideoCapture(0)
+    # Setup interprocess communication with blob detector
+    context = zmq.Context()
+    socket = context.socket(zmq.PAIR)
+    socket.connect("tcp://localhost:5555")
+
+    # Background thread to receive server messages
+    backgroundThread = threading.Thread(target=getData, args = (socket,))
+    backgroundThread.daemon = True
+    backgroundThread.start()
+
+    # Contains found blobs
+    blobs = []
+
+    # Setup details
+    WIDTH = 640
+    HEIGHT = 480
+    HWIDTH = WIDTH/2
+    HHEIGHT = HEIGHT/2
+    
+    # Number of steps from the edge to reach the center
+    PAN_STEPS_TO_CENTER = 66
+    PAN_STEP_CONV = float(PAN_STEPS_TO_CENTER)/HWIDTH
+    TILT_STEPS_TO_CENTER = 220
+    TILT_STEP_CONV = float(TILT_STEPS_TO_CENTER)/HHEIGHT
+
+    # Camera setup
     camera = PiCamera()
-    camera.resolution = (640, 480)
-    camera.framerate = 32
-    rawCapture = PiRGBArray(camera, size=(640, 480))
+    camera.resolution = (WIDTH, HEIGHT)
+    camera.framerate = 49
+    camera.sensor_mode = 5
+    camera.exposure_mode = 'sports'
 
-    # while True:
-    for frameCam in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-        # ret, frame = cap.read()
-        frame = frameCam.array
-        # frame = cv2.imread("G:/Google Drive/University/Year 3/Project/3rdYearProject/ImageAnalysis/DSC_0681.png", cv2.IMREAD_GRAYSCALE)
-        # frame = cv2.resize(frame, (0, 0), fx=0.2, fy=0.2)
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        _, gray = cv2.threshold(frame, 10, 255, cv2.THRESH_BINARY)
-    # gray = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 15, 2)
-    # col = Image.open("G:/Google Drive/University/Year 3/Project/3rdYearProject/ImageAnalysis/DSC_0681.png")
-    # col = col.resize((col.width / 10, col.height / 10))
-    # gray = col.convert('L')
+    # Gets luminescence data
+    lumi = Luminescence(WIDTH, HEIGHT)
 
-    # Let numpy do the heavy lifting for converting pixels to pure black or white
-    # bw = np.asarray(gray).copy()
+    # Tracking params
+    DSLR_CENTER_Y = HHEIGHT + 25
+    lumiLevel = 5
+    trackedBlob = None
+    maxBlobSize = 80
+    minBlobSize = 10
+    decelerationAmount = 0.75
 
-    # Threshold image to become black/white to make blobs distinct
-    # threshold = 50
-    # bw[bw < threshold] = 0    # Black
-    # bw[bw >= threshold] = 255  # White
+    # Process camera frames
+    for cap in camera.capture_continuous(lumi, format="yuv", use_video_port=True):
+        frame = cap.data
+        frame.flags.writeable = True
 
-    # Find blobs
-        blobPixels = np.argwhere(gray == 0)
-        # # numThreads = 1
-        # pool = ThreadPool()
-        # numElems = len(blobPixels) / 1
-        # chunks = [blobPixels[i:i + numElems] for i in xrange(0, len(blobPixels), numElems)]
-        # chunkBlobs = pool.map(findBlobs, chunks)
-        chunkBlobs = findBlobs(blobPixels)
-        # print chunkBlobs
+        # Find blobs in the image
+        blobs = fb.findBlobs(frame, blobs, lumiLevel, maxBlobSize, minBlobSize)
 
-    # Now we put it back in Pillow/PIL land
-    # im = Image.fromarray(bw)
-    # draw = ImageDraw.Draw(im)
+        # Process blobs
+        closestBlobToCenter = None
+        cBlobCenter = ()
+        cBlobDistSq = None
+        blobCenter = ()
+        blobDistSq = -1
+        found = False
+        for b in blobs:
+            if b.alive == 1:
+                blobCenter = (b.rect[0] + (b.rect[2] - b.rect[0]) / 2, b.rect[1] + (b.rect[3] - b.rect[1]) / 2)
+                blobDistSq = (blobCenter[0] - HWIDTH)**2 + (blobCenter[1] - DSLR_CENTER_Y)**2
 
-    # for i in xrange(0, len(bw), numElems):
-    #     draw.rectangle([0, i, len(bw[0]), i + numElems], outline=50)
+                # Draw bounding boxes and IDs
+                cv2.rectangle(frame, (b.rect[0], b.rect[1]), (b.rect[2], b.rect[3]), (128, 0, 0), 3)
+                cv2.putText(frame, str(b.num), blobCenter, cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 128, 0), 2)
 
-        # for cb in chunkBlobs:
-        for b in chunkBlobs:
-            cv2.rectangle(gray, (b.rect[0], b.rect[1]), (b.rect[2], b.rect[3]), (0,0,0), 3)
+                if trackedBlob is not None and b.num == trackedBlob.num:
+                    # Found blob that needs to be tracked
+                    found = True
+                    trackedBlob = b
+                    break
+                elif closestBlobToCenter is None or blobDistSq < cBlobDistSq:
+                    # Find closest blob to the center of the DSLRs view, in case tracked blob is lost
+                    closestBlobToCenter = b
+                    cBlobCenter = blobCenter
+                    cBlobDistSq = blobDistSq
 
-        cv2.imshow('image', gray)
-        rawCapture.truncate(0)
+            # Lost tracked blob, so track blob closest to DSLRs center
+            if found == False:
+                if closestBlobToCenter is not None:
+                    trackedBlob = closestBlobToCenter
+                    blobCenter = cBlobCenter
+                    blobDistSq = cBlobDistSq
+                else:
+                    # No blobs found, reset tracked blob
+                    trackedBlob = None
 
 
+        # Automated tracking mode
+        if AUTO_MODE:
+            # Move system to blobs new position
+            if trackedBlob is not None:
+                panSteps = int(PAN_STEP_CONV * (blobCenter[0] - HWIDTH) * decelerationAmount)
+                tiltSteps = int((TILT_STEP_CONV * (DSLR_CENTER_Y - blobCenter[1])) * decelerationAmount)
+                
+                # Dead zone check
+                panPadding = 4
+                tiltPadding = 10
+                if panSteps < panPadding and panSteps > -panPadding:
+                    panSteps = 0
+                if tiltSteps < tiltPadding and tiltSteps > -tiltPadding:
+                    tiltSteps = 0
+
+                # Tell server where to move
+                message = str(panSteps) + "," + str(tiltSteps)
+                socket.send_string(message)
+
+        # Draw center of DSLR dot for visual help
+        cv2.rectangle(frame, (HWIDTH, DSLR_CENTER_Y), (HWIDTH, DSLR_CENTER_Y), (128, 0, 0), 3)
+
+        # Show camera display
+        cv2.imshow('image', frame)
+
+        # Loop until 'q' is pressed to exit
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-    # cap.release()    
+    # Clean up
     cv2.destroyAllWindows()
-    # im.show()
-
 
 main()
