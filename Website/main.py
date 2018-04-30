@@ -101,7 +101,7 @@ def cmd(command):
                 return (int(out[0].split(' ')[1]), int(out[1].split(' ')[1]))
             except ValueError:
                 return None
-    except SerialTimeoutException:
+    except serial.SerialTimeoutException:
         return None
 
 
@@ -114,8 +114,8 @@ def getPositions():
         panTilt = positions.split(',')
         print "Received positions: " + positions
 
-        # If in position, take photots every 1.5 seconds
-        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 1.5:
+        # If in position, take photots every 3 seconds
+        if positions == "0,0" and (datetime.now() - LAST_PICTURE).total_seconds() > 3:
             LAST_PICTURE = datetime.now()
             camera.stdin.write('set-config /main/actions/autofocusdrive 1\ncapture-image\n')
 
@@ -234,6 +234,10 @@ def site():
             print "Reseting system..."
             connectToSerial()
             return jsonify(pan=0, tilt=0)
+        elif reqType == "heightComp":
+            val = request.form['amount']
+            socket.send_string("HEIGHT_COMP: " + str(val))
+            return "True"
         else:
             print "Unknown request type: " + request.form['type']
             failed = True

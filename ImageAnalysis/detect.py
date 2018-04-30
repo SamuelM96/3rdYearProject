@@ -13,6 +13,13 @@ import findBlobs as fb
 # Automated tracking toggle
 AUTO_MODE = False
 
+# Setup details
+WIDTH = 640
+HEIGHT = 480
+HWIDTH = WIDTH/2
+HHEIGHT = HEIGHT/2
+DSLR_CENTER_Y = HHEIGHT - 20
+
 # Retreives just the luminescence data from a camera setup with the YUV420 image format
 class Luminescence():
     def __init__(self, width, height):
@@ -27,8 +34,10 @@ class Luminescence():
 # Receives messages from the server
 def getData(socket):
     global AUTO_MODE
+    global DSLR_CENTER_Y
     while True:
         message = socket.recv()
+        print "Received message: " + message
 
         # Toggle automated tracking on/off
         if message == "MANUAL_TOGGLE":
@@ -37,6 +46,12 @@ def getData(socket):
                 print "Mode: AUTO"
             else:
                 print "Mode: Manual"
+        elif message.startswith("HEIGHT_COMP: "):
+            val = message.split(' ')[1]
+            try:
+                DSLR_CENTER_Y = HHEIGHT + int(val)
+            except ValueError:
+                pass
 
 def main():
     # Setup interprocess communication with blob detector
@@ -52,12 +67,6 @@ def main():
     # Contains found blobs
     blobs = []
 
-    # Setup details
-    WIDTH = 640
-    HEIGHT = 480
-    HWIDTH = WIDTH/2
-    HHEIGHT = HEIGHT/2
-    
     # Number of steps from the edge to reach the center
     PAN_STEPS_TO_CENTER = 66
     PAN_STEP_CONV = float(PAN_STEPS_TO_CENTER)/HWIDTH
@@ -75,7 +84,6 @@ def main():
     lumi = Luminescence(WIDTH, HEIGHT)
 
     # Tracking params
-    DSLR_CENTER_Y = HHEIGHT + 25
     lumiLevel = 5
     trackedBlob = None
     maxBlobSize = 80
@@ -84,7 +92,7 @@ def main():
 
     # Process camera frames
     for cap in camera.capture_continuous(lumi, format="yuv", use_video_port=True):
-        frame = cap.data
+        frame = cap.data[:HEIGHT-20,:]
         frame.flags.writeable = True
 
         # Find blobs in the image

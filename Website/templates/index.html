@@ -146,23 +146,7 @@
             });
         }
 
-        // Reset serial connection
-        function reset() {
-            $.ajax({
-                type: 'POST',
-                url: '/',
-                data: {
-                    "type":"reset"
-                },
-                success: function(response) {
-                    console.log(response);
-                    $('input#panPos')[0].value = 0;
-                    $('input#tiltPos')[0].value = 0;
-                }
-            });
-        }
-
-        // Get thumbnails 
+       // Get thumbnails 
        function getThumbnails() {
             $.ajax({
                 type: 'POST',
@@ -179,6 +163,21 @@
             });
        }
 
+        // Set DSLR height compensation
+        function height() {
+            var amount = $("input#heightComp").val();
+            $.ajax({
+                type: 'POST',
+                url: '/',
+                data: {
+                    "type":"heightComp",
+                    "amount":amount
+                },
+                success: function (response) {
+                    console.log(response);
+                }
+            });
+        }
     </script>
 </head>
 
@@ -191,7 +190,6 @@
         <button type="button" onclick="move('down')">Down</button>
         <button type="button" onclick="move('up')">Up</button>
         <button type="button" onclick="move('right')">Right</button><br>
-        <button type="button" onclick="reset()">Reset</button>
         <button type="button" onclick="move('zero')">Zero Pan and Tilt</button><br>
         <button type="button" onclick="takePicture()">Take Picture</button><br>
         <input type="text" id="panPos" value="0"/> <button type="button" onclick="setPos('pan')">Set Pan Position</button></br>
@@ -199,7 +197,8 @@
         <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('pan')">Change Pan Step</button><br>
         <input type="text" id="stepAmount" value="10"/> <button type="button" onclick="step('tilt')">Change Tilt Step</button><br>
         <input type="text" id="panSpeed" value="80"/> <button type="button" onclick="setSpeed('pan')">Set panning speed</button><br>
-        <input type="text" id="tiltSpeed" value="80"/> <button type="button" onclick="setSpeed('tilt')">Set tilting speed</button><br><br>
+        <input type="text" id="tiltSpeed" value="80"/> <button type="button" onclick="setSpeed('tilt')">Set tilting speed</button><br>
+        <input type="text" id="heightComp" value="-25"/> <button type="button" onclick="height()">Change height compensation</button><br><br>
         Command: <input type="text" id="commandText"> <button type="button" onclick="command()">Execute</button><br><br>
 
         <button type="button" onclick="manualToggle()">Toggle Manual/Auto Mode</button>

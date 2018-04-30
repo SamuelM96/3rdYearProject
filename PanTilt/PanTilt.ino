@@ -39,6 +39,7 @@ void setup() {
     digitalWrite(TILT_ENDSTOP, HIGH);
     
     // Find endstop
+    Serial.println("Finding tilt compensation...");
     tilt.setMaxSpeed(200);
     tilt.setSpeed(200);
     while (digitalRead(TILT_ENDSTOP) == LOW) {
@@ -49,11 +50,14 @@ void setup() {
     
     tilt.stop();
     tiltComp = tilt.currentPosition() - MIN_TILT;
+    Serial.print("Found tilt compensation: ");
+    Serial.println(tiltComp);
+    
     tiltPos = tiltComp;
     tilt.moveTo(tiltPos);
     tilt.runSpeedToPosition();
     
-    pan.setMaxSpeed(120);
+    pan.setMaxSpeed(100);
     tilt.setMaxSpeed(500);
 }
 
@@ -100,11 +104,11 @@ void loop() {
         } else if (inputStr.startsWith("ZERO")) {
             // Reset pan and tilt back to home
             panPos = 0;
-            tiltPos = tiltComp;
+            tiltPos = 0;
         } else if (inputStr.startsWith("ZERO_PAN")) {
             panPos = 0;
         } else if (inputStr.startsWith("ZERO_TILT")) {
-            tiltPos = tiltComp;
+            tiltPos = 0;
         } else {
             Serial.println("INVALID COMMAND");
         }
