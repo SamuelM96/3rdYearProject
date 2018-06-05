@@ -108,7 +108,6 @@ def cmd(command):
 # Gets the new pan/tilt positons from the blob detector
 def getPositions():
     global LAST_PICTURE
-    # photoThread = None
     while True:
         positions = socket.recv()
         panTilt = positions.split(',')
@@ -127,14 +126,17 @@ def site():
     if request.method == 'GET':
         return render_template('index.html')
     elif request.method == 'POST':
+        # Parse request type
         reqType = request.form['type']
 
         if reqType == "thumbnails":
+            # Retrieve thumbnails
             print "Getting thumbnails..."
             camera.communicate()
             system('cd ' + IMAGES_PATH + ' && gphoto2 --get-all-thumbnails --skip-existing && cd -')
             images = [basename(f) for f in glob(IMAGES_PATH + '*.jpg')]
 
+            # Create HTML to display images
             imagesHTML = ''
             for index,filename in enumerate(images):
                 if index % 5 == 0:
@@ -144,6 +146,7 @@ def site():
             connectToCamera()
             return imagesHTML
         elif reqType == "move":
+            # Move a given direction
             direction = request.form['direction']
             print "Attempting to move in direction " + direction + "..."
             if direction == 'left':
@@ -175,6 +178,7 @@ def site():
                 print "Unknown movement: " + direction
                 failed = True
         elif reqType == "step":
+            # Change step amount for a given direction
             amount = request.form['amount'].encode('ascii')
             if request.form['axis'] == "pan":
                 global PAN_STEP
@@ -183,6 +187,7 @@ def site():
                 global TILT_STEP
                 TILT_STEP = amount
         elif reqType == "speed":
+            # Change speed for a given direction
             amount = request.form['amount'].encode('ascii') 
             axis = request.form['axis']
             if axis == "pan":
@@ -194,9 +199,11 @@ def site():
             else:
                 failed = True
         elif reqType == "picture":
+            # Take a picture
             print "Taking picture..."
             camera.stdin.write('set-config /main/actions/autofocusdrive 1\ncapture-image\n')
         elif reqType == "command":
+            # Send command to controller
             command = request.form['cmd']
             if (command.startswith("PT ") or
                     command.startswith("PAN ") or
@@ -213,9 +220,11 @@ def site():
             else:
                 return "False"
         elif reqType == "manualToggle":
+            # Toggle between automated and manual tracking
             socket.send_string("MANUAL_TOGGLE")
             return "True"
         elif reqType == "setPos":
+            # Set absolute pan/tilt positions
             val = request.form['value']
             try:
                 int(val)
@@ -230,11 +239,8 @@ def site():
                     failed = True
             except ValueError:
                 return "False"
-        elif reqType == "reset":
-            print "Reseting system..."
-            connectToSerial()
-            return jsonify(pan=0, tilt=0)
         elif reqType == "heightComp":
+            # Set DSLR height compensation
             val = request.form['amount']
             socket.send_string("HEIGHT_COMP: " + str(val))
             return "True"

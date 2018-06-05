@@ -47,6 +47,7 @@ def getData(socket):
             else:
                 print "Mode: Manual"
         elif message.startswith("HEIGHT_COMP: "):
+            # Changes DSLR height compensation
             val = message.split(' ')[1]
             try:
                 DSLR_CENTER_Y = HHEIGHT + int(val)

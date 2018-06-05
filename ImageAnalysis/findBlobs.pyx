@@ -25,7 +25,6 @@ cdef class Blob:
         self.rect = array.array('i', [x, y, x, y])
         self.alive = 1
         self.iteration = 5
-        # self.pixelCount = 0
 
     # Adds a point to the blob
     # x : x coordinate of pixel
@@ -37,7 +36,6 @@ cdef class Blob:
             self.rect[2] = x
         elif y > self.rect[3]:
             self.rect[3] = y
-        # self.pixelCount += 1
 
     # Returns True if the give pixel coords are within range of the blob, False otherwise
     cpdef inRange(self, int x, int y):

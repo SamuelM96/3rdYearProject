@@ -52,7 +52,8 @@ void setup() {
     tiltComp = tilt.currentPosition() - MIN_TILT;
     Serial.print("Found tilt compensation: ");
     Serial.println(tiltComp);
-    
+
+    // Set tilt to a level position 
     tiltPos = tiltComp;
     tilt.moveTo(tiltPos);
     tilt.runSpeedToPosition();
@@ -90,15 +91,19 @@ void loop() {
             // Find step count for tilt
             tiltMov = inputStr.substring(4).toInt();
         } else if (inputStr.startsWith("PAN_SPEED ")) {
+            // Find new pan speed
             int speed = inputStr.substring(9).toInt();
             pan.setMaxSpeed(speed);
         } else if (inputStr.startsWith("TILT_SPEED ")) {
+            // Find new tilt speed
             int speed = inputStr.substring(10).toInt();
             tilt.setMaxSpeed(speed);
         } else if (inputStr.startsWith("SET_PAN ")) {
+            // Find new absolute position for pan
             int newPos = inputStr.substring(7).toInt();
             panMov = newPos - panPos;
         } else if (inputStr.startsWith("SET_TILT")) {
+            // Find new absolute position for tilt
             int newPos = inputStr.substring(8).toInt();
             tiltMov = newPos - tiltPos;
         } else if (inputStr.startsWith("ZERO")) {
@@ -106,8 +111,10 @@ void loop() {
             panPos = 0;
             tiltPos = 0;
         } else if (inputStr.startsWith("ZERO_PAN")) {
+            // Zeros pan
             panPos = 0;
         } else if (inputStr.startsWith("ZERO_TILT")) {
+            // Zeros tilt
             tiltPos = 0;
         } else {
             Serial.println("INVALID COMMAND");
